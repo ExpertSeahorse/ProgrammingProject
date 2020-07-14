@@ -1,0 +1,993 @@
+Passage New Game:
+Text:  "
+
+"
+Link:  display=Start, target=Start
+Text:  "
+
+"
+Set:  var=$mbedroom, value=false
+Text:  "
+"
+Set:  var=$takewater, value=false
+Text:  "
+"
+Set:  var=$takeshoes, value=false
+Text:  "
+"
+Set:  var=$takejumper, value=false
+Text:  "
+"
+Set:  var=$end1, value=false
+Text:  "
+"
+Set:  var=$end2, value=false
+Text:  "
+"
+Set:  var=$end3, value=false
+Text:  "
+"
+Set:  var=$end4, value=false
+Text:  "
+"
+Set:  var=$end5, value=false
+Text:  "
+"
+Set:  var=$end6, value=false
+Text:  "
+"
+Set:  var=$end7, value=false
+Text:  "
+"
+Set:  var=$end8, value=false
+Text:  "
+"
+Set:  var=$end9, value=false
+Text:  "
+"
+Set:  var=$end10, value=false
+Text:  "
+"
+Passage Start:
+Text:  "//Siiiiiiiiiigh//. 
+You roll over and burrow comfortably into the duvet, relishing the warm feeling of the saturday morning sunlight on your face. You could swear that today your bed felt even comfier than usual-then again, it always does when you get the chance to take a long lie in. Its the weekend, that means for two whole days, no more catty Katie and her gang, no more Mrs. Gordon, no more Getting Started with Algebra, just two whole days of sweet, sweet freedom. //Mmmmmmmmmm~// 
+
+'School days are the best days of your life!', Yeah right, you snort. Anything is better than being stuck in that hell-hole. Fighting to stay awake. Staring at the clock hanging on the wall and feeling your brain slowly melt into mush. //Tick. Tick. Tick. Tick. ZZzzzzzzzzzz// Ugh!
+'I should really be thinking about getting up soon', you say aloud, trying to will yourself out of the soft cocoon of Bed and out into the cruel spring air. After all, you thought, I have a busy day today- a busy day of saturday morning tv, video games, and chinese carry-out! Not forgetting packing your things for a sleepover with Beth tonight. If only you didnt have to look after your little sister and her snotty friends first. Ugh. Whatever, the usual babysitting strategy will suffice- load 'em up on caffeine and sugar and barricade yourself upstairs in your bedroom to rack up your phone bill.
+When you finally flutter your eyes open, it takes a moment for your sleep-addled brain to notice that anything is wrong. The ceiling is just the same, a tasteful off-white matte with de facto hanging pendant light vaguely positioned in the centre. When you roll over, though, you realise that something feels...//off//, although you can't put your finger on exactly what. Everything seems sort of....hazy? 
+It looks just like a standard bedroom should look, a little untidy but not overly so, with an assortment of posters scattered across the 4 walls bearing smiling celebrities and cartoon mascots. There's a conveniently small wooden nightstand on your right beside the bed with a posable daisy desk lamp sitting on top next to a glass of water and a folded-up copy of //That's Crush!//, and a large but not imposing metal bookshelf against the wall opposite the end of the bed, filled with Aggressively Grown-up Gritty Mature Crime Fiction titles that only a preteen who wanted to show off would pick up, as well as several little trinket boxes and other small decorative-but-useless items. You notice a standard-looking airing cupboard in the far corner, and a soft-looking lilac dressing gown hanging on the back of the door. 
+Scanning the room, you feel a vague sese of unease. It feels like it could be- it //should// be-your bedroom, but is it?
+If this is your room, why doesn't it feel like home?
+It feels familiar as you cast your eyes across each wall, like a bedroom from a beloved frequently-watched movie or a tv show, but at the same time- When you focus your eyes on any one single object, it almost seems to blur and shift flatly in front of you, like staring at a magic-eye puzzle too long and watching it turn back into a pattern on a page- as if whatever or whoever is causing this illusion  doesn't //quite// understand the details well enough to produce something wholly authentic, and is glossing over simple details and just hoping that no-one will look closely enough at anything to notice.
+You pull down the duvet and slide out of bed, slipping your feet into a pair of fluffy pig slippers you assume are yours. The carpet feels strange and sort of warm, almost organic(??) under your slippered feet.
+You crouch down and gingerly prod the soft pile. It feels just like a normal carpet, but when you lift your finger away it leaves an almost greasy sheen on your skin. Gross. Don't want to touch that again in a hurry.
+'Something is definitely not normal here', you think.
+Just as you stand back up, a folded sheet of paper on the desk in the corner catches your eye. Hmm. Better check that out, you think, and walk over to the other side of the room. 
+When you pick up the note, its blank except for  the words, 
+&quot;MAMA'S COMING.....WHEN THE CLOCK STRIKES 12, YOU'LL KNOW WHAT TO DO
+GO THROUGH THE DOOR, AND WE CAN GO HOME.&quot;
+What...What could this possibly mean? Mama's coming? Who is &quot;Mama&quot;, anyway? What did it mean you'll &quot;know what to do&quot;? You don't understand...This whole thing seems like some kind of crazy dream or one of those camp horror novels that you're //definitely// too old for but secretly still love anyway.
+You decide to head on downstairs or at least check out the rest of the house, but when you pad over to the door and try the handle, you find it locked. Strange. 
+Normally you'd assume it was Robby playing a dumb prank or a run-of-the-mill problem with the lock and just shrug and call on your mother, but today was different. Somehow you knew that for whatever reason something was trying to //keep// you here, and you knew that you had to make yourself scarce before you found out just what that reason actually was.
+The window that opens out onto the roof below looks like it opens fairly wide, so you're pretty sure you could climb out-but on the other hand, it would be pretty dangerous. Not to mention, at least if you stayed inside you know that it feels //relatively// safe in here, whereas there could be anything outside waiting for you.
+You can also make out the sound of an air vent from inside the airing closet, and remember all those spy movies you used to watch as a kid where the clever and resourceful hero would outsmart the blundering villain by crawling unseen through the ventilation system to safety. Then again, that also sounds pretty dangerous. You had no idea if something like that would even work in real life, much less if you had the physical strength to pull it off.
+Actually, come to think of it, neither of those sounded safer than just staying put and waiting it out here. At least this place //felt// like a comfortable bedroom, and you were almost positive the  weird feelings this place was giving you were all just in your mind. Maybe it would be a better idea just to curl back up in that warm bed and see if you feel better after some more rest, or at least wait it out for awhile to see if maybe things started to feel more normal.
+
+"
+If:  var=$takeshoes, value=true
+START BLOCK
+Text:  "There are some shoes sitting on the end of the bed, so you pick them up."
+END BLOCK
+Text:  "
+"
+If:  var=$takewater, value=true
+START BLOCK
+Text:  "There is a glass of strange clear liquid on the bed. It might come in handy. Better take it with me"
+END BLOCK
+Text:  "
+"
+If:  var=$takejumper, value=true
+START BLOCK
+Text:  "There is a sweatshirt lying crumpled on the bed. Better grab it in case it gets cold later or something."
+END BLOCK
+Text:  "
+"
+If:  var=$takewater, value=true
+START BLOCK
+If:  var=$takeshoes, value=true
+START BLOCK
+If:  var=$takejumper, value=true
+START BLOCK
+If:  var=$mbedroom, value=true
+START BLOCK
+Text:  "You don't fully understand why, but with the strange assortment of items packed in a bag you feel oddly prepared. Maybe you //will// make it home."
+END BLOCK
+END BLOCK
+END BLOCK
+END BLOCK
+Text:  "
+
+You decide to:
+"
+Link:  display=climb out the window, target=climb out the window
+Text:  "
+"
+Link:  display=check out the airing closet, target=check out the airing closet
+Text:  "
+"
+Link:  display=stay put for now, target=stay put for now
+Passage climb out the window:
+Text:  "You take a deep breath, and yank open the bedroom window. Taking the cold morning air into your lungs, you look down. Huh, doesnt seem so bad, you think. Ugh...You'd never been particularly frightened of heights- but climbing out of the window of a second-story room would be enough to put fear in anyone, you reason.
+//Gulp//. 'W-Well then, I guess its time to do it', you say aloud to the room, or to no-one in particular. You turn to face away from the window and lift one leg back, and then the other, inching out of the window bit by bit until your lower body is fully outside. You grip the window-ledge tightly and start to lower yourself down until you can barely feel the slanted roof beneath your feet, and then let go of the ledge. 
+Whew, That wasnt //so// awful, you lie to yourself-
+//Thunk!!//
+You feel some of the thin tiles crack and slip away under your feet, clearly not designed to take the weight of a person, and for a short, horrible moment lose your balance and are filled with terror as you envision your body flopping limply like a ragdoll down the roof and hitting the concrete far below with a thick, sickening, fleshy //smack//. You desparately flail your arms and stick out your chest in hopes of regaining your centre of gravity, and fall forwards onto the slope of the roof, smacking your chin on the tiles but otherwise coming away unharmed. 
+After taking a moment to recover and get your breath back, you consider your situation.
+Ok, fine, this was a terrible idea. That was terrifying and you already regret it. 
+Even so, you shudder, you're already glad to be out of that weird wrong-room. Just breathing the cool air outside is already starting to calm you down.
+You swivel round and take in your surroundings. You landed on a wide, slanted stretch of roof below the bedroom window, about halfway between the bottom of the roof and the peak. 
+Looking up, you can see that on the roof just before the peak there is a black shiny rectangle- a window? Upon closer inspection you discover that the black rectangle looks to be a window for some kind of attic or boiler-room, open just a crack to let out steam. Maybe the power supply for the house is in there? Whatever this house is, its still a //house//, so naturally it must need power, right? Maybe if you can find some way to cut off the power supply you'd be able to outsmart whoever is running this place and try to escape. The window is short and wide, and looks more than big enough for you to slip through easily. Plus, any strategy that didn't involve leaping out of bedroom windows and potentially falling to your doom was more than welcome news in your book. Even if the attic-looking window was kinda creepy, at least it didnt involve risking ending up splatted like a bug on the concrete garden path below.
+Then again, come to think of it, since you already fell a fair distance, maybe it wouldnt be so far to travel for you to make your way from here down to the porch roof. You can see the top of a drain pipe affixed to the corner of the roof you're currently sat on from the gutters. It looks pretty sturdy, and you would guess that it continues down to the gutters on the top of the porch roof. You could probably use it to climb the short distance down to the smaller porch roof, and from there, easily jump down to the ground or perhaps gain access to some of the other rooms on the 1st floor of the house.
+You realise that you'd better decide quickly anyway: this roof didn't seem like the steadiest place to sit, and besides, the sooner you could find a way out of this nightmare the better.
+Timidly, you push yourself up onto your feet, and
+
+"
+Link:  display=climb down drain, target=climb down drain
+Text:  "
+"
+Link:  display=climb up into attic window, target=climb up into attic window
+Passage check out the airing closet:
+Text:  "You decide that the ventilation tube in the airing closet is probably a great deal safer than leaping out of a window or sitting waiting here like a fish ready to shoot, so you head on over and open the closet to take a look at the vent tube. It looks like a tight fit, but still wide enough to squeeze inside. You tap the side and hear a long echo, so it probably continues on for a while- long enough, hopefully, to buy you some time to escape. It looks, and feels, pretty much like a normal vent tube, so you're hoping it won't turn out to be some sort of ventilation-tube mimic monster that swallows you whole. 
+//Gulp//
+You push the thought out of your mind. You've made your choice, time to get a move on before you chicken out.
+Climbing up the closet shelves is easier than you expected, and you're soon at the top of the cupboard, ready to get inside. You tug at the grate protecting the front end of the vent shaft, and find it pulls away surprisingly easily, before grabbing the end, swinging round, and pulling yourself up inside. 
+The metal feels cool on your palms. Its kind of a tight squeeze, as you thought, but you can fit inside no problem. Inside is pitch black, but once you turn the corner you can see a faint glow reflected on the metal &quot;ceiling&quot; of the vent, shining in from a grate below. When you get closer, you figure that this grate must be above the hall. Its so close to the bedroom, it couldn't //really// be another room, could it? From the little you can actually see of the room through the grate, it looks long and narrow, like a hall, with a threadbare beige carpet. If you wanted to exit the vent here, you'd have to remove the grate with your hands from inside, then crawl past it and retreat down it legs-first, so you could jump down. It didnt look like much of a drop, but you're pretty clumsy and you didnt really want to risk breaking an ankle at a time like this. Plus, if that bedroom was weird enough, at least this vent shaft felt pretty standard-fare. Who //knows// what sort of horrors could be awaiting you in //this// room. Not to mention whoever that &quot;Mama&quot; in the note was, she didn't sound like the sort of person you were eager to meet.
+From here, you can also see a larger grate that looks like it drops down into some kind of bedroom or study.
+Staying hidden inside the ventilation system or crawling further down sounded like a pretty safe plan, but then again, how were you supposed to somehow find a way home cooped up in here? As far as you can tell, the only thing inside this vent was you, so you didn't imagine you'd get very far in terms of getting home by lying here waiting. If you could exit the vent system and go into the hall, maybe you'd be in with some chance of making some progress on your quest to make it home. Is it worth the risk?
+You didn't much like the idea of living out the rest of your life alone in a vent before eventually becoming a shrivelled-up skeleton, doomed to lie here forever. Talk about being bored to death... On the other hand, &quot;boring&quot; might not be //such// a bad thing, compared to whatever could be lurking down in the hall. A demonic wall hanging? A haunted chest? Who knows, evil versions of the entire cast of Beauty and the Beast could be hanging out down there just //waiting// for some tasty morsel like you to drop in.
+You decide to...
+
+"
+Link:  display=stay hidden in vents, target=stay hidden in vents
+Text:  "
+"
+Link:  display=go down into hall, target=go down into hall
+Text:  "
+"
+If:  var=$mbedroom, value=true
+START BLOCK
+Text:  " "
+Link:  display=peek into bedroom vent, target=peek into bedroom vent
+Text:  " "
+END BLOCK
+Passage stay put for now:
+Text:  "This room isnt //so// bad, and you decide that the best course of action is to stay scarce up here. Whatever's out there waiting for you could be way, way worse, and personally, you didn't want to take the chance to find out. Plus, spending a little more time in here would give you more time to look for some clues as to what exactly was going on and what you were doing here in the first place.
+This had to be some kind of crazy dream, right? Everything //seems// neaaaaaarly normal, but not //quite// convincing enough to fool you into thinking that everything is perfectly normal and okay.
+You plop back down on the bed and decide to take a closer look at the ceiling. It looks just like a normal ceiling, except distorted and //sliiiiiiightly// swollen. In the middle, there are patchy brown nicotine stains from the people who used to live here. Like everything else in here, when you stare too hard it starts to shift uncomfortably from your gaze. It almost looks like its...throbbing, very, very gently. 
+You stand up on the bed and reach as high as you can, to see if you can touch it and confirm your suspicions, but its too high to reach. Even so, you can feel a strange heat emanating from it just hitting the air around your fingertips. Huh?
+The room doesn't feel particularly warm, but when you lift your hand up near the ceiling, you can feel a definite heat in the air.
+You decide to leave that question unanswered for now. You don't have time to waste wondering about strange ceilings, not right now. Time to find some clues and get the hell out of here, ASAP.
+You decide to check out the desk more thoroughly and see if you can find some other note-or //something//- anything that will help you form a plan to escape.
+You head over to the desk. You already pocketed the note from before, but maybe there's something else? You shuffle through the objects on the desk, finding pens, a rubber, a small pad of post-it notes, and......
+Absolutely nothing of interest. Figures. Whoever left that note probably didn't have much time to write any other helpful tidbits, judging by the way the message seemed cut off.
+Whatever. Lets check out something else...Wait. You notice a tiny little bright yellow corner just peeking out from under the desk. Its the same lurid shade of yellow as the post-its on the desk, you realise, excitedly.
+You quickly go to pull it out from underneath and try to read the message, but to your dismay the text you find makes little to no sense at all.
+&quot;200ml WATER
+1 JUMPER
+1 JEANS
+2 SHOES&quot;
+Huh? A shopping list?...No, that can't be right. The way its laid out, it looks more like a recipe than a shopping list....A recipe for what? What kind of procedure involves what looks like  a simple outfit, and...water? 
+Well, you guess, //nothing// seems to make sense here, for all you know this could be this country's national dish. You're just lucky its written in english at all.
+Not to mention, //any// information that could help you get out of here is only a good thing. You stuff the note into your back pocket and continue your search.
+You decided to have a good rifle through the bookshelf and head towards the opposite corner of the room, when suddenly you are surprised by a loud, jarring //clang//, followed by a slow, soft  hissing. You spin on the spot to try to discern the source of the noise, but can't see any immediate suspect. 
+//Hissssssssssssssssssssssssssss//
+The sound continues, almost soft enough to be inaudible. It sounds just like a smoke machine, leaking softly, except there's no smoke. What //is// that? 
+You ignore the sound and carry on with your decision to search the bookshelf. You decide to start with the top shelf and work your way down, searching for clues on each one. The hissing sound seems to have gotten louder, but you try not to pay attention to it and focus on your task instead.
+You pull out a few thick novels and flip through the pages, hoping to find some mysterious hollowed-out tome with a key hidden inside like in the movies, but are only met with standard slightly yellowed pages of Gripping Action and Fascinating Fantasy- absolutely nothing you're interested in finding right now, at all. Lame...
+You move on to the lower shelf and continue your search. You rummage through several cute trinket-boxes in a wide array of carefully chosen pastel colours, but all you manage to find is a few tacky pieces of someone's grandma's costume jewellery and some assorted berhinestoned accessories. You scoop up as many as you can carry in one go, and dump them all on the bed where you can better check them out just in case there's some ancient cursed amulet lurking amongst the plastic beads and friendship bracelets.
+You're just getting to the end of the first uneventful pile, when you hear another heavy metallic //clunk//, and then the hissing sound suddenly stops. You had forgotten all about it, but now that the room is completely silent again it almost feels eerie.
+'At least that noise finally stopped', you tell yourself, trying to ease your mind and will yourself into carrying back on with your checking the jewellery pile.
+//Snap!//
+//Click//
+All at once, its as if all the air is knocked out of your lungs, and you stagger backwards. W-what??
+In an instant, the whole room seems to change. The light seems to become almost dim and flickering, and your whole mind is filled up with an unnaturally calm sensation. 
+You //know// that you should be alarmed by this sudden change, but even your forced slow breaths of the thick, greasy air don't phase you. It's alright...Mama's coming...~
+MAMA'S COMING~
+DONT FRET, DEAR, DONT FRET
+Mama's coming....Mustn't worry...Mama's coming....
+Mama...Why does that sound somehow familiar?
+Mama. Mama....
+Mama's coming
+
+
+
+
+
+mama's
+
+			coming
+			
+			 			m a m a' s
+											HERE
+
+Mama'sheremamasheremamasheremamashere MaMa'S hErE
+HAVE NO FEAR, MY DEAR, MAMA'S HERE~
+a strange, unearthly, sing-song tone plays out, filling your head, surrounding you with the Voice.
+It feels wet and greasy, clinging to your skin. Intoxicating.
+Still, you are incapable of feeling the fear you know should be feeling at this moment. The Voice feels so familiar and gentle as it constricts around your chest, its impossible to panic.
+Suddenly, your entire body feels very, very heavy.
+
+THERE, THERE
+As though you're sinking into the earth. You can fight it, but it takes more strength than you have, and after a few moments of frenetically flailing your arms around, attempting to 'pull' youself 'out' of the voice you're exhausted.
+You'd imagine that this is what drowning feels like, except instead of floating in salt water, you're drowning in thick wet cement, taking in thick gulps to try desperately to suck down some air in the gaps, feeling your body grow heavier and heavier as its filled with the warm heavy sensation.
+Everything feels so, so warm. 
+Without even realising it, you somehow made your way over to the bed. Each of your limbs feels like its, just.... sinking in to the sheets.
+This is the most comfortable bed you've ever laid on, you're absolutely sure of it~
+Mmmmmmmm~
+It feels like you're...melting.
+The sheets wrap tightly around your body, and Mama's voice chimes soothingly in your head, lulling you to sleep.
+Goodnight, Mama~
+
+
+
+
+
+
+The last thing you see is a white-hot shining light, so bright it shines directly through your half-closed eyes straight into your brain.
+SHHHHHHHHHHHH. EVERYTHING IS OKAY.
+
+						
+"
+Set:  var=$end1, value=true
+Text:  "
+ENDING= BAD DREAM(????)
+"
+Link:  display=EPILOGUE, target=EPILOGUE
+Text:  " "
+Passage climb down drain:
+Text:  "You decide to grab onto the drain at the edge of the house and shimmy down it onto the roof of the porch. You really, really dont want to risk trying the attic, and after the leap of faith you just took out the bedroom window this small drop seems like a piece of cake.
+You cast your eyes over the garden beneath. It looks pretty ordinary- a wide, soft-looking mossy lawn with a few shrubs scattered here and there, with a few seasonal flowers arranged tastefully at the edges. You don't recognise it as normal //home// exactly, but you have pretty much begun to accept that whatever is going on here it is definitely //not// normal...//OR// home.
+From your vantage point on top of the roof, you can see that the house seems to be surrounded by grassy fields in all directions except for one slightly neglected looking country road winding out to the north at the back of the house. Going through the fields is definitely not an option- you already have a pretty poor sense of direction as it is, and you know that trying to make your way through the tall grasses would only result in getting lost. This is definitely //not// the sort of place you wanted to risk getting lost in.
+So if you want to try running away from the house, realistically the country road would be your only option. You're certain that if you kept running far enough, that you'd run into someone that could help. Even just a bus stop would be enough, just something or someone that could take you far,far away from this place. As a general rule, getting very far away from weird and scary places as fast as possible was always going to be a good thing.
+On the other hand, who //knows// what else awaits you in this alien place. If this house alone is bad enough, whats to say that that abandoned-looking creepy country road wouldn't be even worse. You shudder to imagine walking along that road at night for god-knows how long until potentially //maybe// finding civilisation.....or something worse.
+You can see the open window of the house's master bedroom from here, and it would be pretty easy just to climb across and sneak inside. Maybe whoever &quot;Mama&quot; was, that was her base of operations, and sneaking in there during the daytime when she is presumably not asleep could be a way to gather some clues and find some information about what's even going on.
+Besides, no matter what happens, you reason, there's nothing stopping you from coming back out and legging it down the path if it //does// turn out to be a dud idea. 
+Either way, you'd better think quickly. After the roof incident, the sooner you can feel some firm flat surface under your tennis shoes the better.
+You decide to...
+
+"
+Link:  display=climb into master bedroom window, target=climb into master bedroom window
+Text:  "
+"
+Link:  display=climb down onto the porch, target=climb down onto the porch
+Passage climb up into attic window:
+Text:  "You decide that you've had more than enough of heights for one day, and that the best course of action is to investigate the rectangular window a little farther up the roof. If there's some type of power supply for the building, maybe you can figure out some way to disable it, or at least temporarily shut it off in the hope that it puts a stop to some of the weirdness- everything has to obtain power from somewhere, right? And after all, this is a house- what better place to start looking than the attic, surely the most sensible place to put it. You try to ignore the niggling doubt in the back of your mind that nothing in this place makes sense and that you're being naive to assume that anything about here is logical, and press on up the roof.
+You begin to scale the slanted surface, pressing your palms firmly against the tiles and finding your footing before taking the next step upwards towards the window.
+When you begin to get close to your destination, you can even smell the heat emanating from the cracked open window. There's a sort of fizzing sound as the hot steam comes into contact with the cool air, and intimidating though it is, at least you are reassured that your suspicions about the attic housing a boiler or some such thing are pretty much confirmed.
+You reach your hand round the bottom of the long, wide window and feel around until you find the handle, then grasp it firmly and pull it back until the window is open wide enough for you to slip inside. You sit on the edge of the window and dangle your legs inside, noticing the pleasantly warm air around your ankles already before pushing off and falling the short drop into the window to land sprawled awkwardly on the attic floor.
+As soon as you're inside, a thick heat hits you hard smack in the throat. The air is almost suffocating. 
+You look around the room, though you can barely see through the mist of steam and the salty sweat thats already started to run down your eyelids and into your eyes. You can make out a large black shape in the corner of the room- the boiler, you guess. There are a number of heavy metallic pipes infesting the floor and walls, and standard fluffy clouds of yellow insulation foam flank the room. It looks like a fairly standard attic, you think, even if the mind-melting heat makes thinking somewhat difficult in here. You get up from your awkwardly seated position on the floor and unintentionally press your hand against the slanted wall on the inside of the roof. It feels slick and hot, and so unnatural and disturbing that you immediately yank your hand away in disgust. Its like the hot, greasy inside of some horrible creature's belly.
+//Ugh//..., you shudder. What kind of person would live in a place like this? You don't even know if you want to find out.
+Taking a deep breath to steady yourself, you continue making your way towards the hissing boiler at the end of the room, before a faint white rectangle you notice on the ground catches your eye. It looks like...another note? You bend to pick it up and squint to make out the scrawled text.
+Whoever left the note in the bedroom must have written this one too, you think. It's written in the same somehow familiar sloping cursive. There are several similar scraps of paper on the floor around your feet, so you decide to sit down and scoop them up to check them out.
+&quot;WE NEED TO TRICK IT TO KILL IT. DON'T BE SCARED, SHE'LL SMELL IT. 
+SHE WON'T COME UP HERE ANYMORE; IT DOESN'T LIKE HOT MEALS.
+IT'S TOO LATE FOR US THIS TIME, BUT DON'T BE SCARED.
+ALL WE HAVE TO DO IS TURN HER ROUND. IF WE TURN HER AROUND, THEN WE CAN GO HOME.
+NEXT TIME, YOU'LL M-&quot;
+The writing is too smudged by the steam past here for you to make out the next few lines. What did it all mean? Who was writing these anyway?
+It seems like the more you learned, the less this messed-up dream made sense.
+You pocket the notes and stand back up, ignoring the growing fear manifesting in the bottom of your tummy and deciding you'd better press on.
+somethingdoesntfeelrightsomethingdoesntfeelrightsomethingdoesntfeelright
+Deep breath.
+'Just keep going on towards the furnace, you're almost there', you tell yourself. Wait a second, furnace? Now that you think about it, the hissing, sizzling machine was unlike any household boiler you'd ever seen, but what gave you the idea that it was a furnace? Doesn't matter now, anyway, just gotta get to it.
+keepgoingkeepgoingkeepgoingkeepgoing keep
+going keepgoing keep going goonthenthatsityoucandoit youcandoit keepgoing keep going
+You continue towards the machine. It's getting too hot to think, and its all you can do to will yourself on.
+cmonjustacouplemoremetresjustacouple justafewmorestepsmoresteps morestepsmoresteps thatsit morestepsmoresteps 
+moresteps
+Eventually the blistering heat becomes too much, and you're forced to close your searing eyes before stumbling forwards
+//moresteps //
+moresteps morestepsmoresteps
+All you can think about now is getting away from this heat. Every nerve in your body is screaming for relief. You can feel the rubber soles of your tennis shoes soften like playdough and begin to melt onto the floorboards.
+I have to do this Ihavetodothis i haveto i havetodothis i havetodothishavetodothis have to have to have to get home have to do this have to get home have to have to have to havetohavetohavetohavetohsavertyudfsdsrhtdjyfh dfgdgfh gfhjy
+One more step. You can almost reach out and touch the searing blackness of the  machine.
+Justasecondmore just a second almost there //just a second//
+just a second
+
+just
+
+-
+
+
+
+
+
+
+A moment too early, the heat becomes too much for you- almost as though it had been planned this way from the start. Delirious from the heat, you drift out of consciousness. Your sweat-drenched, blistered body falls to the floor with a wet //thump//.
+The boiler almost seemed to taunt you, allowing you a moment of respite here and there before letting out a bellow of boiling steam each hotter and more excruciating than the last.
+Just a few more seconds, and you would have made it.
+As your body lies there against the hot swollen floorboards, clothes sticking to your skin, the last shards of consciousness melt away. The boiler lets out a satisfied //humm//, and, noticing its work is done, allows the temperature dial inside to //click-click-click// back down to a pleasant, balmy warmth.
+The metal relaxes with a //thunk// and slowly moves back into place, ready to lure the next hopeful victim to a sweltering death.
+
+ENDING: FEVER DREAM
+"
+Set:  var=$end2, value=true
+Text:  "
+
+"
+Link:  display=EPILOGUE, target=EPILOGUE
+Text:  "
+
+"
+Passage climb into master bedroom window:
+Text:  "The last thing you want is to get lost in the middle of a creepy cornfield. Besides, whatever is in here is weird enough, and you don't want to take your chances with running off into the middle of nowhere- or //worse//. No, your best bet is //definitely// to check out what looks to be the master bedroom and see if you can find some clues as to //what// exactly is going on and //who// exactly is even living here- not to mention, what the hell //you're// doing in a place like this.
+You carefully pick your steps across the roof of the porch over towards the open window. You take a quick peek through the half-open blinds just to check that the coast is clear, and then grab ahold of the wide window-ledge and pull yourself up inside.
+In hindsight, this was a poorly thought-out move, and you soon realise this when you crash straight through onto the floor and smack onto your face.
+Oopsy.
+Whatever, you adjust yourself and try to look dignified getting back up onto your feet. Ouch. Its hard to tell what hurts more between your face and your pride.
+You quickly stand up and decide to get to work. Ok, now, if I was a single, middle-class eldritch horror 100000something, where would I hide my top-secret ultimate weapons? (Y'kno, just in case of the occasional emergency suicidal thought)
+Ok, so you're not likely to find any of //those//, but you can dream.
+You hear a strange clattering coming from the air vent grate, but there's no obvious way to climb up, so you don't really have a way to check it out. Probably a mouse, you think. 
+Any monster small enough to scuttle around an air vent is not going to be that big of a threat, so you pay it no mind and get back to your plan.
+Lets start with the closet, everyone keeps WMD there, right?
+You rifle through an array of tastefully coordinated garments in neutral tones, size: Amorphous Demon. Besides the worrying ratio of armholes to garments, nothing seems particularly interesting here. Better check someplace else. How about the bedside cabinet? You hadn't noticed before, but there's a small wooden cabinet on either side of the wide double bed, similar to the nightstand in your own room. One of them has a coaster on it and a couple of pill bottles, so you guess that anything important would be housed inside.
+You open the drawer and are appaled to find a stack of polaroids of a masculine-looking winged demon creature in flirty poses on a beach. One of them has &quot;I'll visit you in your dreams tonight, baby~ &lt;3&quot; scrawled on it in english, next to a series of weird symbols and a language you'd never seen. Ugh! What a pervert, you think. Being attracted to //that//? You don't even know if you //want// to know what is in the rest of these drawers.
+Then again, come to think of it, you have no idea what this &quot;Mama&quot; actually looks like, for all you know she could be an identical behemoth sea-beast. Maybe a little smaller with some lipstick smeared on her tentacles. Beauty queen.
+Ugh. You shudder and try to stop imagining the two of them bumping tentacles. Gross.
+You carry on rummaging through the drawers, finding some toiletries and other uninteresting items, until a strange metallic screeching sound fizzling from the centre of the room startles you. Huh? You could have sworn that you were totally alone in this room, but you arent so sure now.
+The overwhelming scent of metal fills your nose.
+You can hear whistling, raspy breaths from somewhere behind you,  accompanied by a low, mechanical screeching sound. Wait, what?
+Maybe coming into the proverbial belly of the beast wasn't such a bright idea after all. The only information you were able to glean is that whoever &quot;Mama&quot; is- if its even a &quot;who&quot;- it clearly has very peculiar taste in men.
+Your thoughts are interrupted by a flash of white light, catching you off guard and briefly blinding you. You turn around, rubbing your eyes, to come face to face with a large, grand-looking wooden door, surrounded by a writhing white-hot mass. It looks like a fairly ordinary door, at first, before you notice that the &quot;wood&quot; is covered with fine veins throbbing ever so slightly. Its.....alive? A door?
+You remember the note in your pocket and quickly pull it out.
+&quot;GO THROUGH THE DOOR, AND WE CAN GO HOME.&quot;
+Thats it! You refuse to be put off by the apparently organic flesh-wood and reach out for the handle, but are knocked away as the radiant mass whirls around to face you.
+
+//Flash!//
+For an instant, time seems to stop.
+
+The creature's face is indescribable. At first, it looks sort of like a person, only with smooth flat skin above the nose where the eyes should be and a sort of pronounced snout, but as you look on in horror the top part of the jaw unhinges and folds back over the &quot;face&quot; to reveal a mouth almost like a lamprey, but with human-looking teeth instead of sharp fangs. The creature almost seems to smile, its pale flesh contorting the round maw into a sinister oblong grin.
+The jaw continues straight into wide, rounded humanlike shoulders, without any visible trace of a neck, and then a quivering, blubbery mass of pale white flesh below. The fat, fleshy body grew slightly narrower further down, with a defined sternum jutting through the thin skin and more bones protruding from various places.
+Along each corpulent side, there were several underdeveloped limbs and fleshy stumps, giving it an overall almost centipede-like appearance- as well as the three or four thick muscular appendages you would guess were its main mode of transport.
+The creature's whole body was bathed in a shimmering, almost blinding white light that seemed to be coming directly from its greasy skin.
+
+The light flashes again, and again, and you struggle to keep your eyes open even though it burns, before you can resist no longer and you crumple to the floor at the creature's stunted feet.
+It feels like every cell of your being is burning and alive, and then nothing at all.
+You try desperately to keep thinking, keep thinking, if you can think, then you are real, keep thinking, until eventually its no use, and your consciousness fades.
+
+"
+Set:  var=$mbedroom, value=true
+Text:  "
+"
+Set:  var=$takejumper, value=true
+Text:  "
+"
+Set:  var=$end4, value=true
+Text:  "
+
+ENDING= WOKE UP MAMA
+
+"
+Link:  display=EPILOGUE, target=EPILOGUE
+Passage climb down onto the porch:
+Text:  "You decide that getting away from this place as fast as possible is the only sane option- go //back// inside?? After //that//? That would be crazy.
+No, making your way down onto the porch and then heading for the hills was the only realistic choice. Surely before long you'll run into //some// sign of civilisation, perhaps some nice friendly older couple shocked to see an exhausted-looking kid running alone in the middle of nowhere who would invite you in for warm milk and freshly-baked cookies before calling your parents and sending you safely home.
+Okay, that's pretty unlikely. But still, you'd settle for a hovel full of mountain witches if it meant they'd call you a taxi and give you some directions.
+Whatever, lets just get out of here, you think to yourself.
+You carefully make your way over towards the edge of the porch roof, before rolling over onto your tummy and lowering your legs off the roof until you could wrap your knees around the porch's wooden support pillar and shimmy on down again. 
+You breathe a sigh of relief when your feet hit the ground. Even landing in a prickly bush and probably acquiring several dozen splinters coming along for the ride didn't phase you. 
+Phew, you think. Couldn't //pay// me to go back in that....place. That was like a haunted house on steroids!
+You relax for a moment, and try to remember which way the path was so you can start running in that direction, when a sharp rattling sound behind the front door just metres away from you grabs your attention and jolts you back to reality.
+It sounds like someone - or some//thing//- is trying to get out. 
+//Shoot//, you think, it probably heard you running around and making a racket knocking off the roof tiles and realised you were making a break for it. No time to look for the path-//RUN!//
+You spin around and immediately take off sprinting in the opposite direction, trying to put as much distance between the ominously rattling door and yourself as possible.
+You reach the end of the garden quickly, and vault over the fence into the cornfield. At least when whatever is making that sound //does// manage to break out, you'll be well hidden surrounded by all these tall stalks.
+You decide that the best course of actio is for you to just keep running in the opposite direction from the house and just get as far away as possible- eventually, there had to be some sort of road or maybe a farmhouse, right? 
+You assured yourself that there's no possible way the cornfields could go on //forever//- it was only a matter of time before you ran into some nice farmhand out tending his crops who knew the area well and could help you out-//right??//
+You turn to take a last look at the house, but decide to spin right back around and get moving quick-sharp when you're almost //positive// you can hear the sound of footsteps rapidly approaching from in front of you in the direction of the house.
+You push some stalks aside, taking care not to break any, and step through the gap in between. You're pleasantly surprised with how easily the stalks bend from your ministrations, and continue moving with this strategy for quite some time until you're sure you've been travelling for at //least//a couple hours.
+Come to think of it, you didn't have a watch, and judging by the gradually darkening sky, time was definitely getting on.
+Being stuck out here in some creepy cornfields at night sounded like a horror movie waiting to happen, so you'd really rather not deal with that if it could be avoided.
+You strain on your tiptoes to try to see over the tops of the stalks, but it was no use: corn was everywhere for miles around, and even if you //could// see some kind of path, you weren't even certain you'd want to try it if it meant you ending up right back at that creepy house you came from.
+You'd been in too much of a panic just trying to get //away// from the house when you first set off through the fields to take note of the directions, so unfortunately you really had no idea where you were, or what direction you had even come from.
+It was hard to judge a straight line when you were surrounded by identical stalks of corn on every side.
+The realisation started to dawn on you that you really //were// completely lost, but even so, you tried not to panic.
+Panicking doesn't solve anything.
+You look around again, trying in vain to negotiate a path through the corn. Maybe if you..
+No, its no use.
+The darkness is beginning to set in.
+You decide to pick a direction at random and start walking. Even if you could just find some way to the road, you'd rather sleep by the side of the road and hope that some late-night freight driver spotted you than just lie...here.
+You were starting to regret watching all those previously unthreatening American horror films set on farmland, and visions of haunted scarecrows and Indian burial grounds flashed through your mind.
+T-that kind of stuff is only in the movies, right?
+Ok, relax, time to keep walking. You're //bound// to find a road or something, eventually, right?
+You take a guess as to which way you think is most likely to be north and continue your forage.
+Steady, just keep going, and you'll find a path, right?
+And maybe nightfall wouldnt be such a bad thing- You could try to spot that one star that sailors used to navigate, to help you find your way!
+Truimphant with this plan, you decide to sit down and allow yourself a rest. The ground is surprisingly smooth and comfortable, even if its damp and cold.
+You find a comfortable position leaning against some stalks and stretch out your legs. Okay, now, don't fall asleep. If you can stay awake long enough to see the stars come out, then maybe you can find your way. Maybe you can finally get home...
+Home...Your eyelids start feelings heavier and heavier as you think about how grateful you'll be for everything when you finally make it out of here. Your parents' nagging would be a warm welcome home. Robby's dumb pranks would be playful and fun, and not at all frightening compared to this hell-hole. Man, even catty Katie and her bitch crew would be a sight for sore eyes right now. 
+Filled with dreams of going back to school on monday and actually looking //forwards// to it for probably the first time in your life, you drift off to a peaceful sleep. Lying there in the stalks, you look like a character straight from some kind of american childrens' book- the lazy farmhand napping on the job.
+Maybe tomorrow, you'll wake up and this will all have been just a nasty dream. Maybe tomorrow.....Maybe.....
+-
+
+
+
+
+
+
+You're woken by an ear-splitting metallic sound, singing in both ears, stabbing straight through your brain like a white-hot knife.
+Your eyes snap open straight away to try to figure out the source of the noise , but its still too dark outside to see anything. There are no stars in the sky, no discernible moon.
+This feeling....This is like no migraine you've ever had before. Every second more of the maddening sound pierces your brain. Its impossible to get used to it, god, god, what //is// that???
+Suddenly you witness something small move, just in the corner of your eye. You try to turn, to get a closer look, but find yourself rooted to the ground. You swivel the top half of your body round, determined to find the source of the noise and put a stop to this, but when you try to push some of the corn stalks out of the way you find your hand passes straight through, like a hologram.
+What? This can't be happening...You try again to push one of the stalks aside and find that the same thing happens. 
+The sound keps getting stronger and stronger, and suddenly the corn stalks and the cool earth starts to feel more and more flat and distant, almost as though you're watching them through a screen.
+You try to turn, to close your eyes, but its no use. You're frozen in place, like a video game character someone reset too quickly, with nothing to do but sit motionless and watch the scene unfold and wait for the power to turn off.
+You can just make out a vaguely light-coloured shape amongst the foliage. Is that...is that a tennis shoe? It looks so familiar, but for some reason you can't quite put the pieces together in your mind..
+What's going on? 
+Is that...you? Are you...a ghost?
+No, thats ridiculous. But the more you watch the scene, the more you feel almost like an outside observer looking in.
+The metallic screeching has faded away now, replaced by cold black silence.
+Only a moment ago you swore you could hear the gentle rustle of the corn stalks in the cool night air.
+Strange...
+You try again to look around but to no avail.
+You're so... Confused. 
+You try to focus your eyes on the light shape in the midst of the foliage...Tennis shoe...//Your// tennis shoe? You can't really tell: when you try to focus in on any close detail of the scene, you can feel your eyes straining to make sense of it.
+Like the bedroom before, everything feels strange and sort of....wrong.
+What's happening to you? It must be this place, because your eyesight is perfectly fine normally.
+You desparately want to blink, but even your eyelids are frozen in place, encased in this darkness like an insect preserved in amber.
+Insect....
+You can vaguely remember something about those.....Insect. Robby had some, saved up in a jar. But who was Robby?
+Jar.
+Nice word.
+Jar. Safe...
+You feel the blackness start to seep in. Is this what dying feels like?
+Is this....Is this my death?
+You don't feel cold anymore, and for a brief moment a shard of fear cuts through you before being replaced with more of the same blackness.
+When you were a little kid, you had always had an almost irrational fear of contracting hypothermia. You read this one Big-Kid Book, about a girl who lay down in a freezer and froze to death, and the book had described her feeling warm and hallucinating a comfy bed just before she died- the brain's way of tricking the body to maintain comfort even in the last moments. This had terrified you, to the point that every time you felt //slightly// comfortable and warm you insisted your mother take your temperature and verify that you were not, in fact, about to freeze to death. Even several years later(although, less than you'd like to admit), when you lie in bed at night, feeling warm  always sends a little sharp shock through you and for just a moment you're a child again and terrified that maybe this is all a hallucination and in actuality you're lying passed-out on the floor of some huge industrial meat-freezer turning into a human cornetto.
+The warmth fades away now, replaced only by room-temperature blackness that surrounds you from all sides.
+You aren't scared anymore, just very, very tired.
+You don't think you can even feel anything anymore.
+Its time to rest now...
+Time to rest
+rest
+
+r e s t
+
+
+"
+Set:  var=$end3, value=true
+Text:  "
+ENDING: A CORNY STORY
+
+"
+Link:  display=EPILOGUE, target=EPILOGUE
+Passage stay hidden in vents:
+Text:  "You decide that for now, you'll wait it out. At least you know you're almost //certainly// alone in the vents, and you //really// didn't want to take a gamble on meeting that &quot;Mama&quot; person. No, keeping yourself hidden up here was surely the smart choice.
+You crawl forward a little to get a good view down the second grate, but unfortunately because of the angle of the slats you can't really see much through. Not only that, but since you crawled forwards to take a peek, you pretty much have to keep going whether you like it or not, due to the slope of the metal and your limited range of movement.
+You shrug, and decide to keep moving. Maybe you'll come to another grate, or a wider area of the vent where you can turn yourself around. Or, at the very least, a flatter and less sloping part of the vent where you can comfortably take a nap.
+You continue pressing your hands on the metal and sort of pushing yourself through the vent somewhat ungracefully in the manner that you'd imagine a long,fat lizard would use to get around.
+You start to notice that lying on your stomach in this position is //really// getting uncomfortable, so that encourages you to get moving in hopes of finding a more comfortable area of vent to lie down in and give your poor elbows some respite.
+As you keep wriggling forwards on through the ventilation, you become more and more sure that its //not// just your imagination....that the tube really //is// getting smaller and more cramped the further along you crawl.
+You'd never really been claustrophobic before, but suddenly the idea of being frightened of tight spaces made all too much sense. You try to ignore the growing tightening in your chest and turn your thoughts to wide, open grassy fields and spacious gym halls.
+You're really starting to regret choosing to come this direction. Its getting far too squashed for your comfort, and if you keep going this way you're pretty sure that soon you won't be able to fit at all.
+You try vainly to bend your legs back and stretch out your arms in front of you, trying to push yourself backwards up the metal slope towards the direction you came from, but its no use. You can't get enough grip with your legs to pull yourself back up the slope. At the same time, the polished metal seems to have magically become almost slippery, forcing you forwards in the direction of gravity's pull.
+Just as you're //sure// you couldn't //possibly// fit any further inside the vent tube, a panel of the &quot;floor&quot; underneath you gives way, tipping you head-first straight down into a tight metal chute. You freefall for a moment before your shoulders break your fall as the chute becomes too tight for them, cramming you upside-down jammed halfway along the chute.
+You have a horrible moment of realisation that there's little to no chance of you being able to get out of this position any time soon (or late, for that matter), and begin frantically banging on the chute walls, screaming for help and trying desperately to push yourself back //up// the chute, willing your body //just this once// to defy gravity in the name of self-preservation, but its no good. The only answers to your cries for help are echoes of your own screams, bouncing along the pipes.
+Before long, being suspended in this posture starts to take an effect on you. You feel the pressure build up in your throat, and you begin to feel ve-e-ery lightheaded.
+God, if only there was a way to just go back in time and //not// go down the stupid chute, if only-
+
+Your thoughts are cut short by the sudden onset of a strange, dizzy feeling, and your eyes flutter closed.
+Defeated, you let out a long sigh and wait for time to pass as the cold blackness sets in.
+
+"
+Set:  var=$end6, value=true
+Text:  "
+ENDING: VENT-I DEATHSPRESSO
+"
+Link:  display=EPILOGUE, target=EPILOGUE
+Text:  " "
+Passage go down into hall:
+Text:  "Something about the cold, infinite-seeming vent shaft ahead of you gave you a bad feeling. You decide that you cant risk missing your chance to explore the house more and trying to find some clues. You'll never make it home if you just lie there in the vent shaft indefinitely doing nothing.
+You wriggle forwards and unlatch the clasps holding the grate on the vent, being careful not to accidentally let the grate drop down and foil your &quot;stealth-mode&quot; plan. Once you've removed the grate, you pull yourself forwards until your feet are just before the grate-hole, and then, carefully gripping the edge of the hole, start to lower yourself feet-first through the gap down into the hall. You hit the floor smoothly with a soft //thud//, bending your knees like a true practised tree-climber so as not to hurt your ankles. 
+The first thing you notice is that the carpet has the same odd, warm, slightly //greasy// feel as the bedroom before, almost as though its some creature's dirty skin. Gross.
+As much as you wanted to avoid exploring what you were sure would be even more disgusting things, you'd never get out of here if you just stood around poking and prodding pieces of furniture.
+You quickly scan the hall- just in case of some undesirable company- but find yourself relieved that you seem to be alone.
+The hall is fairly wide and short with a couple of doors on one side- one of them being the bedroom you had just come from. The other one had a cute, kitschy wooden sign with a little smiling cartoon toilet on it, so you use your stellar detective skills to deduce that its //probably// going to be a bathroom. The hall continued, leading down some creaky carpeted stairs. You decided to quickly tiptoe down them and check out what was there, just to see //all// your options for a starting point. You find the stairs open out onto another, smaller hall, with three doors. One of them stands out because its larger and sturdier than the other doors in the house, and made of darker wood, so you assume that this is the front door. Another of the doors is open a crack, and from what you can see of the inside it looks to be a kitchen. 
+"
+If:  var=$mbedroom, value=true
+START BLOCK
+Text:  "The last door is shut tight. You try jiggling the handle, and to your surprise, it swings open. You can't see much of what's inside, since the room is in darkness. It looks like perhaps some sort of bedroom? The curtains must be shut. Through the cracked open door, you could have sworn you could feel a strange //warmth// radiating from the room. Hmm. Strange. Must be your imagination. 
+Mmm. Regardless, couldn't hurt to check it out."
+END BLOCK
+Text:  "
+"
+If:  var=$mbedroom, value=false
+START BLOCK
+Text:  "The last door is shut tight. You try jiggling the handle but to no avail. Maybe its locked? You'll start your search elsewhere, anyway- if you don't find anything interesting, you can always go back and check it out."
+END BLOCK
+Text:  "
+
+"
+Link:  display=Go into the bathroom, target=Go into the bathroom
+Text:  "
+"
+Link:  display=Go into the kitchen, target=Go into the kitchen
+Text:  "
+"
+If:  var=$mbedroom, value=true
+START BLOCK
+If:  var=$takeshoes, value=true
+START BLOCK
+If:  var=$takewater, value=true
+START BLOCK
+Link:  display=Go into master bedroom, target=Go into master bedroom
+END BLOCK
+END BLOCK
+END BLOCK
+Text:  "
+
+"
+Passage Go into the bathroom:
+If:  var=$end8, value=true
+START BLOCK
+Text:  "
+"
+Set:  var=$takeshoes, value=true
+Text:  "
+The second you enter the room, you get a horrible sensation along the back of your neck, almost as though you're being watched. You decide that you regret coming in this way. 
+Even though it looks like a fairly normal bathroom, for some reason this place gives you a bad feeling. 
+You jam the door open with your foot, just in case.
+Before you leave, though, you notice a pair of tennis shoes sitting on the floor in front of the sink. Huh. Without thinking, you decide you'd better take them just in case.
+You grab the shoes and get the hell out of there.
+"
+Link:  display=go down into hall, target=go down into hall
+Text:  "
+"
+END BLOCK
+Text:  "
+"
+If:  var=$end8, value=false
+START BLOCK
+Text:  "
+The bathroom is small, and brightly lit. As soon as you enter, you're overwhelmed by the horrible sensation of being watched by a great many pairs of eyes. You soon realise the source of your discomfort- on all three sides of the room other than the door, the walls are covered floor-to-ceiling by huge mirrors. The mirrors are polished perfectly clean and each reflects an image of the others, which reflects an image of the others reflecting the others and so on, which gives the illusion that the room is an infinitely large space. There's a reflection of you from the front in the first mirror, and the walls on each side display profile views. The mirrors reflect one another, so that the whole room is filled up with you, with copies of you. With a copy of a copy of a copy. 
+You can't really see anything of interest in here, so you turn on your heel and reach for the door handle, but when you turn you find yourself face to face with...Yourself?
+Its another mirror? You could have sworn you came in from this direction, but it looks like you made a mistake.
+Wait, what?
+You spin around, but you seem to be surrounded by mirrors on all sides. God, what a cliche.
+What, some kind of cursed house where the bathroom transforms into a hall of mirrors? Lame.
+Y-yeah, ridiculous, you say to yourself.
+Its gotta be a trick.
+'Okay, if I push these mirrors, one of them will come away and I can push it back to reveal the door...right?'
+Telling yourself that it sounds plausible, you turn back to face what you //think// is the way you came in and give the mirror a hearty //shove//.
+The glass //does// come away under your palms, although it doesn't reveal a shy hidden door like you thought. Rather, the glass swings back straight into..A wide, empty pit.
+You try to press your hands against the opposite wall, to break you fall, but unfortunately the gap between you and the opposite side of the pit is just too wide, and you bellyflop down a deep dark chute- losing a shoe in the process as it is caught on the edge of the pit and is left behind.
+You hit the ground with a soft //thunk//, strangely unscathed despite your several-story drop.
+You sit up and try to look around, but its almost too black to see a thing.
+You can make out a faint reflection of yourself in the wall opposite you.
+&quot;Great&quot;, you snort to the reflection. &quot;//More// mirrors&quot;.
+The reflection ignores you and just sits there, staring blankly at you.
+&quot;What?&quot;, you ask it. At least if you're stuck in a hole, might as well find //some// form of entertainment.
+The mirror-you just sits with the same vacant expression, again neglecting to respond.
+&quot;What's your problem, dumbass&quot;, you ask it, and playfully give the mirror a whack, starting to get more into enjoying your pretend game.
+You hear a snarling voice that seems to come from right beside you.
+//&quot;What's yours?&quot;//
+Huh? Are you going crazy, or did that mirror just //respond// to you?
+It didn't sound too happy, either.
+When you look back up at the reflection's face, it has moved. Maybe its just your imagination, but it seems like the mirror-you has shifted position and is looking down at you confidently with its chest puffed out.
+//&quot;Yeah, what's YOUR problem, dumbass?&quot;//
+Okay, that was //definitely// not your imagination. 
+W-what? Mirrors can't //talk//?
+As if to answer you, the mirror lets out a cackle.
+You watch in horror as the mirror-you from one wall walks over through the reflections to the opposite wall's mirror.
+The mirror you there, which had been sitting perfectly mimicking you up until this moment, grinned from ear to ear, revealing row after row of sharp pointed teeth.
+//&quot;Yeah, dumbass, what is it??&quot;//
+The twin mirror-yous sneer in unison, then walk around opposite sides of you via the back wall mirror to the mirror in front of you. The you in that mirror //seemed// to be a perfect copy of yourself with no autonomous demonic behaviour, so at first you were confused as to what they were intending to //do// in there. However, you quickly realised. That mirror looked like it had a genuine reflection of you. The mirror-demons stood menacingly on either side of your reflection, before almost in sync each wrapped a pair of long-fingered hands around your reflection's neck. 
+You felt your neck suddenly begin to tighten, as though someone was really squeezing it hard, and you realise that...Somehow, whatever the two mirror demons appear to be doing to your reflection...Happens to the real you. 
+One demon continues to choke the reflection, and the other pokes and prods at it tauntingly with sharp claws.
+&quot;S-Stop!&quot;, you splutter. &quot;If you kill me, y-you'll die too, right? You're just reflections!&quot;.
+In response, the two demons laugh manically. 
+One of them pulls a comically large frying pan out of nowhere, and still cackling manically, raises it above your reflection's head and brings it down with a //CRASH!//
+
+
+You must have blacked out, because the last thing you can remember after that is waking up with one of the two eerily-similar copies staring down at you, prodding you and tormenting you with insults. This time, however, it was standing right before you in the flesh, rather than through a mirror.
+&quot;W-what?&quot; you stutter.
+The copy just grins and taps the mirror in front of you, motioning for you to look. You dont seem to have a reflection.
+In the mirror, you can see the other copy who had previously been bullying you. She gives a wide, toothy grin- all normal human teeth, mind- and waves, before pressing her palms against a secret door in the wall that calls a small lift. 
+She cheerfully waves goodbye to the other twin before hopping into the lift and ascending, and you realise what's actually going on.
+&quot;No, Wait!!! That's not right!! You're me! Thats my body! Come back!&quot;
+You start frantically pleading and banging on the glass in front of you with both hands. The other copy just giggles as it watches you suffer.
+You notice that the nails on both hands have grown into long, gnarled claws, and when you further examine your hands and arms you can see that they've become a pale, gaunt version of your own hands. H-huh?
+The other copy smiles widely at you and motions for you to come.
+You get up and stand beside it, and it hands you a few items.
+A toothbrush, a rag, and some window cleaner.
+//&quot;Better get to work, cousin!&quot;// It sings merrily.
+//&quot;It's gonna be a long damn time before another idiot falls out of the sky, so better get off that sweet ass o'yours and get moving~&quot;//
+ENDING: MIRROR WORLD
+"
+Link:  display=EPILOGUE, target=EPILOGUE
+Text:  "
+"
+Set:  var=$end8, value=true
+Text:  "
+"
+END BLOCK
+Text:  "
+"
+Passage Go into the kitchen:
+Text:  "You decide to take a look in the kitchen first. Even if there was nothing of interest in there, at the very least it couldn't hurt to pick up a knife just in case of emergency.
+You pad through the hall as quickly and quietly as you can, and push open the kitchen door.
+After the usual scoping-out-for-bad-guys procedure, you flip the light switch on.
+The kitchen looks pretty basic: Slate-grey tiled floor, Light wood cabinets with a matching slate worktop, off-white walls bearing all manner of shiny metal utensils hanging on  wooden racks. It looks almost unused, like an ikea showroom, and being in here feels strangely calming compared to the other rooms. The whole room is very, very cold. You hadn't really noticed it when you first came in, but you were starting to feel just a little bit of a chill. You rubbed your palms together to warm up your fingers.
+You decide that your first priority should be to find a suitable weapon-strictly for self-defense, of course. 
+You start with the leftmost drawer. You rummage through and find a variety of strange-looking and unfamilar utensils, but nothing that looks feasible as a weapon to stand up against whatever psycho kidnappers who even brought you here.
+You continue looking through the drawers. Bizarrely, you find absolutely nothing that seems a possible candidate. There are no knives, no prongs, not even a rolling pin. Either someone had been really, //really// careful when baby-proofing this kitchen, or whoever brought you here had guessed that you'd try to arm yourself and taken preventative measures. Drat.
+You consider grabbing a spatula as a last-ditch attempt, but decide that your kidnappers would probably pity you and laugh if you showed up wielding that. Better just leave it.
+You give up searching for a weapon and decide to check out some of the other items in here instead. At least maybe you'd be able to find something that might help with your investigation.
+Something...Something....
+Your eyes are drawn to the counter on the other side of the room. On it sitting neatly atop a coaster is a half-drunk glass of clear liquid -water, most likely- and a folded napkin containing some slightly stale-looking crackers.
+Hmm. It looks almost as though someone set the food out //knowing// you'd be here. Your stomach growled. No, come //on//... How stupid do they think you are? Do they really think you'd fall for a lame trick like that?
+Then again, you reason, if they had //wanted// to poison you to death or some other grisly fate, they had had plenty of opportunities to do this already while you were out cold.
+There was no reason for someone to let you survive up until now if they //really// wanted to kill you. No, this person wanted you //alive//.
+Hmm. You considered whether you were really going to let your stomach talk you into potentially risking your survival for some gross stale crackers. Even if they //weren't// poisoned, you'd definitely not be eating any gourmet-quality michelin chef cuisine. Eugh. Even though you weren't a picky eater by any means, this was a new low.
+Even if you didn't decide to eat the crackers, having a drink of water would surely perk you up. Imagining getting to drink some you start to salivate. Mmmm. You're suddenly a lot more parched than you realise. Maybe you should resist...After all, the &quot;water&quot; could not really be water at all, or it could be poisoned. Maybe you could rinse out the glass and fill it with fresh water from the tap..? Nope, tough call. Your dreams are crushed when you attempt to turn on the tap to find the handle pops straight off in your hand. 
+That was too good to be true, you suppose.
+Ok. You decide you've spent more than enough time in here. Time to decide whether to eat the crackers, drink some water, or just head back into the hall without taking anything.
+
+"
+Link:  display=go down into hall, target=go down into hall
+Text:  "
+"
+Link:  display=take the crackers, target=take the crackers
+Text:  "
+"
+Link:  display=take the water, target=take the water
+Passage Go into master bedroom:
+Text:  "You decide to head for the master bedroom. Something, //somehow// inside, you know that this is the best choice.
+When you push open the door, you're hit with the strangest sensation of deja vu. You //know// you couldn't have been here before, right? No, that was crazy.
+Yet somehow you knew what you had to do.
+The room is in darkness when you step inside. The thick curtains are drawn tight, letting only narrow strips of light shine in between. Weirdly, the bag in your hand feels heavier than before. Its sort of....buzzing, very, very faintly, as if its reacting to something in the air.
+You sit down on the bed and close your eyes, waiting for it to come.
+The alarm clock on the nightstand beeps, announcing that its 12:00am and rousing you from your dreamless sleep.
+//Flash!//
+
+Like clockwork she comes.
+The creature's face is indescribable...Somehow strangely familiar in a dozen ways at once. At first, it looks sort of like a person, only with smooth flat skin above the nose where the eyes should be and a sort of pronounced snout, but as you look on in horror the top part of the jaw unhinges and folds back over the &quot;face&quot; to reveal a mouth almost like a lamprey, but with human-looking teeth instead of sharp fangs. The creature almost seems to smile, its pale flesh contorting the round maw into a sinister oblong grin.
+The jaw continues straight into wide, rounded humanlike shoulders, without any visible trace of a neck, and then a quivering, blubbery mass of pale white flesh below. The fat, fleshy body grew slightly narrower further down, with a defined sternum jutting through the thin skin and more bones protruding from various places.
+Along each corpulent side, there were several underdeveloped limbs and fleshy stumps, giving it an overall almost centipede-like appearance- as well as the three or four thick muscular appendages you would guess were its main mode of transport.
+The creature's whole body was bathed in a shimmering, almost blinding white light that seemed to be coming directly from its greasy skin.
+
+
+The light flashes again, and again, and you struggle to keep your eyes open even though it burns, but you refuse to fall.
+
+//Flash//
+
+						//flashflashflashflashflash//
+It feels like every cell of your being is burning and alive.
+//FLASH//
+You face the creature and suddenly know what you have to do.
+//&quot;WE HAVE TO TRICK HER&quot;//
+The words echo in your head, though you're not sure from where.
+//&quot;ALL WE HAVE TO DO IS TURN HER ROUND. IF WE TURN HER AROUND, THEN WE CAN GO HOME.&quot;//
+Turn her around...Turn her around...
+You can't explain it, but somehow you just //know// 
+The creature lets out a strange, metallic cry, and stretches up to its full height, mouth pointed upwards towards the hanging light fixture in the middle of the room. 
+This buys you just enough time to reach into your bag and grab the contents.
+
+//&quot;200ml WATER
+1 JUMPER
+1 JEANS
+2 SHOES&quot;//
+
+Huh? Why did this...recipe(?) sound so familiar. The words pop into your head as though someone pushed them right into your ear and into your brain.
+You have to..Use these? But how? You try to think of something you could make with these items...Fold them up like origami? No, you dont have time. Wear them? Dress up the monster?
+You rack your brains for an answer, but find nothing.
+//DO SOMETHING!!!//
+//DO ANYTHING JUST DO SOMETHING!!!!//
+
+
+//Flash!//
+Ok, ok, quick. You panic and lay the clothes out as if you were setting out an outfit for the day ahead. But what about the water? In a panic, you pour the water straight down the middle of the clothes, trying to get some on each garment. Ok, ok, let's try not to panic. Panicking doesn't solve anything.
+
+//Flash!//
+
+In an instant, the creature flops down from its 'standing' pose and back onto its stumpy lower legs, sending ripples through the wobbling meat of its abdomen. It moves its head slowly and carefully through the air, trying to sniff you out judging by its apparent lack of eyes or other normal facial features found in humans or mammals.
+The creature hesitates for a moment, and you quickly spring up onto your toes and flatten yourself against the wall. At first it seems to have followed the sound, turning its head to face you, but you stand perfectly still and it becomes confused. 
+It takes in another wheezy breath before turning back towards the clothes lying on the floor.
+If only you had a rock or something to throw in the other direction to avert the creature's attention. Damn, why can't real life be like a video game?
+Luckily, the creature seems to decide that the wet pile of clothes on the floor is you, and turns fully to face it. 
+Without even thinking about it, before you even realise what you're doing you've darted round to the creature's back.
+You reach forwards and grab the hot fleshy handle of the door in the creature's back, pulling open the door and throwing yourself through before you have time to be scared.
+
+A flash of white light, and then nothing at all.
+
+
+"
+Set:  var=$end10, value=true
+Text:  "
+
+"
+Link:  display=nothing at all, target=nothing at all
+Passage take the crackers:
+Text:  "You decide to give in to your ravenous appetite, and reach for the small pile of dry crackers sitting in front of you. Drinking that suspicious &quot;water&quot; was too risky, and besides, you could always grab some fresh water from the tap later if you wanted. 
+You had no idea how long you'd even been sleeping up there, and surely taking a bite to eat would ground you a little and help you to make some sense of things.
+You pick up the first one and take a bite. Despite appearances, it tastes not at all stale, with a delicious, complex flavour you found too difficult to describe. You swallow it after just a couple of bites and greedily wolf down the rest, picking up the napkin and licking up the crumbs.
+God, that feels better.
+4 or 5 crackers, while they //were// exceptionally tasty, was definitely not a substantial meal, but you somehow felt peacefully full up already as though you'd had a full 3 course meal. Content, you take a seat on the counter and pat your tummy.
+Mmmmmmmm~
+You yawn. Wow, that food was ree-eea-aaa-aaly good....You're even starting to get sleeeeeeepy~
+No, mustn't fall asleep. Mustn't fall asleep. Musn't fall...
+Before long, your eyes flutter closed against your will, and you slump over on the counter tucked in the foetal position.
+You dont //want// to close your eyes...Don't want to fall asleep for a minute. If this kitchen has clues in it, then you don't want to miss a thing.
+Oops. Too late.
+As you lay there on the counter snoring softly, full and happy, you're blissfully unaware of the changes taking place in your body.
+Curled up there, you didn't notice your body gradually shrinking, becoming smaller and flatter,your arms and legs starting to sort of merge to your body, making you into a sort of flattened ball. 
+Your skin begins to take on a golden hue, and gains an odd flakey texture.
+By the time the transformation was finished, you had shrunk to palm-sized and flattened out into a thin, golden brown disc. 
+At this point, all your features had melted away, replaced by a delicious salty-sweet coating. Your clothes flattened out and turned white and papery, wrapped around your body //almost//...like a napkin. //Strange//.
+
+If only you'd been patient enough to take a look around for the packaging of the crackers before you ate, then maybe you'd have realised that it was a bad idea. In the small cabinet above the hob, there was a little red-and-yellow box labelled 
+&quot;BISCUIT SPELLS- You are what you eat!
+10 Years running voted the underworld's favourite snack!
+The secret ingredient is.......//YOU//!&quot;
+
+"
+Set:  var=$end5, value=true
+Text:  "
+ENDING: PUTTING ON THE RITZ
+"
+Link:  display=EPILOGUE, target=EPILOGUE
+Passage take the water:
+Set:  var=$takewater, value=true
+Text:  "
+You remember those survival shows you used to watch with your dad. &quot;Hydration is key!&quot;, if you remember correctly. Yeah, water is important. You had no real idea of //how// long you'd been asleep up there, so your body would surely thank you for watering it a bit. You can deal with being hungry a little longer, and besides- those crackers looked at //least// 200 years old, dry as a desert and shrivelled up in a way you didn't even realise crackers would be.
+You reach for the glass and chug it straight down in several gulps. Immediately, you feel much better. You didn't realise how dehydrated you actually were, but almost at once, you feel a new lease of vitality as the water flows in.
+Aaah, much better.
+You take a deep, satisfied breath.
+
+Much better.
+
+Then worse.
+
+Much, much worse.
+It starts off as a small, barely noticable fizzing sensation deep in your chest. Did you drink too quickly and give yourself heartburn or something? No, its not that. It feels almost like you're...drying out? Even though you just took a drink right now, you feel even //more// dehydrated than you had before. Your throat feels like its swelling up and becoming rough like coarse wood. It gets harder and harder to swallow. Its like having a throat infection, only much worse. You feel drool run down your chin and wipe at it with your sleeve, but it keeps coming at an almost alarming rate, as if the water is being pushed right out of you. Your sleeve is saturated with drool, but it keeps flowing. You try to purse your lips and try not to lose any more water, but the dry now-scaly skin on your face cracks from the effort and you cry out in pain.
+Your nostrils feel like they're burning inside each time you breathe in, like that one time Robby dared you to stick jalapeno slices up your nose, and your eyes feel parched and painful. You strain to close them, but your unlubricated eyelid skin scrapes painfully against the surface of your eyeball.
+You curse yourself. Did you really just fall for possibly the //oldest// murder mystery trick in the book? For a stupid drink of water, damn it! 
+Water....Mmmm. You're starting to feel tired and lightheaded. You //have// to find some water, you have to. You stagger over to the fridge and feel around inside desperately for some water, //something// you can derive water from, //anything//.
+Even a jar of pickles in vinegar sounded heavenly right now.
+You slam the fridge door shut and frantically pull open every cupboard, scooping your hand inside and dumping the contents on the floor haphazardly in hope of finding //something//, //anything// to drink.
+The burning in your chest is growing stronger and stronger. You grab the glass from before and hold it under your chin, hoping to collect a resevoir of drool that you could then drink, but when you hold the glass up to your lips you find you can't even get your parched throat to swallow. 
+God damn it, you felt like this time you were so close.
+
+
+The room has seemed cold before, but now the only thing you can feel is a dry, maddening heat spreading from the centre of your torso through your entire body. The slow, daunting realisation that this is it, this is //really// it starts to compute in your addled, dehydrated brain. You try not to panic. Panicking doesn't solve anything. Panicking doesn't solve anything. 
+
+The room feels more and more far away now, almost dreamlike through the pain.
+
+You try to think of swimming as you watch everything grow dark.
+
+ENDING: DRY AGAIN NEXT TIME
+"
+Set:  var=$end7, value=true
+Text:  "
+"
+Link:  display=EPILOGUE, target=EPILOGUE
+Passage EPILOGUE:
+Text:  "You wake up somewhere soft and warm.
+The light surrounds you like viscous body-temperature syrup, saturating your hair and clothes, touching all of your skin and filling up every pore, your ears, your nose, your throat, your eyes, the gaps in your fingers-but you're not afraid.
+The only sound you can hear is a soft slow pounding in both ears-your heartbeat? Its incessant, but not annoying, rather, it helps you to keep track of the passing seconds.
+Its a strange but not uncomfortable sensation. 
+You feel at ease.
+Is this what heaven feels like? 
+Are you dead?
+Growing up, you  had always pictured pretty much the standard-fare, mass-produced idea of heaven: White, fluffy clouds, Dear Old Ladies in hospital gowns shuffling around arm-in-arm with smartly-uniformed soldiers- husbands taken before their time now reunited with their sweethearts. Harp-toting angels with shining golden hair and flowing robes, singing forever. Infinite swirling spires reaching up beyond where the eye could see, glowing golden palaces filled with tired souls, etc, etc.
+You always imagined it feeling strange and couldn't quite believe it could be real, but this place.....
+Somehow you know.
+Somehow it feels like home.
+
+But you can't stay here, not yet, not now.
+This isn't how it was supposed to end. You have a responsibility! Finding your way home. Not just for you, but for whatever; whoever has been looking out for you this whole time, for whoever it is that wants you to come home safe out of this strange place.
+A voice rings out in your head like a bell
+&quot;//You want to go back? Already?~//&quot;
+You swallow and nod.
+&quot;//Hmm. Then, in that case, take care//&quot;
+You feel the light close in around you as though to embrace you.
+You can feel the love radiating from all around you, and you aren't scared anymore.
+&quot;I'll go back&quot;, you say
+
+"
+Link:  display=Start, target=Start
+Text:  "
+
+"
+Link:  display=Achievements, target=Achievements
+Text:  " "
+Passage peek into bedroom vent:
+Text:  "
+"
+Set:  var=$end9, value=true
+Text:  "
+
+As you're drawing near, you notice that you can see inside the master bedroom's ventilation grate from where you are.
+You curiously paw at the grate to find that the slats can be pushed back, so you go ahead and look inside.
+//FLASH//
+W-what //is// that?
+//FLASHFLASH//
+The white-hot flashes of light continue intermittently, scalding your retinas. In between them you can see a strange scene. 
+A set of clothes, laid out on the floor as though the person inside them had suddenly disappeared, and a strange wooden door that seemed to be floating on its own in the middle of the room.
+And then....That...Who was that?
+//FLASH//
+In the corner of your eye you can see the figure of a young teenager. The figure seems to be dressed in an outfit the same as your own. Huh, weird.
+Just as you're about to look away, the figure steps forwards.
+You almost missed it, //almost// but 
+//FLASH//
+For just a second you look directly at...Yourself.
+Wait, no, who is that?
+YOU you
+t-thats n
+ot thats not
+
+you you you you not you not you "
+Link:  display=EPILOGUE, target=EPILOGUE
+Text:  " 
+EP "
+Link:  display=EPILOGUE, target=EPILOGUE
+Text:  " ] OGUE you you
+
+
+youyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouyouY҉̻͈̯͓̀Ơ̧͖͉̜U͏̩̬̪̣ ͎̝̟̕͢Y̨̙̻͈̮̬Ó̡̰̥̙̳̫̟̞̼͡U̧͉̭̦͙̙͔̼ ̜̮̝̳͔͙̥͟Y̡̝O̴̢̯̰͎͟U̝̳̜͔̗̻̠ ̶̬̖͕̼̠͘Y̸͖̗͔̗͙͈͘̕O̮̻̥̟U̶̺̲͍̲̻̮̪̲̱͢ ̶̝̳̜Y̶̢̯̞͡O̸͓̝̥̯̼̲̪̠U҉͓͙ͅ ͙̠̘̩́͝Y̯̬̟̟̮̠̦̯͠
+Y҉̻͈̯͓̀Ơ̧͖͉̜U͏̩̬̪̣ ͎̝̟̕͢Y̨̙̻͈̮̬Ó̡̰̥̙̳̫̟̞̼͡U̧͉̭̦͙̙͔̼ ̜̮̝̳͔͙̥͟Y̡̝O̴̢̯̰͎͟U̝̳̜͔̗̻̠ ̶̬̖͕̼̠͘Y̸͖̗͔̗͙͈͘̕O̮̻̥̟U̶̺̲͍̲̻̮̪̲̱͢ ̶̝̳̜Y̶̢̯̞͡O̸͓̝̥̯̼̲̪̠U҉͓͙ͅ ͙̠̘̩́͝Y̯̬̟̟̮̠̦̯͠
+Y̶̛̬O̸̸̦̗U͢͏̳̞̝͈̲YOUYOUYOY҉̻͈̯͓̀Ơ̧͖͉̜U͏̩̬̪̣ ͎̝̟̕͢Y̨̙̻͈̮̬Ó̡̰̥̙̳̫̟̞̼͡U̧͉̭̦͙̙͔̼ ̜̮̝̳͔͙̥͟Y̡̝O̴̢̯̰͎͟U̝̳̜͔̗̻̠ ̶̬̖͕̼̠͘Y̸͖̗͔̗͙͈͘̕O̮̻̥̟U̶̺̲͍̲̻̮̪̲̱͢ ̶̝̳̜Y̶̢̯̞͡O̸͓̝̥̯̼̲̪̠U҉͓͙ͅ ͙̠̘̩́͝Y̯̬̟̟̮̠̦̯͠UYOU      
+̱̩͕̘͟Y̸̥͜ͅO͚̠̫͙̰͡ͅU̷͇̜̟͕͈̩̞̣͡͝
+̞͔͈͉̖͓̗͚͡Y̶̻̗̘̫̘Ò̬̠̰̖͢Ụ̵
+
+̜͙͈̕͘͢Y͞҉̻̙͈̗̩O̶̞̬̘͔͓ͅU̷̢̦̘̲̘̞͇̩͍ ̪̥̥̖̤Y҉̻͈̯͓̀Ơ̧͖͉̜U͏̩̬̪̣ ͎̝̟̕͢Y̨̙̻͈̮̬Ó̡̰̥̙̳̫̟̞̼͡U̧͉̭̦͙̙͔̼ ̜̮̝̳͔͙̥͟Y̡̝O̴̢̯̰͎͟U̝̳̜͔̗̻̠ ̶̬̖͕̼̠͘Y̸͖̗͔̗͙͈͘̕O̮̻̥̟U̶̺̲͍̲̻̮̪̲̱͢ ̶̝̳̜Y̶̢̯̞͡O̸͓̝̥̯̼̲̪̠U҉͓͙ͅ ͙̠̘̩́͝Y̯̬̟̟̮̠̦̯͠O̰͚̫̮̱̻͢U̖̣͈͉̲̺͇̼͡ͅ ̝͙͉̯͚̕ͅỲ̠̻̝̳͙͜O̴̰̹͇̳̯̖̪͠U̟̹̟̦̗̝̘̙͡͞ ̞̯Y̥̻͜Ó̶͍U̧͠͏̺͈̤̜̜̘̦̺ ̛̞̭͕̺̠̹̠̬͡Y͚̤͕̬͎͙͟O̸̦̯̦̖̺̹̪̯̙͢͟U͏͉̱̰ ̠͜͜Y҉̼̳̳́O̠̮̺̭̲̤U̠̙̖̺͇̕͢ ̳͙͟Y̮̟̱̹O͏̷̖͇͓̹̻͖́ͅƯ̗̼͕ ̷̗͙̟̳̹̱͇̜̹͡͠Y̗̖͇͓͓͔͢O̢̺͓͟U̶̘̕ ̗̠͉͎͎̪̤̙͇͠Y̡̨̤̻̤̮͚̦O̶̮̫̳̖̗͘U͍̯͇̼̕ ̵̬̤̜̮̪̙̗Y̴̩͍̰͖̙̯̪͙̮O̡̘͈͉̖̜̦̫͜͜ͅU͔̻͈͇̰̜͢͝ ̸̛̠͍̦͠ͅÝ̮̯̼̰͖̥O̷҉̦̪͚Ų͕̝͓̮͎̻ ̡̣̗̪̥̳͘Y͍̝̗̯̣̤̭̻̹͘O̮̥̬̭U̡͢҉͍̗̭ ̨̺̭̖̤̞͖̫̩͈Y̬̻̝̘̺̗͚̳̕O̯͓U͘͏̢̦̳ ҉͖͚͓͞Y̲̞͇̜̹͖̤͠O͞҉̹̞͕̮͖͈U͞͏͕͇̰̤̪ ͕̘̙̕͢͜Y̷̞̬͉̫̭͕̻͚͉͢͝O̼͙̜̪͚̬̯͜͠Ú͏̟̩ ̲͙̬̗̺͔̝̰̰Y͡҉̳͚̳͕́O͎̥̖̟͓̣̺͟͟ͅU̸̲̼̮͇̦̥ ̢̩̻̻́Ý̴̖̪͈̼͓͈ͅÓ͚̮̮̗͚͘͝U̵̲̩̫͙͈͡͞ ̷̹̫̟̙̙͙̠̮̕͟Ý̡̤͉͡O̞̲̟͜Ṵ͞ ̧͉̪͡͞Y̷͉̦͇͇̤ͅO̪̬͍̗̕U̹̦͔̦̞̭̣̩̰ ̶̡̞̝͖̰̞̝̠̲̕Y̨̠̞̥͢O͎̦̙̩ͅU͔͔͈ͅ ̷͖̗̫͓̙͇̲͜͞Y̹̬͕̺O̡̹̝̬͈̼̲̩ͅÚ̹̝͎͈̩̟͙̦̀ ̺̝̯͎̳̤̘͖̕͡Y̫̖̳͎̻̲̘O͇̭̮͖̗̱̳̫͟U̴̘͓̻̟͍̞͝ ̼̖͓̯̯͞Y̱̝̳̝̻͉O͔̫̖̬̯͘U̸͉̲̲͔͢ ̼̳̙̥̮͉̲̰͓́Y̶̯̣͖̭Ọ̬͙U̴̻̳̫͓̱͜ ̪̗̗̤͉͖̮ͅY̢̤̩͉̹͚̱͠O҉̨̬̻̪͔̲͚U̷̟̯̤̯͍̺͈̬͢ ̛̛͙͖̙͇̜̠̬̦͡Y̻̭̬̜͍͈̳͡O̡͓̺̝̫̟̖͎̼̣͠U̳͕̮̖̞͉̲̫̼ ̶̴̢͓̲͇Y͘҉͇̹̠͘Ơ͏͍͉̺̪̹̥͠Ù̩̬̖̜̙͟ ̨͖̣̭̣͠Y̩̰͢͠ͅͅO͖̞̖͙̺̠̝̕U͠҉̝͇ͅ ̥̞̳Y̨͓̙͔͙͇̮̕͠Ơ̠̪̙͔̥͍̝ͅƯ̵̩̯ ̸̷̶̰̝̪Y̨̼͎̞Ǫ̹̟͟͡U̴̡̫͘ ̴̗̗̹̙͍Y̡̼͟O̸ͅŲ͚̖̻̟͓̲̙̺̣͞ ̶̸̘̙̦̙̣̩̣͠Y̸͏̱͝O̧͈̤̺̘͍̰͚Ú͚̱̮͞ ̭̫͔̠͍͇ͅY̳͖͖̝̕͢Ò̧̪̙̤U҉̤͓̥͕̰͇͘ ̨̨̟͓̗͈͔̲Y͘҉̠̙̝͎͡O̶̟̜̬̹͚͎̟̣U̪͍͞ ̸̠̤̙͔̪̭Y̗͇͈͙͇̙͞͡O̷̲̣̹͍̪̻̕͢U͏̩ ̘̻̠̙͇Y̶̧̬͍̥͓̖̦͘O͚̘̤͕̦̠͞U̶͔̼̹̜̜̮͠ͅͅ ̹̼̗̀͟Y̴͚͙̗̟͉O̷̧̯͎U̶̪̣͚̜ ̨͉̗͕͈̀͞Y̵̰̪̘̹̝̦O̢̙͚̪͚̞͍̕͝ͅU͔̹̫͔̗̯͉ ̶̻̜̥Y͏̖̙̠̘̙̀ͅO͉̤̪̪͔͍̪͢U͟ͅ ̥Y̴͉̖̙̼̺̬̗̼Ờ̞̪̜̞̞ͅU͖͖̲ ҉̢͔͖̘͔Y̵̙̥͎͙̫O̴̱̣̣U̱̱̙̜͢͠ ̶͇Y̸̳̙̙Ò͎̞U̮̙̙̞̹ ͈̹͔͙̤͘͟͝Ỵ̞̹̘͇O̰͖͟͢ͅͅU̪̙͍̭̲̬ͅ ͏̨͉̻͎͉̞Y̵͈̬̗̪͙͍̹͓̝̕͝O̷̦ͅU̻̭̩̖̠͖̜͉̬ ̧̩̲̳̩͇̝̜͍̀Y̶̶̫͍͈̕O̶̗̱͔̱̯̹͙
+
+
+U̧̠̺͡ ͓͓̥̠͍̱Y͏͜͏̝̣͔O҉̨̤̖̦̰̗̺͚̩͠U̥̲̠̖̺ ̶̵̖̮̘̳̪͈͞ͅY̧̘̼̰̬̙O̵̜̙̫͔͢͡ͅU̸̵͎̥͙͔̦̣̪̭͞ ̫͇Y̰͕O̵̤̫̮̪̩̺̯Ų̀͏͍̪̺͔ ̛̟̤̮͘͢Y҉̣̦̭͍̭̭̥O̺͇̦̲̬͚U̘̰̞̠̟̯̥̱͢͠ ͚̻̠͙Ỳ̨̜̱̼͖̱O̱̖̰̪̲͍͉U̴̪̜̩͚̫̼ ͎͖̹̬͚̹͟͞Y̻̫̟̯͎̤̣̳Ơ̢̠̩U̼̘͈͢͡ ̶͍̯͈̳͘͞Y̡̨̞͓̖̳̟̫̻͟O̴҉̺̺U̢̫̙̘̖͖̺͙ ̬̥͚̠͈͞͞ͅY̗͚̮̕͠O͏̞̺̮U҉̸͉͈͚̯̲̲͉̠ ̴̢̠̝̠̼̠̬̤Y̵̫̼͖̕O̢̼̭͖͚̮̳͜U̩̠̟̥ ̶̠̰͈͇̞̭̺Y͈͍̞͍̫̗O̶͇̬̦U̷̘̻̤͡ ̗̩͓͖̥̦͍Ỳ̞̲̹̲͠Ọ̟͉̥̗͇̹̥̤̀U̢̗̤̱͙̳ ̛̙͈̞͓͈͓̺Y҉͍̩ͅO̭̦͓̼̠̗U͔̦̪̫ ̨̜͝Y̴̵̙͖͉̻̕O̷̸͚̙̙̝̤̜̝̤͠U̮̼̲̯͍̦̼̭͝͝ ̨̢̻̰̱̖̜̦͠Y̷̧͇͎͇͇̗͙͇͍̕O̷͉̖̺̮̺U̴̸͔̙͖̪͖͞ ̶̢͔̰̻̯̠Y̢̱̭̻̪͙͖̜̰̳O̴̸͇͈̪͕Ṵ̘̗͕ͅ ̢̤̫̤̘͎̲̩̕Y̧̼̱̗̭̮O͎̳̪̙̗̤̪ͅU̳̻̖̦̹͍̞̤̱͝ ͏̗͘Y͈̜O̴̻̗͇͕̘̜ͅƯ̹̠͖̠̠ ͚̺̙̕Y͚O̝̖̺̪͍̞ͅU̙̼̱͖ ̙̘Y̝̲̬̝̝̫̟̘O̕͏͖͎̗͕͕̻̙U̵̯͇͟ ͚̩͙́̀Y̴̱̺̱͇͡O̢̡̬͎͞Ụ̢͚ ̟̲̰Y̠͍̩̖͓̕͞Ơ҉҉̹̠̹̞̯̫̤̙Ų͍̰̭̮̖͇̯͠ͅ ̴̭͇Y͏҉̭͚O̗̫̩͢͟͞U̞̹̘̠̱͕͖̠ ̀͝҉̥͚Y͔̲̮͎̝̝͟ͅÓ̩̘̹̮̲͢U̯̻͍̱̯͘͜ ̛̛̳͍Y͇͙O̰̣̭̹̦͔̰͈Ư̥̙̯ ̴̲̀͜Ỳ̛͎̥̞̟̜͇͢O̞̬͍̟͡U̬͙͈͙̰͟ ̷̧̹̟̲̘̘̱̝̤Y̸̠̖̪̲͙̳͙͖̳O̴̙̙͙̩̰̲̘Ư̝͉̲̝͎̰̰ ̸̸̪͍̗̙̦̼͙́Y̵͇̞̙̟̱̤̕͘O̤͇̬͎̟̤̠̞ͅŲ̵̛̭̤̖̦̙ͅ ͏̡̪͖͙͖̥̤͇͖Y̢̺O̵̶̖̪̼̼̭͙͞Ų̺͙̬͇̹͓́ ҉̘̩Y͓̠̘̹͇̬Ó̖͚̕U̝̟̪ ̴̸̭̦̟̮̠̞̟́Y̡̨̥O̴̦̳̯͙̹̥̗U̞͙̺͖͉͍̦͝͡ͅ ̟̹̜̣̹Y̬̰̗̱͚̠̕O҉͙̙͈͓̀U̗̼̣͍͎̥̙͇͜ ̴͓̤̤̻͙͖Y̰̪͉͢͞O̷̳͔U͉͚͎̖̙̬ ̲̻̬͔͖̹̝͚Y̨͈͕͚͙̮̘̬̮͝Ǫ͈͔̳̹͔̣̀͠ͅŲ̦͙͈͈̯̺̹͘͞ ͏̤͙Y̴͔̣̻͓̞͡O̷̦̤̥̣̻̕͟Ú̯̕͜ ͏̧͓̥̱̲Ỳ̶̡̩̼͚̥̠͎Ó̴̩̤̹U̠̳̝̭̣͎͔͉̥͟͡ ̡҉̩͓͕̼Y̶͏̸̯̪̫̗̻̥͍ͅÓ̵͎Ṵ̠͖͕͎͍͉͕͔ ̥͙Ỳ̸̨̬̪O͍͖͟ͅṶ̸̪̤̖̣͖͖̝̮ ̸̣͎͍̼͞Y̟̜͎̫͇O҉̙̙̹Ư̹͢͡ ̷̛͚̲͎̬͇̀Y̧̲̯̥̙̱͚̬͠O͏̢̟͖͚͈͇̥͉͝Ừ̠̺̺̦̮̩͈ ̶̟͎̞͇̹̲̬͢͞Y̛͏̞̝̬̗͍̺O̠̪̖̱U͕̖̳̩͝ ͓̺̲̦͉̠̪Y͎̤͎̱̜̥̣̖͡͠O̧̦̘̭̞̖̝͉̘͟U̫͉͇̝̳̥͓͜ ̷͚̳̮̥̪Y̵̧͇̜̥̤̩̙̬̙̤O͏͉̗͈̖̦Ų̢̰̙̪ ̢̬̜͚͔Ỵ̡͇͚̞̪̞̯ͅO̶̝̻̭̺̫͟U̕ͅ ̣͈͟Y̜͈͖̖͉̺O̢͞ͅͅƯ҉̠̖̀ ̻̲̦͎̜̹̭Y̡̯̼̝̪ͅO̬̼̭͎̟̙Ứ̤̱̞̜̳͖̮͎ ̶̗͢Y̢͖̤̖͔O̜͎̳͕͎̝͎͙Ụ͔̺̳͎̺͈̺́͟ ̧̨̗̜͚̦̰̝̝́Ỵ̹̭̯̭̩͖̻́ͅO̱̣̹̞͈̱̩͖U̵̖͈̼̬͘ ̡̨̱̪̗͔͉̭̱Y̷̢̤̝O̶͓̻U̜͡ ̶̬̞̫͓͕̮͝ͅY̢̞̱̞͝ͅO̥̺̗͎̝U̶͚̭͇͖̲̞ ͇̣̤̺̺͖͜Y̵̞͇͓O͖̞̮̗͎U̲̫͇̮ ̛̺͎̗̮͢Y̕͏̢̪̼̬͈͓O̗̟̙̣̲̳U̸̱͇͙̬̺͓̺͡ ̸͏̛̦͇͙͔͙Y̦̘̼̺̥͍̹͎O̷̺̣̲̝̰̞̕U̴̘̞̫̗̣͖̣͚ ̵̘̦̘͖̖Y̛̞̯͖͍͜O̦͍̬̫̠U͉̟ ͙̗̝̬ͅͅY͓͉̠̺̖Ò̞̝͍̩̥̻͉̫̰͟͝U̪̖̠̻̻̠̕ ̗͙̻̣̞̫͎Ỳ̫̤͇̦̫̯̲O̻̼̻U̧̯͘͞ ͇̻̜̪̬Y̤̕͘͞O̷̸̲̠U̩͎ ̳̪̲͉̖͇͚͘͟Y̼̣̼͜O̯̤̝̩̹͖͞U̡̞͕̖͉͖͇͘ ҉̜̙͙̳̪͍Y̵̺̥̭Ǫ̡̟̘͓̝̯Ṳ͇̀ ͓͈͚̤͎͘͡Y̡̞͚͉O̻͇͘U̯̭͘ ̤͇͍̰̥̖́͟͝Y̪͕͘O̞̞̲͉ͅU͈̥̞͉ ̸̦͙̞̗̬͔̲͙̮Y̸̖̘O̕҉̺̳̬͙̳̪Ų̳̰̦͇͚̕ ̷̲̦̪͚̣̞͘Y̩̦͈͇̲̕͜ͅO̝͎̰̖Ú͖ ̘̣Y̷̲͜O̧̝̦̪͔̥̕͞ͅÙ̵͖̫̬̫̬̭ ̵̯̻͞Y̤͕͉̣͖͉̥̹O҉̘̼̩͕͎̖̮̭Ú̧̝̙͇͕͔̣͙̻ ̸̨̞̻̩̬Y̧̹̻̼̪͡Ǫ͖̬̣̳͚͍̘̠̹̕U̮̥̹̭̠͟͞ ̨̝̯̩̱̘̟̩̣͠Ý̷̢̥̬̹͎O͓͚͖̳̰͚͟͝͞Ų̙̩̫̰̹̻̹̪͢͠ ͇̞͈̰̥̦̻̻Y̜͚̖̗͘O̸͖̩͔͇̬͚͚U͚̩̙̮̘͟ ̻̘̗͍̬̝̮Y̸̩͍̳͔͓̜ͅO̤̝̖͔̱͖̹͠Ų̷̟̻̠ ͏̥̝͕Y̴̩͉͍͕̟̟ͅO̡̱̖̦̤͚ͅU̲̤̹͝ ̤̣͇̯̤̳̹̘̀̀͘Ỵ͎̩̠̩͟͟O̞̰̘̮̲̯̻̣̝U͉̘̟̼͙ ͏͉̖͓̭Y̟̼͉̬̥̫͢O̸͎͔͜U̩̟͈̘̳̼̳ ̵̳̜͈̀̕Y̸҉̞͇̱̹O̸͔̣̩̦̩̩̺͝U̷̻̤̪̱̜̥͍̰͚͡ ̡̼̯̺͉̳Y͉̠̣͔̻O̧̧̬͍͎͜U̷̫͙̲̗̩̥͔ ͏̖̫̱͈͇̩̣̕͡Y̷̛͉͢Ơ̙̼͚̝U͏̟̳̮̘̭̤̀ ̥̠͇̯̩̫Y̨̱͚͍͚̱̼O̵͈̩̹̪͡U̕͏̘̰̞̟̰̘͔ ̡̛̰͈̗̟Y̛̦̬͘͘Ó̵͚̼̝̩̞̩̦̱̻U̧̙̞ ͜҉̥͍̻̬͕̯͚̼ͅÝ̷̳͔̹̠͘Ó͈̫̰͎U҉̶̠͔̞̳͎͍̯͙ ͏̝̻͕͇̝͉Y͕̗̮͇̬͖̤͘Ò̶̩͔̰͉͘Ư̼̺̪̼͉͘ ̨̬̺Y̶̖̥O̻͍͎̹̻͍̻͝ͅU͕̦͓̼͟ ̱̫͟Y̶̹̮̕Ó̰̞̦̣̦̬̀͝U̵͍̟̺̭̜̞̥ ̢̼̜Y͕̖̱Ó͇̩͞U̸͚͖͈̞̲͙̞͜ ̗̦͕̼͢͟Y͙͓͎͝O̵͔͇̰͈̩U̸̶͕̞̙͔̟̩ ҉͏҉̹͓̼͉Y̛͕̮̬̖̙O̢̨̞̰̱͍U̸̸͍͔̻͓͎̹̪̦͘ ̷̰Ỵ̡̼̘̹͚͉Ò̥̩͓͉̞̬̞͖̳̕Ù̙͙͇̰̭͇͢ͅͅ ͕Y̙̜̣̪͚̕O͉̤͖̥̲̠͎̙U̸̜̘͇̥͓̹̳̝ ͈̯͎͖̠̩͍͠͠Y̗̠̣̪̣Ó̻͇̫̫̰̳͍͓͢U̠͟͡ ̨̻̝̻͞Y҉̮̬̣͜ͅO͇͚̜͈͙̝̗U̴͙̤̹̝ ͈̟̫̭͓̮͞Ỳ̡̧̹̱̠̮̺͔̬͚̣Ò̡͚̣̫̳U͎͘͢ ͢͏̞͈̥͍͙Y͚͙͖͔̬̣͕̗͢͞ͅÓ̻̙͈̭̹̦͍͇̥͟Ų̷̨̯̠̣͖͔͈̼ ͕̲͚͜ͅY͍̮̩͖̳̟͡O̶̶͙̤̦͝U̴̳͙ ̸̧̢̠͚̫̥̤̳̲Y̪̥̣͚O̢̧͍͖̭̲͈U͏̻͚̮̞̘̠̟ ͓̰̲̣͙͚̮̮͠Y̧͝҉̘͚̲͍̣̻O̧͘͏̯̥ͅͅU͏̟͕̜͚̳̻ ͍͓̯̱̮̳͓̩̀Y̹̫̲͖̟̭͢Ó̴̹͚͚̜͖Ù͏͎͎̭̲̺̲̻͈ ̮̤̘̝͘͠Y̢̙̝̤͎̟Ó̵̦̝U̧͓̣͎ͅ ͏͘҉̹̞͈̙̠̯͍̬Y̵̴̞̮̻Ơ̖̕Ư̧҉͕̯̳̙̪̝̞͎ ̨̯̙̗̳͙̭̘̺̼Y̶̝̫͓͎Ơ̶̬̝U̡̬̩͇̲̹ ̧̼̳̖Y̡̩̮̱̲̝͘O̶̖̼̯̱̗̪U̷̡̝ ̱̹͎Y̺̯̟̫O͙̯̳̙͡Ú̧͉̬͈͈̜̫ ̩͖̦͎̬̜̮̠͠͝͡Y̙̹̞̙O̵̠̘̜̺̣͜͡Ú̡̖̭̰̬̬ ͉̘͖͘͠Y̯̣̲Ơ̵̡̼̰͈U̳͟͞ ҉̩̯͕͎̦̣͠Y̧̘͔͟O̡͇̟U̡͍̤̲ ̵̠͖̭̬̝̦̙͞Y̙̗͉̙̼̯O̯̯̯̖̙̗̲͘Ṳ͈̱̖̯ ̺̟Y͚̫̖̯̞O̷̫̯̗̝̕͟U̵̢̨̮ͅ ̝̤̟̩Y̸̴̘̱̤O̝̹Ư̛͎̩͔͡ ̪͍̭̮̗͕̹̬Y̗̘̤͙͚̯̹͘O̜̠̣̺̪̠͡U̬͚͔̭̱͚͢ ̴̲̥͟Y̥̻̪̦̱̼ͅO̷̹̮͞Ù̴̯̤̘̲͉͉̘ͅU̧̠̺͡ ͓͓̥̠͍̱Y͏͜͏̝̣͔O҉̨̤̖̦̰̗̺͚̩͠U̥̲̠̖̺ ̶̵̖̮̘̳̪͈͞ͅY̧̘̼̰̬̙O̵̜̙̫͔͢͡ͅU̸̵͎̥͙͔̦̣̪̭͞ ̫͇Y̰͕O̵̤̫̮̪̩̺̯Ų̀͏͍̪̺͔ ̛̟̤̮͘͢Y҉̣̦̭͍̭̭̥O̺͇̦̲̬͚U̘̰̞̠̟̯̥̱͢͠ ͚̻̠͙Ỳ̨̜̱̼͖̱O̱̖̰̪̲͍͉U̴̪̜̩͚̫̼ ͎͖̹̬͚̹͟͞Y̻̫̟̯͎̤̣̳Ơ̢̠̩U̼̘͈͢͡ ̶͍̯͈̳͘͞Y̡̨̞͓̖̳̟̫̻͟O̴҉̺̺U̢̫̙̘̖͖̺͙ ̬̥͚̠͈͞͞ͅY̗͚̮̕͠O͏̞̺̮U҉̸͉͈͚̯̲̲͉̠ ̴̢̠̝̠̼̠̬̤Y̵̫̼͖̕O̢̼̭͖͚̮̳͜U̩̠̟̥ ̶̠̰͈͇̞̭̺Y͈͍̞͍̫̗O̶͇̬̦U̷̘̻̤͡ ̗̩͓͖̥̦͍Ỳ̞̲̹̲͠Ọ̟͉̥̗͇̹̥̤̀U̢̗̤̱͙̳ ̛̙͈̞͓͈͓̺Y҉͍̩ͅO̭̦͓̼̠̗U͔̦̪̫ ̨̜͝Y̴̵̙͖͉̻̕O̷̸͚̙̙̝̤̜̝̤͠U̮̼̲̯͍̦̼̭͝͝ ̨̢̻̰̱̖̜̦͠Y̷̧͇͎͇͇̗͙͇͍̕O̷͉̖̺̮̺U̴̸͔̙͖̪͖͞ ̶̢͔̰̻̯̠Y̢̱̭̻̪͙͖̜̰̳O̴̸͇͈̪͕Ṵ̘̗͕ͅ ̢̤̫̤̘͎̲̩̕Y̧̼̱̗̭̮O͎̳̪̙̗̤̪ͅU̳̻̖̦̹͍̞̤̱͝ ͏̗͘Y͈̜O̴̻̗͇͕̘̜ͅƯ̹̠͖̠̠ ͚̺̙̕Y͚O̝̖̺̪͍̞ͅU̙̼̱͖ ̙̘Y̝̲̬̝̝̫̟̘O̕͏͖͎̗͕͕̻̙U̵̯͇͟ ͚̩͙́̀Y̴̱̺̱͇͡O̢̡̬͎͞Ụ̢͚ ̟̲̰Y̠͍̩̖͓̕͞Ơ҉҉̹̠̹̞̯̫̤̙Ų͍̰̭̮̖͇̯͠ͅ ̴̭͇Y͏҉̭͚O̗̫̩͢͟͞U̞̹̘̠̱͕͖̠ ̀͝҉̥͚Y͔̲̮͎̝̝͟ͅÓ̩̘̹̮̲͢U̯̻͍̱̯͘͜ ̛̛̳͍Y͇͙O̰̣̭̹̦͔̰͈Ư̥̙̯ ̴̲̀͜Ỳ̛͎̥̞̟̜͇͢O̞̬͍̟͡U̬͙͈͙̰͟ ̷̧̹̟̲̘̘̱̝̤Y̸̠̖̪̲͙̳͙͖̳O̴̙̙͙̩̰̲̘Ư̝͉̲̝͎̰̰ ̸̸̪͍̗̙̦̼͙́Y̵͇̞̙̟̱̤̕͘O̤͇̬͎̟̤̠̞ͅŲ̵̛̭̤̖̦̙ͅ ͏̡̪͖͙͖̥̤͇͖Y̢̺O̵̶̖̪̼̼̭͙͞Ų̺͙̬͇̹͓́ ҉̘̩Y͓̠̘̹͇̬Ó̖͚̕U̝̟̪ ̴̸̭̦̟̮̠̞̟́Y̡̨̥O̴̦̳̯͙̹̥̗U̞͙̺͖͉͍̦͝͡ͅ ̟̹̜̣̹Y̬̰̗̱͚̠̕O҉͙̙͈͓̀U̗̼̣͍͎̥̙͇͜ ̴͓̤̤̻͙͖Y̰̪͉͢͞O̷̳͔U͉͚͎̖̙̬ ̲̻̬͔͖̹̝͚Y̨͈͕͚͙̮̘̬̮͝Ǫ͈͔̳̹͔̣̀͠ͅŲ̦͙͈͈̯̺̹͘͞ ͏̤͙Y̴͔̣̻͓̞͡O̷̦̤̥̣̻̕͟Ú̯̕͜ ͏̧͓̥̱̲Ỳ̶̡̩̼͚̥̠͎Ó̴̩̤̹U̠̳̝̭̣͎͔͉̥͟͡ ̡҉̩͓͕̼Y̶͏̸̯̪̫̗̻̥͍ͅÓ̵͎Ṵ̠͖͕͎͍͉͕͔ ̥͙Ỳ̸̨̬̪O͍͖͟ͅṶ̸̪̤̖̣͖͖̝̮ ̸̣͎͍̼͞Y̟̜͎̫͇O҉̙̙̹Ư̹͢͡ ̷̛͚̲͎̬͇̀Y̧̲̯̥̙̱͚̬͠O͏̢̟͖͚͈͇̥͉͝Ừ̠̺̺̦̮̩͈ ̶̟͎̞͇̹̲̬͢͞Y̛͏̞̝̬̗͍̺O̠̪̖̱U͕̖̳̩͝ ͓̺̲̦͉̠̪Y͎̤͎̱̜̥̣̖͡͠O̧̦̘̭̞̖̝͉̘͟U̫͉͇̝̳̥͓͜ ̷͚̳̮̥̪Y̵̧͇̜̥̤̩̙̬̙̤O͏͉̗͈̖̦Ų̢̰̙̪ ̢̬̜͚͔Ỵ̡͇͚̞̪̞̯ͅO̶̝̻̭̺̫͟U̕ͅ ̣͈͟Y̜͈͖̖͉̺O̢͞ͅͅƯ҉̠̖̀ ̻̲̦͎̜̹̭Y̡̯̼̝̪ͅO̬̼̭͎̟̙Ứ̤̱̞̜̳͖̮͎ ̶̗͢Y̢͖̤̖͔O̜͎̳͕͎̝͎͙Ụ͔̺̳͎̺͈̺́͟ ̧̨̗̜͚̦̰̝̝́Ỵ̹̭̯̭̩͖̻́ͅO̱̣̹̞͈̱̩͖U̵̖͈̼̬͘ ̡̨̱̪̗͔͉̭̱Y̷̢̤̝O̶͓̻U̜͡ ̶̬̞̫͓͕̮͝ͅY̢̞̱̞͝ͅO̥̺̗͎̝U̶͚̭͇͖̲̞ ͇̣̤̺̺͖͜Y̵̞͇͓O͖̞̮̗͎U̲̫͇̮ ̛̺͎̗̮͢Y̕͏̢̪̼̬͈͓O̗̟̙̣̲̳U̸̱͇͙̬̺͓̺͡ ̸͏̛̦͇͙͔͙Y̦̘̼̺̥͍̹͎O̷̺̣̲̝̰̞̕U̴̘̞̫̗̣͖̣͚ ̵̘̦̘͖̖Y̛̞̯͖͍͜O̦͍̬̫̠U͉̟ ͙̗̝̬ͅͅY͓͉̠̺̖Ò̞̝͍̩̥̻͉̫̰͟͝U̪̖̠̻̻̠̕ ̗͙̻̣̞̫͎Ỳ̫̤͇̦̫̯̲O̻̼̻U̧̯͘͞ ͇̻̜̪̬Y̤̕͘͞O̷̸̲̠U̩͎ ̳̪̲͉̖͇͚͘͟Y̼̣̼͜O̯̤̝̩̹͖͞U̡̞͕̖͉͖͇͘ ҉̜̙͙̳̪͍Y̵̺̥̭Ǫ̡̟̘͓̝̯Ṳ͇̀ ͓͈͚̤͎͘͡Y̡̞͚͉O̻͇͘U̯̭͘ ̤͇͍̰̥̖́͟͝Y̪͕͘O̞̞̲͉ͅU͈̥̞͉ ̸̦͙̞̗̬͔̲͙̮Y̸̖̘O̕҉̺̳̬͙̳̪Ų̳̰̦͇͚̕ ̷̲̦̪͚̣̞͘Y̩̦͈͇̲̕͜ͅO̝͎̰̖Ú͖ ̘̣Y̷̲͜O̧̝̦̪͔̥̕͞ͅÙ̵͖̫̬̫̬̭ ̵̯̻͞Y̤͕͉̣͖͉̥̹O҉̘̼̩͕͎̖̮̭Ú̧̝̙͇͕͔̣͙̻ ̸̨̞̻̩̬Y̧̹̻̼̪͡Ǫ͖̬̣̳͚͍̘̠̹̕U̮̥̹̭̠͟͞ ̨̝̯̩̱̘̟̩̣͠Ý̷̢̥̬̹͎O͓͚͖̳̰͚͟͝͞Ų̙̩̫̰̹̻̹̪͢͠ ͇̞͈̰̥̦̻̻Y̜͚̖̗͘O̸͖̩͔͇̬͚͚U͚̩̙̮̘͟ ̻̘̗͍̬̝̮Y̸̩͍̳͔͓̜ͅO̤̝̖͔̱͖̹͠Ų̷̟̻̠ ͏̥̝͕Y̴̩͉͍͕̟̟ͅO̡̱̖̦̤͚ͅU̲̤̹͝ ̤̣͇̯̤̳̹̘̀̀͘Ỵ͎̩̠̩͟͟O̞̰̘̮̲̯̻̣̝U͉̘̟̼͙ ͏͉̖͓̭Y̟̼͉̬̥̫͢O̸͎͔͜U̩̟͈̘̳̼̳ ̵̳̜͈̀̕Y̸҉̞͇̱̹O̸͔̣̩̦̩̩̺͝U̷̻̤̪̱̜̥͍̰͚͡ ̡̼̯̺͉̳Y͉̠̣͔̻O̧̧̬͍͎͜U̷̫͙̲̗̩̥͔ ͏̖̫̱͈͇̩̣̕͡Y̷̛͉͢Ơ̙̼͚̝U͏̟̳̮̘̭̤̀ ̥̠͇̯̩̫Y̨̱͚͍͚̱̼O̵͈̩̹̪͡U̕͏̘̰̞̟̰̘͔ ̡̛̰͈̗̟Y̛̦̬͘͘Ó̵͚̼̝̩̞̩̦̱̻U̧̙̞ ͜҉̥͍̻̬͕̯͚̼ͅÝ̷̳͔̹̠͘Ó͈̫̰͎U҉̶̠͔̞̳͎͍̯͙ ͏̝̻͕͇̝͉Y͕̗̮͇̬͖̤͘Ò̶̩͔̰͉͘Ư̼̺̪̼͉͘ ̨̬̺Y̶̖̥O̻͍͎̹̻͍̻͝ͅU͕̦͓̼͟ ̱̫͟Y̶̹̮̕Ó̰̞̦̣̦̬̀͝U̵͍̟̺̭̜̞̥ ̢̼̜Y͕̖̱Ó͇̩͞U̸͚͖͈̞̲͙̞͜ ̗̦͕̼͢͟Y͙͓͎͝O̵͔͇̰͈̩U̸̶͕̞̙͔̟̩ ҉͏҉̹͓̼͉Y̛͕̮̬̖̙O̢̨̞̰̱͍U̸̸͍͔̻͓͎̹̪̦͘ ̷̰Ỵ̡̼̘̹͚͉Ò̥̩͓͉̞̬̞͖̳̕Ù̙͙͇̰̭͇͢ͅͅ ͕Y̙̜̣̪͚̕O͉̤͖̥̲̠͎̙U̸̜̘͇̥͓̹̳̝ ͈̯͎͖̠̩͍͠͠Y̗̠̣̪̣Ó̻͇̫̫̰̳͍͓͢U̠͟͡ ̨̻̝̻͞Y҉̮̬̣͜ͅO͇͚̜͈͙̝̗U̴͙̤̹̝ ͈̟̫̭͓̮͞Ỳ̡̧̹̱̠̮̺͔̬͚̣Ò̡͚̣̫̳U͎͘͢ ͢͏̞͈̥͍͙Y͚͙͖͔̬̣͕̗͢͞ͅÓ̻̙͈̭̹̦͍͇̥͟Ų̷̨̯̠̣͖͔͈̼ ͕̲͚͜ͅY͍̮̩͖̳̟͡O̶̶͙̤̦͝U̴̳͙ ̸̧̢̠͚̫̥̤̳̲Y̪̥̣͚O̢̧͍͖̭̲͈U͏̻͚̮̞̘̠̟ ͓̰̲̣͙͚̮̮͠Y̧͝҉̘͚̲͍̣̻O̧͘͏̯̥ͅͅU͏̟͕̜͚̳̻ ͍͓̯̱̮̳͓̩̀Y̹̫̲͖̟̭͢Ó̴̹͚͚̜͖Ù͏͎͎̭̲̺̲̻͈ ̮̤̘̝͘͠Y̢̙̝̤͎̟Ó̵̦̝U̧͓̣͎ͅ ͏͘҉̹̞͈̙̠̯͍̬Y̵̴̞̮̻Ơ̖̕Ư̧҉͕̯̳̙̪̝̞͎ ̨̯̙̗̳͙̭̘̺̼Y̶̝̫͓͎Ơ̶̬̝U̡̬̩͇̲̹ ̧̼̳̖Y̡̩̮̱̲̝͘O̶̖̼̯̱̗̪U̷̡̝ ̱̹͎Y̺̯̟̫O͙̯̳̙͡Ú̧͉̬͈͈̜̫ ̩͖̦͎̬̜̮̠͠͝͡Y̙̹̞̙O̵̠̘̜̺̣͜͡Ú̡̖̭̰̬̬ ͉̘͖͘͠Y̯̣̲Ơ̵̡̼̰͈U̳͟͞ ҉̩̯͕͎̦̣͠Y̧̘͔͟O̡͇̟U̡͍̤̲ ̵̠͖̭̬̝̦̙͞Y̙̗͉̙̼̯O̯̯̯̖̙̗̲͘Ṳ͈̱̖̯ ̺̟Y͚̫̖̯̞O̷̫̯̗̝̕͟U̵̢̨̮ͅ ̝̤̟̩Y̸̴̘̱̤O̝̹Ư̛͎̩͔͡ ̪͍̭̮̗͕̹̬Y̗̘̤͙͚̯̹͘O̜̠̣̺̪̠͡U̬͚͔̭̱͚͢ ̴̲̥͟Y̥̻̪̦̱̼ͅO̷̹̮͞Ù̴̯̤̘̲͉͉̘ͅU̧̠̺͡ ͓͓̥̠͍̱Y͏͜͏̝̣͔O҉̨̤̖̦̰̗̺͚̩͠U̥̲̠̖̺ ̶̵̖̮̘̳̪͈͞ͅY̧̘̼̰̬̙O̵̜̙̫͔͢͡ͅU̸̵͎̥͙͔̦̣̪̭͞ ̫͇Y̰͕O̵̤̫̮̪̩̺̯Ų̀͏͍̪̺͔ ̛̟̤̮͘͢Y҉̣̦̭͍̭̭̥O̺͇̦̲̬͚U̘̰̞̠̟̯̥̱͢͠ ͚̻̠͙Ỳ̨̜̱̼͖̱O̱̖̰̪̲͍͉U̴̪̜̩͚̫̼ ͎͖̹̬͚̹͟͞Y̻̫̟̯͎̤̣̳Ơ̢̠̩U̼̘͈͢͡ ̶͍̯͈̳͘͞Y̡̨̞͓̖̳̟̫̻͟O̴҉̺̺U̢̫̙̘̖͖̺͙ ̬̥͚̠͈͞͞ͅY̗͚̮̕͠O͏̞̺̮U҉̸͉͈͚̯̲̲͉̠ ̴̢̠̝̠̼̠̬̤Y̵̫̼͖̕O̢̼̭͖͚̮̳͜U̩̠̟̥ ̶̠̰͈͇̞̭̺Y͈͍̞͍̫̗O̶͇̬̦U̷̘̻̤͡ ̗̩͓͖̥̦͍Ỳ̞̲̹̲͠Ọ̟͉̥̗͇̹̥̤̀U̢̗̤̱͙̳ ̛̙͈̞͓͈͓̺Y҉͍̩ͅO̭̦͓̼̠̗U͔̦̪̫ ̨̜͝Y̴̵̙͖͉̻̕O̷̸͚̙̙̝̤̜̝̤͠U̮̼̲̯͍̦̼̭͝͝ ̨̢̻̰̱̖̜̦͠Y̷̧͇͎͇͇̗͙͇͍̕O̷͉̖̺̮̺U̴̸͔̙͖̪͖͞ ̶̢͔̰̻̯̠Y̢̱̭̻̪͙͖̜̰̳O̴̸͇͈̪͕Ṵ̘̗͕ͅ ̢̤̫̤̘͎̲̩̕Y̧̼̱̗̭̮O͎̳̪̙̗̤̪ͅU̳̻̖̦̹͍̞̤̱͝ ͏̗͘Y͈̜O̴̻̗͇͕̘̜ͅƯ̹̠͖̠̠ ͚̺̙̕Y͚O̝̖̺̪͍̞ͅU̙̼̱͖ ̙̘Y̝̲̬̝̝̫̟̘O̕͏͖͎̗͕͕̻̙U̵̯͇͟ ͚̩͙́̀Y̴̱̺̱͇͡O̢̡̬͎͞Ụ̢͚ ̟̲̰Y̠͍̩̖͓̕͞Ơ҉҉̹̠̹̞̯̫̤̙Ų͍̰̭̮̖͇̯͠ͅ ̴̭͇Y͏҉̭͚O̗̫̩͢͟͞U̞̹̘̠̱͕͖̠ ̀͝҉̥͚Y͔̲̮͎̝̝͟ͅÓ̩̘̹̮̲͢U̯̻͍̱̯͘͜ ̛̛̳͍Y͇͙O̰̣̭̹̦͔̰͈Ư̥̙̯ ̴̲̀͜Ỳ̛͎̥̞̟̜͇͢O̞̬͍̟͡U̬͙͈͙̰͟ ̷̧̹̟̲̘̘̱̝̤Y̸̠̖̪̲͙̳͙͖̳O̴̙̙͙̩̰̲̘Ư̝͉̲̝͎̰̰ ̸̸̪͍̗̙̦̼͙́Y̵͇̞̙̟̱̤̕͘O̤͇̬͎̟̤̠̞ͅŲ̵̛̭̤̖̦̙ͅ ͏̡̪͖͙͖̥̤͇͖Y̢̺O̵̶̖̪̼̼̭͙͞Ų̺͙̬͇̹͓́ ҉̘̩Y͓̠̘̹͇̬Ó̖͚̕U̝̟̪ ̴̸̭̦̟̮̠̞̟́Y̡̨̥O̴̦̳̯͙̹̥̗U̞͙̺͖͉͍̦͝͡ͅ ̟̹̜̣̹Y̬̰̗̱͚̠̕O҉͙̙͈͓̀U̗̼̣͍͎̥̙͇͜ ̴͓̤̤̻͙͖Y̰̪͉͢͞O̷̳͔U͉͚͎̖̙̬ ̲̻̬͔͖̹̝͚Y̨͈͕͚͙̮̘̬̮͝Ǫ͈͔̳̹͔̣̀͠ͅŲ̦͙͈͈̯̺̹͘͞ ͏̤͙Y̴͔̣̻͓̞͡O̷̦̤̥̣̻̕͟Ú̯̕͜ ͏̧͓̥̱̲Ỳ̶̡̩̼͚̥̠͎Ó̴̩̤̹U̠̳̝̭̣͎͔͉̥͟͡ ̡҉̩͓͕̼Y̶͏̸̯̪̫̗̻̥͍ͅÓ̵͎Ṵ̠͖͕͎͍͉͕͔ ̥͙Ỳ̸̨̬̪O͍͖͟ͅṶ̸̪̤̖̣͖͖̝̮ ̸̣͎͍̼͞Y̟̜͎̫͇O҉̙̙̹Ư̹͢͡ ̷̛͚̲͎̬͇̀Y̧̲̯̥̙̱͚̬͠O͏̢̟͖͚͈͇̥͉͝Ừ̠̺̺̦̮̩͈ ̶̟͎̞͇̹̲̬͢͞Y̛͏̞̝̬̗͍̺O̠̪̖̱U͕̖̳̩͝ ͓̺̲̦͉̠̪Y͎̤͎̱̜̥̣̖͡͠O̧̦̘̭̞̖̝͉̘͟U̫͉͇̝̳̥͓͜ ̷͚̳̮̥̪Y̵̧͇̜̥̤̩̙̬̙̤O͏͉̗͈̖̦Ų̢̰̙̪ ̢̬̜͚͔Ỵ̡͇͚̞̪̞̯ͅO̶̝̻̭̺̫͟U̕ͅ ̣͈͟Y̜͈͖̖͉̺O̢͞ͅͅƯ҉̠̖̀ ̻̲̦͎̜̹̭Y̡̯̼̝̪ͅO̬̼̭͎̟̙Ứ̤̱̞̜̳͖̮͎ ̶̗͢Y̢͖̤̖͔O̜͎̳͕͎̝͎͙Ụ͔̺̳͎̺͈̺́͟ ̧̨̗̜͚̦̰̝̝́Ỵ̹̭̯̭̩͖̻́ͅO̱̣̹̞͈̱̩͖U̵̖͈̼̬͘ ̡̨̱̪̗͔͉̭̱Y̷̢̤̝O̶͓̻U̜͡ ̶̬̞̫͓͕̮͝ͅY̢̞̱̞͝ͅO̥̺̗͎̝U̶͚̭͇͖̲̞ ͇̣̤̺̺͖͜Y̵̞͇͓O͖̞̮̗͎U̲̫͇̮ ̛̺͎̗̮͢Y̕͏̢̪̼̬͈͓O̗̟̙̣̲̳U̸̱͇͙̬̺͓̺͡ ̸͏̛̦͇͙͔͙Y̦̘̼̺̥͍̹͎O̷̺̣̲̝̰̞̕U̴̘̞̫̗̣͖̣͚ ̵̘̦̘͖̖Y̛̞̯͖͍͜O̦͍̬̫̠U͉̟ ͙̗̝̬ͅͅY͓͉̠̺̖Ò̞̝͍̩̥̻͉̫̰͟͝U̪̖̠̻̻̠̕ ̗͙̻̣̞̫͎Ỳ̫̤͇̦̫̯̲O̻̼̻U̧̯͘͞ ͇̻̜̪̬Y̤̕͘͞O̷̸̲̠U̩͎ ̳̪̲͉̖͇͚͘͟Y̼̣̼͜O̯̤̝̩̹͖͞U̡̞͕̖͉͖͇͘ ҉̜̙͙̳̪͍Y̵̺̥̭Ǫ̡̟̘͓̝̯Ṳ͇̀ ͓͈͚̤͎͘͡Y̡̞͚͉O̻͇͘U̯̭͘ ̤͇͍̰̥̖́͟͝Y̪͕͘O̞̞̲͉ͅU͈̥̞͉ ̸̦͙̞̗̬͔̲͙̮Y̸̖̘O̕҉̺̳̬͙̳̪Ų̳̰̦͇͚̕ ̷̲̦̪͚̣̞͘Y̩̦͈͇̲̕͜ͅO̝͎̰̖Ú͖ ̘̣Y̷̲͜O̧̝̦̪͔̥̕͞ͅÙ̵͖̫̬̫̬̭ ̵̯̻͞Y̤͕͉̣͖͉̥̹O҉̘̼̩͕͎̖̮̭Ú̧̝̙͇͕͔̣͙̻ ̸̨̞̻̩̬Y̧̹̻̼̪͡Ǫ͖̬̣̳͚͍̘̠̹̕U̮̥̹̭̠͟͞ ̨̝̯̩̱̘̟̩̣͠Ý̷̢̥̬̹͎O͓͚͖̳̰͚͟͝͞Ų̙̩̫̰̹̻̹̪͢͠ ͇̞͈̰̥̦̻̻Y̜͚̖̗͘O̸͖̩͔͇̬͚͚U͚̩̙̮̘͟ ̻̘̗͍̬̝̮Y̸̩͍̳͔͓̜ͅO̤̝̖͔̱͖̹͠Ų̷̟̻̠ ͏̥̝͕Y̴̩͉͍͕̟̟ͅO̡̱̖̦̤͚ͅU̲̤̹͝ ̤̣͇̯̤̳̹̘̀̀͘Ỵ͎̩̠̩͟͟O̞̰̘̮̲̯̻̣̝U͉̘̟̼͙ ͏͉̖͓̭Y̟̼͉̬̥̫͢O̸͎͔͜U̩̟͈̘̳̼̳ ̵̳̜͈̀̕Y̸҉̞͇̱̹O̸͔̣̩̦̩̩̺͝U̷̻̤̪̱̜̥͍̰͚͡ ̡̼̯̺͉̳Y͉̠̣͔̻O̧̧̬͍͎͜U̷̫͙̲̗̩̥͔ ͏̖̫̱͈͇̩̣̕͡Y̷̛͉͢Ơ̙̼͚̝U͏̟̳̮̘̭̤̀ ̥̠͇̯̩̫Y̨̱͚͍͚̱̼O̵͈̩̹̪͡U̕͏̘̰̞̟̰̘͔ ̡̛̰͈̗̟Y̛̦̬͘͘Ó̵͚̼̝̩̞̩̦̱̻U̧̙̞ ͜҉̥͍̻̬͕̯͚̼ͅÝ̷̳͔̹̠͘Ó͈̫̰͎U҉̶̠͔̞̳͎͍̯͙ ͏̝̻͕͇̝͉Y͕̗̮͇̬͖̤͘Ò̶̩͔̰͉͘Ư̼̺̪̼͉͘ ̨̬̺Y̶̖̥O̻͍͎̹̻͍̻͝ͅU͕̦͓̼͟ ̱̫͟Y̶̹̮̕Ó̰̞̦̣̦̬̀͝U̵͍̟̺̭̜̞̥ ̢̼̜Y͕̖̱Ó͇̩͞U̸͚͖͈̞̲͙̞͜ ̗̦͕̼͢͟Y͙͓͎͝O̵͔͇̰͈̩U̸̶͕̞̙͔̟̩ ҉͏҉̹͓̼͉Y̛͕̮̬̖̙O̢̨̞̰̱͍U̸̸͍͔̻͓͎̹̪̦͘ ̷̰Ỵ̡̼̘̹͚͉Ò̥̩͓͉̞̬̞͖̳̕Ù̙͙͇̰̭͇͢ͅͅ ͕Y̙̜̣̪͚̕O͉̤͖̥̲̠͎̙U̸̜̘͇̥͓̹̳̝ ͈̯͎͖̠̩͍͠͠Y̗̠̣̪̣Ó̻͇̫̫̰̳͍͓͢U̠͟͡ ̨̻̝̻͞Y҉̮̬̣͜ͅO͇͚̜͈͙̝̗U̴͙̤̹̝ ͈̟̫̭͓̮͞Ỳ̡̧̹̱̠̮̺͔̬͚̣Ò̡͚̣̫̳U͎͘͢ ͢͏̞͈̥͍͙Y͚͙͖͔̬̣͕̗͢͞ͅÓ̻̙͈̭̹̦͍͇̥͟Ų̷̨̯̠̣͖͔͈̼ ͕̲͚͜ͅY͍̮̩͖̳̟͡O̶̶͙̤̦͝U̴̳͙ ̸̧̢̠͚̫̥̤̳̲Y̪̥̣͚O̢̧͍͖̭̲͈U͏̻͚̮̞̘̠̟ ͓̰̲̣͙͚̮̮͠Y̧͝҉̘͚̲͍̣̻O̧͘͏̯̥ͅͅU͏̟͕̜͚̳̻ ͍͓̯̱̮̳͓̩̀Y̹̫̲͖̟̭͢Ó̴̹͚͚̜͖Ù͏͎͎̭̲̺̲̻͈ ̮̤̘̝͘͠Y̢̙̝̤͎̟Ó̵̦̝U̧͓̣͎ͅ ͏͘҉̹̞͈̙̠̯͍̬Y̵̴̞̮̻Ơ̖̕Ư̧҉͕̯̳̙̪̝̞͎ ̨̯̙̗̳͙̭̘̺̼Y̶̝̫͓͎Ơ̶̬̝U̡̬̩͇̲̹ ̧̼̳̖Y̡̩̮̱̲̝͘O̶̖̼̯̱̗̪U̷̡̝ ̱̹͎Y̺̯̟̫O͙̯̳̙͡Ú̧͉̬͈͈̜̫ ̩͖̦͎̬̜̮̠͠͝͡Y̙̹̞̙O̵̠̘̜̺̣͜͡Ú̡̖̭̰̬̬ ͉̘͖͘͠Y̯̣̲Ơ̵̡̼̰͈U̳͟͞ ҉̩̯͕͎̦̣͠Y̧̘͔͟O̡͇̟U̡͍̤̲ ̵̠͖̭̬̝̦̙͞Y̙̗͉̙̼̯O̯̯̯̖̙̗̲͘Ṳ͈̱̖̯ ̺̟Y͚̫̖̯̞O̷̫̯̗̝̕͟U̵̢̨̮ͅ ̝̤̟̩Y̸̴̘̱̤O̝̹Ư̛͎̩͔͡ ̪͍̭̮̗͕̹̬Y̗̘̤͙͚̯̹͘O̜̠̣̺̪̠͡U̬͚͔̭̱͚͢ ̴̲̥͟Y̥̻̪̦̱̼ͅO̷̹̮͞Ù̴̯̤̘̲͉͉̘ͅU̧̠̺͡ ͓͓̥̠͍̱Y͏͜͏̝̣͔O҉̨̤̖̦̰̗̺͚̩͠U̥̲̠̖̺ ̶̵̖̮̘̳̪͈͞ͅY̧̘̼̰̬̙O̵̜̙̫͔͢͡ͅU̸̵͎̥͙͔̦̣̪̭͞ ̫͇Y̰͕O̵̤̫̮̪̩̺̯Ų̀͏͍̪̺͔ ̛̟̤̮͘͢Y҉̣̦̭͍̭̭̥O̺͇̦̲̬͚U̘̰̞̠̟̯̥̱͢͠ ͚̻̠͙Ỳ̨̜̱̼͖̱O̱̖̰̪̲͍͉U̴̪̜̩͚̫̼ ͎͖̹̬͚̹͟͞Y̻̫̟̯͎̤̣̳Ơ̢̠̩U̼̘͈͢͡ ̶͍̯͈̳͘͞Y̡̨̞͓̖̳̟̫̻͟O̴҉̺̺U̢̫̙̘̖͖̺͙ ̬̥͚̠͈͞͞ͅY̗͚̮̕͠O͏̞̺̮U҉̸͉͈͚̯̲̲͉̠ ̴̢̠̝̠̼̠̬̤Y̵̫̼͖̕O̢̼̭͖͚̮̳͜U̩̠̟̥ ̶̠̰͈͇̞̭̺Y͈͍̞͍̫̗O̶͇̬̦U̷̘̻̤͡ ̗̩͓͖̥̦͍Ỳ̞̲̹̲͠Ọ̟͉̥̗͇̹̥̤̀U̢̗̤̱͙̳ ̛̙͈̞͓͈͓̺Y҉͍̩ͅO̭̦͓̼̠̗U͔̦̪̫ ̨̜͝Y̴̵̙͖͉̻̕O̷̸͚̙̙̝̤̜̝̤͠U̮̼̲̯͍̦̼̭͝͝ ̨̢̻̰̱̖̜̦͠Y̷̧͇͎͇͇̗͙͇͍̕O̷͉̖̺̮̺U̴̸͔̙͖̪͖͞ ̶̢͔̰̻̯̠Y̢̱̭̻̪͙͖̜̰̳O̴̸͇͈̪͕Ṵ̘̗͕ͅ ̢̤̫̤̘͎̲̩̕Y̧̼̱̗̭̮O͎̳̪̙̗̤̪ͅU̳̻̖̦̹͍̞̤̱͝ ͏̗͘Y͈̜O̴̻̗͇͕̘̜ͅƯ̹̠͖̠̠ ͚̺̙̕Y͚O̝̖̺̪͍̞ͅU̙̼̱͖ ̙̘Y̝̲̬̝̝̫̟̘O̕͏͖͎̗͕͕̻̙U̵̯͇͟ ͚̩͙́̀Y̴̱̺̱͇͡O̢̡̬͎͞Ụ̢͚ ̟̲̰Y̠͍̩̖͓̕͞Ơ҉҉̹̠̹̞̯̫̤̙Ų͍̰̭̮̖͇̯͠ͅ ̴̭͇Y͏҉̭͚O̗̫̩͢͟͞U̞̹̘̠̱͕͖̠ ̀͝҉̥͚Y͔̲̮͎̝̝͟ͅÓ̩̘̹̮̲͢U̯̻͍̱̯͘͜ ̛̛̳͍Y͇͙O̰̣̭̹̦͔̰͈Ư̥̙̯ ̴̲̀͜Ỳ̛͎̥̞̟̜͇͢O̞̬͍̟͡U̬͙͈͙̰͟ ̷̧̹̟̲̘̘̱̝̤Y̸̠̖̪̲͙̳͙͖̳O̴̙̙͙̩̰̲̘Ư̝͉̲̝͎̰̰ ̸̸̪͍̗̙̦̼͙́Y̵͇̞̙̟̱̤̕͘O̤͇̬͎̟̤̠̞ͅŲ̵̛̭̤̖̦̙ͅ ͏̡̪͖͙͖̥̤͇͖Y̢̺O̵̶̖̪̼̼̭͙͞Ų̺͙̬͇̹͓́ ҉̘̩Y͓̠̘̹͇̬Ó̖͚̕U̝̟̪ ̴̸̭̦̟̮̠̞̟́Y̡̨̥O̴̦̳̯͙̹̥̗U̞͙̺͖͉͍̦͝͡ͅ ̟̹̜̣̹Y̬̰̗̱͚̠̕O҉͙̙͈͓̀U̗̼̣͍͎̥̙͇͜ ̴͓̤̤̻͙͖Y̰̪͉͢͞O̷̳͔U͉͚͎̖̙̬ ̲̻̬͔͖̹̝͚Y̨͈͕͚͙̮̘̬̮͝Ǫ͈͔̳̹͔̣̀͠ͅŲ̦͙͈͈̯̺̹͘͞ ͏̤͙Y̴͔̣̻͓̞͡O̷̦̤̥̣̻̕͟Ú̯̕͜ ͏̧͓̥̱̲Ỳ̶̡̩̼͚̥̠͎Ó̴̩̤̹U̠̳̝̭̣͎͔͉̥͟͡ ̡҉̩͓͕̼Y̶͏̸̯̪̫̗̻̥͍ͅÓ̵͎Ṵ̠͖͕͎͍͉͕͔ ̥͙Ỳ̸̨̬̪O͍͖͟ͅṶ̸̪̤̖̣͖͖̝̮ ̸̣͎͍̼͞Y̟̜͎̫͇O҉̙̙̹Ư̹͢͡ ̷̛͚̲͎̬͇̀Y̧̲̯̥̙̱͚̬͠O͏̢̟͖͚͈͇̥͉͝Ừ̠̺̺̦̮̩͈ ̶̟͎̞͇̹̲̬͢͞Y̛͏̞̝̬̗͍̺O̠̪̖̱U͕̖̳̩͝ ͓̺̲̦͉̠̪Y͎̤͎̱̜̥̣̖͡͠O̧̦̘̭̞̖̝͉̘͟U̫͉͇̝̳̥͓͜ ̷͚̳̮̥̪Y̵̧͇̜̥̤̩̙̬̙̤O͏͉̗͈̖̦Ų̢̰̙̪ ̢̬̜͚͔Ỵ̡͇͚̞̪̞̯ͅO̶̝̻̭̺̫͟U̕ͅ ̣͈͟Y̜͈͖̖͉̺O̢͞ͅͅƯ҉̠̖̀ ̻̲̦͎̜̹̭Y̡̯̼̝̪ͅO̬̼̭͎̟̙Ứ̤̱̞̜̳͖̮͎ ̶̗͢Y̢͖̤̖͔O̜͎̳͕͎̝͎͙Ụ͔̺̳͎̺͈̺́͟ ̧̨̗̜͚̦̰̝̝́Ỵ̹̭̯̭̩͖̻́ͅO̱̣̹̞͈̱̩͖U̵̖͈̼̬͘ ̡̨̱̪̗͔͉̭̱Y̷̢̤̝O̶͓̻U̜͡ ̶̬̞̫͓͕̮͝ͅY̢̞̱̞͝ͅO̥̺̗͎̝U̶͚̭͇͖̲̞ ͇̣̤̺̺͖͜Y̵̞͇͓O͖̞̮̗͎U̲̫͇̮ ̛̺͎̗̮͢Y̕͏̢̪̼̬͈͓O̗̟̙̣̲̳U̸̱͇͙̬̺͓̺͡ ̸͏̛̦͇͙͔͙Y̦̘̼̺̥͍̹͎O̷̺̣̲̝̰̞̕U̴̘̞̫̗̣͖̣͚ ̵̘̦̘͖̖Y̛̞̯͖͍͜O̦͍̬̫̠U͉̟ ͙̗̝̬ͅͅY͓͉̠̺̖Ò̞̝͍̩̥̻͉̫̰͟͝U̪̖̠̻̻̠̕ ̗͙̻̣̞̫͎Ỳ̫̤͇̦̫̯̲O̻̼̻U̧̯͘͞ ͇̻̜̪̬Y̤̕͘͞O̷̸̲̠U̩͎ ̳̪̲͉̖͇͚͘͟Y̼̣̼͜O̯̤̝̩̹͖͞U̡̞͕̖͉͖͇͘ ҉̜̙͙̳̪͍Y̵̺̥̭Ǫ̡̟̘͓̝̯Ṳ͇̀ ͓͈͚̤͎͘͡Y̡̞͚͉O̻͇͘U̯̭͘ ̤͇͍̰̥̖́͟͝Y̪͕͘O̞̞̲͉ͅU͈̥̞͉ ̸̦͙̞̗̬͔̲͙̮Y̸̖̘O̕҉̺̳̬͙̳̪Ų̳̰̦͇͚̕ ̷̲̦̪͚̣̞͘Y̩̦͈͇̲̕͜ͅO̝͎̰̖Ú͖ ̘̣Y̷̲͜O̧̝̦̪͔̥̕͞ͅÙ̵͖̫̬̫̬̭ ̵̯̻͞Y̤͕͉̣͖͉̥̹O҉̘̼̩͕͎̖̮̭Ú̧̝̙͇͕͔̣͙̻ ̸̨̞̻̩̬Y̧̹̻̼̪͡Ǫ͖̬̣̳͚͍̘̠̹̕U̮̥̹̭̠͟͞ ̨̝̯̩̱̘̟̩̣͠Ý̷̢̥̬̹͎O͓͚͖̳̰͚͟͝͞Ų̙̩̫̰̹̻̹̪͢͠ ͇̞͈̰̥̦̻̻Y̜͚̖̗͘O̸͖̩͔͇̬͚͚U͚̩̙̮̘͟ ̻̘̗͍̬̝̮Y̸̩͍̳͔͓̜ͅO̤̝̖͔̱͖̹͠Ų̷̟̻̠ ͏̥̝͕Y̴̩͉͍͕̟̟ͅO̡̱̖̦̤͚ͅU̲̤̹͝ ̤̣͇̯̤̳̹̘̀̀͘Ỵ͎̩̠̩͟͟O̞̰̘̮̲̯̻̣̝U͉̘̟̼͙ ͏͉̖͓̭Y̟̼͉̬̥̫͢O̸͎͔͜U̩̟͈̘̳̼̳ ̵̳̜͈̀̕Y̸҉̞͇̱̹O̸͔̣̩̦̩̩̺͝U̷̻̤̪̱̜̥͍̰͚͡ ̡̼̯̺͉̳Y͉̠̣͔̻O̧̧̬͍͎͜U̷̫͙̲̗̩̥͔ ͏̖̫̱͈͇̩̣̕͡Y̷̛͉͢Ơ̙̼͚̝U͏̟̳̮̘̭̤̀ ̥̠͇̯̩̫Y̨̱͚͍͚̱̼O̵͈̩̹̪͡U̕͏̘̰̞̟̰̘͔ ̡̛̰͈̗̟Y̛̦̬͘͘Ó̵͚̼̝̩̞̩̦̱̻U̧̙̞ ͜҉̥͍̻̬͕̯͚̼ͅÝ̷̳͔̹̠͘Ó͈̫̰͎U҉̶̠͔̞̳͎͍̯͙ ͏̝̻͕͇̝͉Y͕̗̮͇̬͖̤͘Ò̶̩͔̰͉͘Ư̼̺̪̼͉͘ ̨̬̺Y̶̖̥O̻͍͎̹̻͍̻͝ͅU͕̦͓̼͟ ̱̫͟Y̶̹̮̕Ó̰̞̦̣̦̬̀͝U̵͍̟̺̭̜̞̥ ̢̼̜Y͕̖̱Ó͇̩͞U̸͚͖͈̞̲͙̞͜ ̗̦͕̼͢͟Y͙͓͎͝O̵͔͇̰͈̩U̸̶͕̞̙͔̟̩ ҉͏҉̹͓̼͉Y̛͕̮̬̖̙O̢̨̞̰̱͍U̸̸͍͔̻͓͎̹̪̦͘ ̷̰Ỵ̡̼̘̹͚͉Ò̥̩͓͉̞̬̞͖̳̕Ù̙͙͇̰̭͇͢ͅͅ ͕Y̙̜̣̪͚̕O͉̤͖̥̲̠͎̙U̸̜̘͇̥͓̹̳̝ ͈̯͎͖̠̩͍͠͠Y̗̠̣̪̣Ó̻͇̫̫̰̳͍͓͢U̠͟͡ ̨̻̝̻͞Y҉̮̬̣͜ͅO͇͚̜͈͙̝̗U̴͙̤̹̝ ͈̟̫̭͓̮͞Ỳ̡̧̹̱̠̮̺͔̬͚̣Ò̡͚̣̫̳U͎͘͢ ͢͏̞͈̥͍͙Y͚͙͖͔̬̣͕̗͢͞ͅÓ̻̙͈̭̹̦͍͇̥͟Ų̷̨̯̠̣͖͔͈̼ ͕̲͚͜ͅY͍̮̩͖̳̟͡O̶̶͙̤̦͝U̴̳͙ ̸̧̢̠͚̫̥̤̳̲Y̪̥̣͚O̢̧͍͖̭̲͈U͏̻͚̮̞̘̠̟ ͓̰̲̣͙͚̮̮͠Y̧͝҉̘͚̲͍̣̻O̧͘͏̯̥ͅͅU͏̟͕̜͚̳̻ ͍͓̯̱̮̳͓̩̀Y̹̫̲͖̟̭͢Ó̴̹͚͚̜͖Ù͏͎͎̭̲̺̲̻͈ ̮̤̘̝͘͠Y̢̙̝̤͎̟Ó̵̦̝U̧͓̣͎ͅ ͏͘҉̹̞͈̙̠̯͍̬Y̵̴̞̮̻Ơ̖̕Ư̧҉͕̯̳̙̪̝̞͎ ̨̯̙̗̳͙̭̘̺̼Y̶̝̫͓͎Ơ̶̬̝U̡̬̩͇̲̹ ̧̼̳̖Y̡̩̮̱̲̝͘O̶̖̼̯̱̗̪U̷̡̝ ̱̹͎Y̺̯̟̫O͙̯̳̙͡Ú̧͉̬͈͈̜̫ ̩͖̦͎̬̜̮̠͠͝͡Y̙̹̞̙O̵̠̘̜̺̣͜͡Ú̡̖̭̰̬̬ ͉̘͖͘͠Y̯̣̲Ơ̵̡̼̰͈U̳͟͞ ҉̩̯͕͎̦̣͠Y̧̘͔͟O̡͇̟U̡͍̤̲ ̵̠͖̭̬̝̦̙͞Y̙̗͉̙̼̯O̯̯̯̖̙̗̲͘Ṳ͈̱̖̯ ̺̟Y͚̫̖̯̞O̷̫̯̗̝̕͟U̵̢̨̮ͅ ̝̤̟̩Y̸̴̘̱̤O̝̹Ư̛͎̩͔͡ ̪͍̭̮̗͕̹̬Y̗̘̤͙͚̯̹͘O̜̠̣̺̪̠͡U̬͚͔̭̱͚͢ ̴̲̥͟Y̥̻̪̦̱̼ͅO̷̹̮͞Ù̴̯̤̘̲͉͉̘ͅU̧̠̺͡ ͓͓̥̠͍̱Y͏͜͏̝̣͔O҉̨̤̖̦̰̗̺͚̩͠U̥̲̠̖̺ ̶̵̖̮̘̳̪͈͞ͅY̧̘̼̰̬̙O̵̜̙̫͔͢͡ͅU̸̵͎̥͙͔̦̣̪̭͞ ̫͇Y̰͕O̵̤̫̮̪̩̺̯Ų̀͏͍̪̺͔ ̛̟̤̮͘͢Y҉̣̦̭͍̭̭̥O̺͇̦̲̬͚U̘̰̞̠̟̯̥̱͢͠ ͚̻̠͙Ỳ̨̜̱̼͖̱O̱̖̰̪̲͍͉U̴̪̜̩͚̫̼ ͎͖̹̬͚̹͟͞Y̻̫̟̯͎̤̣̳Ơ̢̠̩U̼̘͈͢͡ ̶͍̯͈̳͘͞Y̡̨̞͓̖̳̟̫̻͟O̴҉̺̺U̢̫̙̘̖͖̺͙ ̬̥͚̠͈͞͞ͅY̗͚̮̕͠O͏̞̺̮U҉̸͉͈͚̯̲̲͉̠ ̴̢̠̝̠̼̠̬̤Y̵̫̼͖̕O̢̼̭͖͚̮̳͜U̩̠̟̥ ̶̠̰͈͇̞̭̺Y͈͍̞͍̫̗O̶͇̬̦U̷̘̻̤͡ ̗̩͓͖̥̦͍Ỳ̞̲̹̲͠Ọ̟͉̥̗͇̹̥̤̀U̢̗̤̱͙̳ ̛̙͈̞͓͈͓̺Y҉͍̩ͅO̭̦͓̼̠̗U͔̦̪̫ ̨̜͝Y̴̵̙͖͉̻̕O̷̸͚̙̙̝̤̜̝̤͠U̮̼̲̯͍̦̼̭͝͝ ̨̢̻̰̱̖̜̦͠Y̷̧͇͎͇͇̗͙͇͍̕O̷͉̖̺̮̺U̴̸͔̙͖̪͖͞ ̶̢͔̰̻̯̠Y̢̱̭̻̪͙͖̜̰̳O̴̸͇͈̪͕Ṵ̘̗͕ͅ ̢̤̫̤̘͎̲̩̕Y̧̼̱̗̭̮O͎̳̪̙̗̤̪ͅU̳̻̖̦̹͍̞̤̱͝ ͏̗͘Y͈̜O̴̻̗͇͕̘̜ͅƯ̹̠͖̠̠ ͚̺̙̕Y͚O̝̖̺̪͍̞ͅU̙̼̱͖ ̙̘Y̝̲̬̝̝̫̟̘O̕͏͖͎̗͕͕̻̙U̵̯͇͟ ͚̩͙́̀Y̴̱̺̱͇͡O̢̡̬͎͞Ụ̢͚ ̟̲̰Y̠͍̩̖͓̕͞Ơ҉҉̹̠̹̞̯̫̤̙Ų͍̰̭̮̖͇̯͠ͅ ̴̭͇Y͏҉̭͚O̗̫̩͢͟͞U̞̹̘̠̱͕͖̠ ̀͝҉̥͚Y͔̲̮͎̝̝͟ͅÓ̩̘̹̮̲͢U̯̻͍̱̯͘͜ ̛̛̳͍Y͇͙O̰̣̭̹̦͔̰͈Ư̥̙̯ ̴̲̀͜Ỳ̛͎̥̞̟̜͇͢O̞̬͍̟͡U̬͙͈͙̰͟ ̷̧̹̟̲̘̘̱̝̤Y̸̠̖̪̲͙̳͙͖̳O̴̙̙͙̩̰̲̘Ư̝͉̲̝͎̰̰ ̸̸̪͍̗̙̦̼͙́Y̵͇̞̙̟̱̤̕͘O̤͇̬͎̟̤̠̞ͅŲ̵̛̭̤̖̦̙ͅ ͏̡̪͖͙͖̥̤͇͖Y̢̺O̵̶̖̪̼̼̭͙͞Ų̺͙̬͇̹͓́ ҉̘̩Y͓̠̘̹͇̬Ó̖͚̕U̝̟̪ ̴̸̭̦̟̮̠̞̟́Y̡̨̥O̴̦̳̯͙̹̥̗U̞͙̺͖͉͍̦͝͡ͅ ̟̹̜̣̹Y̬̰̗̱͚̠̕O҉͙̙͈͓̀U̗̼̣͍͎̥̙͇͜ ̴͓̤̤̻͙͖Y̰̪͉͢͞O̷̳͔U͉͚͎̖̙̬ ̲̻̬͔͖̹̝͚Y̨͈͕͚͙̮̘̬̮͝Ǫ͈͔̳̹͔̣̀͠ͅŲ̦͙͈͈̯̺̹͘͞ ͏̤͙Y̴͔̣̻͓̞͡O̷̦̤̥̣̻̕͟Ú̯̕͜ ͏̧͓̥̱̲Ỳ̶̡̩̼͚̥̠͎Ó̴̩̤̹U̠̳̝̭̣͎͔͉̥͟͡ ̡҉̩͓͕̼Y̶͏̸̯̪̫̗̻̥͍ͅÓ̵͎Ṵ̠͖͕͎͍͉͕͔ ̥͙Ỳ̸̨̬̪O͍͖͟ͅṶ̸̪̤̖̣͖͖̝̮ ̸̣͎͍̼͞Y̟̜͎̫͇O҉̙̙̹Ư̹͢͡ ̷̛͚̲͎̬͇̀Y̧̲̯̥̙̱͚̬͠O͏̢̟͖͚͈͇̥͉͝Ừ̠̺̺̦̮̩͈ ̶̟͎̞͇̹̲̬͢͞Y̛͏̞̝̬̗͍̺O̠̪̖̱U͕̖̳̩͝ ͓̺̲̦͉̠̪Y͎̤͎̱̜̥̣̖͡͠O̧̦̘̭̞̖̝͉̘͟U̫͉͇̝̳̥͓͜ ̷͚̳̮̥̪Y̵̧͇̜̥̤̩̙̬̙̤O͏͉̗͈̖̦Ų̢̰̙̪ ̢̬̜͚͔Ỵ̡͇͚̞̪̞̯ͅO̶̝̻̭̺̫͟U̕ͅ ̣͈͟Y̜͈͖̖͉̺O̢͞ͅͅƯ҉̠̖̀ ̻̲̦͎̜̹̭Y̡̯̼̝̪ͅO̬̼̭͎̟̙Ứ̤̱̞̜̳͖̮͎ ̶̗͢Y̢͖̤̖͔O̜͎̳͕͎̝͎͙Ụ͔̺̳͎̺͈̺́͟ ̧̨̗̜͚̦̰̝̝́Ỵ̹̭̯̭̩͖̻́ͅO̱̣̹̞͈̱̩͖U̵̖͈̼̬͘ ̡̨̱̪̗͔͉̭̱Y̷̢̤̝O̶͓̻U̜͡ ̶̬̞̫͓͕̮͝ͅY̢̞̱̞͝ͅO̥̺̗͎̝U̶͚̭͇͖̲̞ ͇̣̤̺̺͖͜Y̵̞͇͓O͖̞̮̗͎U̲̫͇̮ ̛̺͎̗̮͢Y̕͏̢̪̼̬͈͓O̗̟̙̣̲̳U̸̱͇͙̬̺͓̺͡ ̸͏̛̦͇͙͔͙Y̦̘̼̺̥͍̹͎O̷̺̣̲̝̰̞̕U̴̘̞̫̗̣͖̣͚ ̵̘̦̘͖̖Y̛̞̯͖͍͜O̦͍̬̫̠U͉̟ ͙̗̝̬ͅͅY͓͉̠̺̖Ò̞̝͍̩̥̻͉̫̰͟͝U̪̖̠̻̻̠̕ ̗͙̻̣̞̫͎Ỳ̫̤͇̦̫̯̲O̻̼̻U̧̯͘͞ ͇̻̜̪̬Y̤̕͘͞O̷̸̲̠U̩͎ ̳̪̲͉̖͇͚͘͟Y̼̣̼͜O̯̤̝̩̹͖͞U̡̞͕̖͉͖͇͘ ҉̜̙͙̳̪͍Y̵̺̥̭Ǫ̡̟̘͓̝̯Ṳ͇̀ ͓͈͚̤͎͘͡Y̡̞͚͉O̻͇͘U̯̭͘ ̤͇͍̰̥̖́͟͝Y̪͕͘O̞̞̲͉ͅU͈̥̞͉ ̸̦͙̞̗̬͔̲͙̮Y̸̖̘O̕҉̺̳̬͙̳̪Ų̳̰̦͇͚̕ ̷̲̦̪͚̣̞͘Y̩̦͈͇̲̕͜ͅO̝͎̰̖Ú͖ ̘̣Y̷̲͜O̧̝̦̪͔̥̕͞ͅÙ̵͖̫̬̫̬̭ ̵̯̻͞Y̤͕͉̣͖͉̥̹O҉̘̼̩͕͎̖̮̭Ú̧̝̙͇͕͔̣͙̻ ̸̨̞̻̩̬Y̧̹̻̼̪͡Ǫ͖̬̣̳͚͍̘̠̹̕U̮̥̹̭̠͟͞ ̨̝̯̩̱̘̟̩̣͠Ý̷̢̥̬̹͎O͓͚͖̳̰͚͟͝͞Ų̙̩̫̰̹̻̹̪͢͠ ͇̞͈̰̥̦̻̻Y̜͚̖̗͘O̸͖̩͔͇̬͚͚U͚̩̙̮̘͟ ̻̘̗͍̬̝̮Y̸̩͍̳͔͓̜ͅO̤̝̖͔̱͖̹͠Ų̷̟̻̠ ͏̥̝͕Y̴̩͉͍͕̟̟ͅO̡̱̖̦̤͚ͅU̲̤̹͝ ̤̣͇̯̤̳̹̘̀̀͘Ỵ͎̩̠̩͟͟O̞̰̘̮̲̯̻̣̝U͉̘̟̼͙ ͏͉̖͓̭Y̟̼͉̬̥̫͢O̸͎͔͜U̩̟͈̘̳̼̳ ̵̳̜͈̀̕Y̸҉̞͇̱̹O̸͔̣̩̦̩̩̺͝U̷̻̤̪̱̜̥͍̰͚͡ ̡̼̯̺͉̳Y͉̠̣͔̻O̧̧̬͍͎͜U̷̫͙̲̗̩̥͔ ͏̖̫̱͈͇̩̣̕͡Y̷̛͉͢Ơ̙̼͚̝U͏̟̳̮̘̭̤̀ ̥̠͇̯̩̫Y̨̱͚͍͚̱̼O̵͈̩̹̪͡U̕͏̘̰̞̟̰̘͔ ̡̛̰͈̗̟Y̛̦̬͘͘Ó̵͚̼̝̩̞̩̦̱̻U̧̙̞ ͜҉̥͍̻̬͕̯͚̼ͅÝ̷̳͔̹̠͘Ó͈̫̰͎U҉̶̠͔̞̳͎͍̯͙ ͏̝̻͕͇̝͉Y͕̗̮͇̬͖̤͘Ò̶̩͔̰͉͘Ư̼̺̪̼͉͘ ̨̬̺Y̶̖̥O̻͍͎̹̻͍̻͝ͅU͕̦͓̼͟ ̱̫͟Y̶̹̮̕Ó̰̞̦̣̦̬̀͝U̵͍̟̺̭̜̞̥ ̢̼̜Y͕̖̱Ó͇̩͞U̸͚͖͈̞̲͙̞͜ ̗̦͕̼͢͟Y͙͓͎͝O̵͔͇̰͈̩U̸̶͕̞̙͔̟̩ ҉͏҉̹͓̼͉Y̛͕̮̬̖̙O̢̨̞̰̱͍U̸̸͍͔̻͓͎̹̪̦͘ ̷̰Ỵ̡̼̘̹͚͉Ò̥̩͓͉̞̬̞͖̳̕Ù̙͙͇̰̭͇͢ͅͅ ͕Y̙̜̣̪͚̕O͉̤͖̥̲̠͎̙U̸̜̘͇̥͓̹̳̝ ͈̯͎͖̠̩͍͠͠Y̗̠̣̪̣Ó̻͇̫̫̰̳͍͓͢U̠͟͡ ̨̻̝̻͞Y҉̮̬̣͜ͅO͇͚̜͈͙̝̗U̴͙̤̹̝ ͈̟̫̭͓̮͞Ỳ̡̧̹̱̠̮̺͔̬͚̣Ò̡͚̣̫̳U͎͘͢ ͢͏̞͈̥͍͙Y͚͙͖͔̬̣͕̗͢͞ͅÓ̻̙͈̭̹̦͍͇̥͟Ų̷̨̯̠̣͖͔͈̼ ͕̲͚͜ͅY͍̮̩͖̳̟͡O̶̶͙̤̦͝U̴̳͙ ̸̧̢̠͚̫̥̤̳̲Y̪̥̣͚O̢̧͍͖̭̲͈U͏̻͚̮̞̘̠̟ ͓̰̲̣͙͚̮̮͠Y̧͝҉̘͚̲͍̣̻O̧͘͏̯̥ͅͅU͏̟͕̜͚̳̻ ͍͓̯̱̮̳͓̩̀Y̹̫̲͖̟̭͢Ó̴̹͚͚̜͖Ù͏͎͎̭̲̺̲̻͈ ̮̤̘̝͘͠Y̢̙̝̤͎̟Ó̵̦̝U̧͓̣͎ͅ ͏͘҉̹̞͈̙̠̯͍̬Y̵̴̞̮̻Ơ̖̕Ư̧҉͕̯̳̙̪̝̞͎ ̨̯̙̗̳͙̭̘̺̼Y̶̝̫͓͎Ơ̶̬̝U̡̬̩͇̲̹ ̧̼̳̖Y̡̩̮̱̲̝͘O̶̖̼̯̱̗̪U̷̡̝ ̱̹͎Y̺̯̟̫O͙̯̳̙͡Ú̧͉̬͈͈̜̫ ̩͖̦͎̬̜̮̠͠͝͡Y̙̹̞̙O̵̠̘̜̺̣͜͡Ú̡̖̭̰̬̬ ͉̘͖͘͠Y̯̣̲Ơ̵̡̼̰͈U̳͟͞ ҉̩̯͕͎̦̣͠Y̧̘͔͟O̡͇̟U̡͍̤̲ ̵̠͖̭̬̝̦̙͞Y̙̗͉̙̼̯O̯̯̯̖̙̗̲͘Ṳ͈̱̖̯ ̺̟Y͚̫̖̯̞O̷̫̯̗̝̕͟U̵̢̨̮ͅ ̝̤̟̩Y̸̴̘̱̤O̝̹Ư̛͎̩͔͡ ̪͍̭̮̗͕̹̬Y̗̘̤͙͚̯̹͘O̜̠̣̺̪̠͡U̬͚͔̭̱͚͢ ̴̲̥͟Y̥̻̪̦̱̼ͅO̷̹̮͞Ù̴̯̤̘̲͉͉̘ͅU̧̠̺͡ ͓͓̥̠͍̱Y͏͜͏̝̣͔O҉̨̤̖̦̰̗̺͚̩͠U̥̲̠̖̺ ̶̵̖̮̘̳̪͈͞ͅY̧̘̼̰̬̙O̵̜̙̫͔͢͡ͅU̸̵͎̥͙͔̦̣̪̭͞ ̫͇Y̰͕O̵̤̫̮̪̩̺̯Ų̀͏͍̪̺͔ ̛̟̤̮͘͢Y҉̣̦̭͍̭̭̥O̺͇̦̲̬͚U̘̰̞̠̟̯̥̱͢͠ ͚̻̠͙Ỳ̨̜̱̼͖̱O̱̖̰̪̲͍͉U̴̪̜̩͚̫̼ ͎͖̹̬͚̹͟͞Y̻̫̟̯͎̤̣̳Ơ̢̠̩U̼̘͈͢͡ ̶͍̯͈̳͘͞Y̡̨̞͓̖̳̟̫̻͟O̴҉̺̺U̢̫̙̘̖͖̺͙ ̬̥͚̠͈͞͞ͅY̗͚̮̕͠O͏̞̺̮U҉̸͉͈͚̯̲̲͉̠ ̴̢̠̝̠̼̠̬̤Y̵̫̼͖̕O̢̼̭͖͚̮̳͜U̩̠̟̥ ̶̠̰͈͇̞̭̺Y͈͍̞͍̫̗O̶͇̬̦U̷̘̻̤͡ ̗̩͓͖̥̦͍Ỳ̞̲̹̲͠Ọ̟͉̥̗͇̹̥̤̀U̢̗̤̱͙̳ ̛̙͈̞͓͈͓̺Y҉͍̩ͅO̭̦͓̼̠̗U͔̦̪̫ ̨̜͝Y̴̵̙͖͉̻̕O̷̸͚̙̙̝̤̜̝̤͠U̮̼̲̯͍̦̼̭͝͝ ̨̢̻̰̱̖̜̦͠Y̷̧͇͎͇͇̗͙͇͍̕O̷͉̖̺̮̺U̴̸͔̙͖̪͖͞ ̶̢͔̰̻̯̠Y̢̱̭̻̪͙͖̜̰̳O̴̸͇͈̪͕Ṵ̘̗͕ͅ ̢̤̫̤̘͎̲̩̕Y̧̼̱̗̭̮O͎̳̪̙̗̤̪ͅU̳̻̖̦̹͍̞̤̱͝ ͏̗͘Y͈̜O̴̻̗͇͕̘̜ͅƯ̹̠͖̠̠ ͚̺̙̕Y͚O̝̖̺̪͍̞ͅU̙̼̱͖ ̙̘Y̝̲̬̝̝̫̟̘O̕͏͖͎̗͕͕̻̙U̵̯͇͟ ͚̩͙́̀Y̴̱̺̱͇͡O̢̡̬͎͞Ụ̢͚ ̟̲̰Y̠͍̩̖͓̕͞Ơ҉҉̹̠̹̞̯̫̤̙Ų͍̰̭̮̖͇̯͠ͅ ̴̭͇Y͏҉̭͚O̗̫̩͢͟͞U̞̹̘̠̱͕͖̠ ̀͝҉̥͚Y͔̲̮͎̝̝͟ͅÓ̩̘̹̮̲͢U̯̻͍̱̯͘͜ ̛̛̳͍Y͇͙O̰̣̭̹̦͔̰͈Ư̥̙̯ ̴̲̀͜Ỳ̛͎̥̞̟̜͇͢O̞̬͍̟͡U̬͙͈͙̰͟ ̷̧̹̟̲̘̘̱̝̤Y̸̠̖̪̲͙̳͙͖̳O̴̙̙͙̩̰̲̘Ư̝͉̲̝͎̰̰ ̸̸̪͍̗̙̦̼͙́Y̵͇̞̙̟̱̤̕͘O̤͇̬͎̟̤̠̞ͅŲ̵̛̭̤̖̦̙ͅ ͏̡̪͖͙͖̥̤͇͖Y̢̺O̵̶̖̪̼̼̭͙͞Ų̺͙̬͇̹͓́ ҉̘̩Y͓̠̘̹͇̬Ó̖͚̕U̝̟̪ ̴̸̭̦̟̮̠̞̟́Y̡̨̥O̴̦̳̯͙̹̥̗U̞͙̺͖͉͍̦͝͡ͅ ̟̹̜̣̹Y̬̰̗̱͚̠̕O҉͙̙͈͓̀U̗̼̣͍͎̥̙͇͜ ̴͓̤̤̻͙͖Y̰̪͉͢͞O̷̳͔U͉͚͎̖̙̬ ̲̻̬͔͖̹̝͚Y̨͈͕͚͙̮̘̬̮͝Ǫ͈͔̳̹͔̣̀͠ͅŲ̦͙͈͈̯̺̹͘͞ ͏̤͙Y̴͔̣̻͓̞͡O̷̦̤̥̣̻̕͟Ú̯̕͜ ͏̧͓̥̱̲Ỳ̶̡̩̼͚̥̠͎Ó̴̩̤̹U̠̳̝̭̣͎͔͉̥͟͡ ̡҉̩͓͕̼Y̶͏̸̯̪̫̗̻̥͍ͅÓ̵͎Ṵ̠͖͕͎͍͉͕͔ ̥͙Ỳ̸̨̬̪O͍͖͟ͅṶ̸̪̤̖̣͖͖̝̮ ̸̣͎͍̼͞Y̟̜͎̫͇O҉̙̙̹Ư̹͢͡ ̷̛͚̲͎̬͇̀Y̧̲̯̥̙̱͚̬͠O͏̢̟͖͚͈͇̥͉͝Ừ̠̺̺̦̮̩͈ ̶̟͎̞͇̹̲̬͢͞Y̛͏̞̝̬̗͍̺O̠̪̖̱U͕̖̳̩͝ ͓̺̲̦͉̠̪Y͎̤͎̱̜̥̣̖͡͠O̧̦̘̭̞̖̝͉̘͟U̫͉͇̝̳̥͓͜ ̷͚̳̮̥̪Y̵̧͇̜̥̤̩̙̬̙̤O͏͉̗͈̖̦Ų̢̰̙̪ ̢̬̜͚͔Ỵ̡͇͚̞̪̞̯ͅO̶̝̻̭̺̫͟U̕ͅ ̣͈͟Y̜͈͖̖͉̺O̢͞ͅͅƯ҉̠̖̀ ̻̲̦͎̜̹̭Y̡̯̼̝̪ͅO̬̼̭͎̟̙Ứ̤̱̞̜̳͖̮͎ ̶̗͢Y̢͖̤̖͔O̜͎̳͕͎̝͎͙Ụ͔̺̳͎̺͈̺́͟ ̧̨̗̜͚̦̰̝̝́Ỵ̹̭̯̭̩͖̻́ͅO̱̣̹̞͈̱̩͖U̵̖͈̼̬͘ ̡̨̱̪̗͔͉̭̱Y̷̢̤̝O̶͓̻U̜͡ ̶̬̞̫͓͕̮͝ͅY̢̞̱̞͝ͅO̥̺̗͎̝U̶͚̭͇͖̲̞ ͇̣̤̺̺͖͜Y̵̞͇͓O͖̞̮̗͎U̲̫͇̮ ̛̺͎̗̮͢Y̕͏̢̪̼̬͈͓O̗̟̙̣̲̳U̸̱͇͙̬̺͓̺͡ ̸͏̛̦͇͙͔͙Y̦̘̼̺̥͍̹͎O̷̺̣̲̝̰̞̕U̴̘̞̫̗̣͖̣͚ ̵̘̦̘͖̖Y̛̞̯͖͍͜O̦͍̬̫̠U͉̟ ͙̗̝̬ͅͅY͓͉̠̺̖Ò̞̝͍̩̥̻͉̫̰͟͝U̪̖̠̻̻̠̕ ̗͙̻̣̞̫͎Ỳ̫̤͇̦̫̯̲O̻̼̻U̧̯͘͞ ͇̻̜̪̬Y̤̕͘͞O̷̸̲̠U̩͎ ̳̪̲͉̖͇͚͘͟Y̼̣̼͜O̯̤̝̩̹͖͞U̡̞͕̖͉͖͇͘ ҉̜̙͙̳̪͍Y̵̺̥̭Ǫ̡̟̘͓̝̯Ṳ͇̀ ͓͈͚̤͎͘͡Y̡̞͚͉O̻͇͘U̯̭͘ ̤͇͍̰̥̖́͟͝Y̪͕͘O̞̞̲͉ͅU͈̥̞͉ ̸̦͙̞̗̬͔̲͙̮Y̸̖̘O̕҉̺̳̬͙̳̪Ų̳̰̦͇͚̕ ̷̲̦̪͚̣̞͘Y̩̦͈͇̲̕͜ͅO̝͎̰̖Ú͖ ̘̣Y̷̲͜O̧̝̦̪͔̥̕͞ͅÙ̵͖̫̬̫̬̭ ̵̯̻͞Y̤͕͉̣͖͉̥̹O҉̘̼̩͕͎̖̮̭Ú̧̝̙͇͕͔̣͙̻ ̸̨̞̻̩̬Y̧̹̻̼̪͡Ǫ͖̬̣̳͚͍̘̠̹̕U̮̥̹̭̠͟͞ ̨̝̯̩̱̘̟̩̣͠Ý̷̢̥̬̹͎O͓͚͖̳̰͚͟͝͞Ų̙̩̫̰̹̻̹̪͢͠ ͇̞͈̰̥̦̻̻Y̜͚̖̗͘O̸͖̩͔͇̬͚͚U͚̩̙̮̘͟ ̻̘̗͍̬̝̮Y̸̩͍̳͔͓̜ͅO̤̝̖͔̱͖̹͠Ų̷̟̻̠ ͏̥̝͕Y̴̩͉͍͕̟̟ͅO̡̱̖̦̤͚ͅU̲̤̹͝ ̤̣͇̯̤̳̹̘̀̀͘Ỵ͎̩̠̩͟͟O̞̰̘̮̲̯̻̣̝U͉̘̟̼͙ ͏͉̖͓̭Y̟̼͉̬̥̫͢O̸͎͔͜U̩̟͈̘̳̼̳ ̵̳̜͈̀̕Y̸҉̞͇̱̹O̸͔̣̩̦̩̩̺͝U̷̻̤̪̱̜̥͍̰͚͡ ̡̼̯̺͉̳Y͉̠̣͔̻O̧̧̬͍͎͜U̷̫͙̲̗̩̥͔ ͏̖̫̱͈͇̩̣̕͡Y̷̛͉͢Ơ̙̼͚̝U͏̟̳̮̘̭̤̀ ̥̠͇̯̩̫Y̨̱͚͍͚̱̼O̵͈̩̹̪͡U̕͏̘̰̞̟̰̘͔ ̡̛̰͈̗̟Y̛̦̬͘͘Ó̵͚̼̝̩̞̩̦̱̻U̧̙̞ ͜҉̥͍̻̬͕̯͚̼ͅÝ̷̳͔̹̠͘Ó͈̫̰͎U҉̶̠͔̞̳͎͍̯͙ ͏̝̻͕͇̝͉Y͕̗̮͇̬͖̤͘Ò̶̩͔̰͉͘Ư̼̺̪̼͉͘ ̨̬̺Y̶̖̥O̻͍͎̹̻͍̻͝ͅU͕̦͓̼͟ ̱̫͟Y̶̹̮̕Ó̰̞̦̣̦̬̀͝U̵͍̟̺̭̜̞̥ ̢̼̜Y͕̖̱Ó͇̩͞U̸͚͖͈̞̲͙̞͜ ̗̦͕̼͢͟Y͙͓͎͝O̵͔͇̰͈̩U̸̶͕̞̙͔̟̩ ҉͏҉̹͓̼͉Y̛͕̮̬̖̙O̢̨̞̰̱͍U̸̸͍͔̻͓͎̹̪̦͘ ̷̰Ỵ̡̼̘̹͚͉Ò̥̩͓͉̞̬̞͖̳̕Ù̙͙͇̰̭͇͢ͅͅ ͕Y̙̜̣̪͚̕O͉̤͖̥̲̠͎̙U̸̜̘͇̥͓̹̳̝ ͈̯͎͖̠̩͍͠͠Y̗̠̣̪̣Ó̻͇̫̫̰̳͍͓͢U̠͟͡ ̨̻̝̻͞Y҉̮̬̣͜ͅO͇͚̜͈͙̝̗U̴͙̤̹̝ ͈̟̫̭͓̮͞Ỳ̡̧̹̱̠̮̺͔̬͚̣Ò̡͚̣̫̳U͎͘͢ ͢͏̞͈̥͍͙Y͚͙͖͔̬̣͕̗͢͞ͅÓ̻̙͈̭̹̦͍͇̥͟Ų̷̨̯̠̣͖͔͈̼ ͕̲͚͜ͅY͍̮̩͖̳̟͡O̶̶͙̤̦͝U̴̳͙ ̸̧̢̠͚̫̥̤̳̲Y̪̥̣͚O̢̧͍͖̭̲͈U͏̻͚̮̞̘̠̟ ͓̰̲̣͙͚̮̮͠Y̧͝҉̘͚̲͍̣̻O̧͘͏̯̥ͅͅU͏̟͕̜͚̳̻ ͍͓̯̱̮̳͓̩̀Y̹̫̲͖̟̭͢Ó̴̹͚͚̜͖Ù͏͎͎̭̲̺̲̻͈ ̮̤̘̝͘͠Y̢̙̝̤͎̟Ó̵̦̝U̧͓̣͎ͅ ͏͘҉̹̞͈̙̠̯͍̬Y̵̴̞̮̻Ơ̖̕Ư̧҉͕̯̳̙̪̝̞͎ ̨̯̙̗̳͙̭̘̺̼Y̶̝̫͓͎Ơ̶̬̝U̡̬̩͇̲̹ ̧̼̳̖Y̡̩̮̱̲̝͘O̶̖̼̯̱̗̪U̷̡̝ ̱̹͎Y̺̯̟̫O͙̯̳̙͡Ú̧͉̬͈͈̜̫ ̩͖̦͎̬̜̮̠͠͝͡Y̙̹̞̙O̵̠̘̜̺̣͜͡Ú̡̖̭̰̬̬ ͉̘͖͘͠Y̯̣̲Ơ̵̡̼̰͈U̳͟͞ ҉̩̯͕͎̦̣͠Y̧̘͔͟O̡͇̟U̡͍̤̲ ̵̠͖̭̬̝̦̙͞Y̙̗͉̙̼̯O̯̯̯̖̙̗̲͘Ṳ͈̱̖̯ ̺̟Y͚̫̖̯̞O̷̫̯̗̝̕͟U̵̢̨̮ͅ ̝̤̟̩Y̸̴̘̱̤O̝̹Ư̛͎̩͔͡ ̪͍̭̮̗͕̹̬Y̗̘̤͙͚̯̹͘O̜̠̣̺̪̠͡U̬͚͔̭̱͚͢ ̴̲̥͟Y̥̻̪̦̱̼ͅO̷̹̮͞Ù̴̯̤̘̲͉͉̘ͅU̧̠̺͡ ͓͓̥̠͍̱Y͏͜͏̝̣͔O҉̨̤̖̦̰̗̺͚̩͠U̥̲̠̖̺ ̶̵̖̮̘̳̪͈͞ͅY̧̘̼̰̬̙O̵̜̙̫͔͢͡ͅU̸̵͎̥͙͔̦̣̪̭͞ ̫͇Y̰͕O̵̤̫̮̪̩̺̯Ų̀͏͍̪̺͔ ̛̟̤̮͘͢Y҉̣̦̭͍̭̭̥O̺͇̦̲̬͚U̘̰̞̠̟̯̥̱͢͠ ͚̻̠͙Ỳ̨̜̱̼͖̱O̱̖̰̪̲͍͉U̴̪̜̩͚̫̼ ͎͖̹̬͚̹͟͞Y̻̫̟̯͎̤̣̳Ơ̢̠̩U̼̘͈͢͡ ̶͍̯͈̳͘͞Y̡̨̞͓̖̳̟̫̻͟O̴҉̺̺U̢̫̙̘̖͖̺͙ ̬̥͚̠͈͞͞ͅY̗͚̮̕͠O͏̞̺̮U҉̸͉͈͚̯̲̲͉̠ ̴̢̠̝̠̼̠̬̤Y̵̫̼͖̕O̢̼̭͖͚̮̳͜U̩̠̟̥ ̶̠̰͈͇̞̭̺Y͈͍̞͍̫̗O̶͇̬̦U̷̘̻̤͡ ̗̩͓͖̥̦͍Ỳ̞̲̹̲͠Ọ̟͉̥̗͇̹̥̤̀U̢̗̤̱͙̳ ̛̙͈̞͓͈͓̺Y҉͍̩ͅO̭̦͓̼̠̗U͔̦̪̫ ̨̜͝Y̴̵̙͖͉̻̕O̷̸͚̙̙̝̤̜̝̤͠U̮̼̲̯͍̦̼̭͝͝ ̨̢̻̰̱̖̜̦͠Y̷̧͇͎͇͇̗͙͇͍̕O̷͉̖̺̮̺U̴̸͔̙͖̪͖͞ ̶̢͔̰̻̯̠Y̢̱̭̻̪͙͖̜̰̳O̴̸͇͈̪͕Ṵ̘̗͕ͅ ̢̤̫̤̘͎̲̩̕Y̧̼̱̗̭̮O͎̳̪̙̗̤̪ͅU̳̻̖̦̹͍̞̤̱͝ ͏̗͘Y͈̜O̴̻̗͇͕̘̜ͅƯ̹̠͖̠̠ ͚̺̙̕Y͚O̝̖̺̪͍̞ͅU̙̼̱͖ ̙̘Y̝̲̬̝̝̫̟̘O̕͏͖͎̗͕͕̻̙U̵̯͇͟ ͚̩͙́̀Y̴̱̺̱͇͡O̢̡̬͎͞Ụ̢͚ ̟̲̰Y̠͍̩̖͓̕͞Ơ҉҉̹̠̹̞̯̫̤̙Ų͍̰̭̮̖͇̯͠ͅ ̴̭͇Y͏҉̭͚O̗̫̩͢͟͞U̞̹̘̠̱͕͖̠ ̀͝҉̥͚Y͔̲̮͎̝̝͟ͅÓ̩̘̹̮̲͢U̯̻͍̱̯͘͜ ̛̛̳͍Y͇͙O̰̣̭̹̦͔̰͈Ư̥̙̯ ̴̲̀͜Ỳ̛͎̥̞̟̜͇͢O̞̬͍̟͡U̬͙͈͙̰͟ ̷̧̹̟̲̘̘̱̝̤Y̸̠̖̪̲͙̳͙͖̳O̴̙̙͙̩̰̲̘Ư̝͉̲̝͎̰̰ ̸̸̪͍̗̙̦̼͙́Y̵͇̞̙̟̱̤̕͘O̤͇̬͎̟̤̠̞ͅŲ̵̛̭̤̖̦̙ͅ ͏̡̪͖͙͖̥̤͇͖Y̢̺O̵̶̖̪̼̼̭͙͞Ų̺͙̬͇̹͓́ ҉̘̩Y͓̠̘̹͇̬Ó̖͚̕U̝̟̪ ̴̸̭̦̟̮̠̞̟́Y̡̨̥O̴̦̳̯͙̹̥̗U̞͙̺͖͉͍̦͝͡ͅ ̟̹̜̣̹Y̬̰̗̱͚̠̕O҉͙̙͈͓̀U̗̼̣͍͎̥̙͇͜ ̴͓̤̤̻͙͖Y̰̪͉͢͞O̷̳͔U͉͚͎̖̙̬ ̲̻̬͔͖̹̝͚Y̨͈͕͚͙̮̘̬̮͝Ǫ͈͔̳̹͔̣̀͠ͅŲ̦͙͈͈̯̺̹͘͞ ͏̤͙Y̴͔̣̻͓̞͡O̷̦̤̥̣̻̕͟Ú̯̕͜ ͏̧͓̥̱̲Ỳ̶̡̩̼͚̥̠͎Ó̴̩̤̹U̠̳̝̭̣͎͔͉̥͟͡ ̡҉̩͓͕̼Y̶͏̸̯̪̫̗̻̥͍ͅÓ̵͎Ṵ̠͖͕͎͍͉͕͔ ̥͙Ỳ̸̨̬̪O͍͖͟ͅṶ̸̪̤̖̣͖͖̝̮ ̸̣͎͍̼͞Y̟̜͎̫͇O҉̙̙̹Ư̹͢͡ ̷̛͚̲͎̬͇̀Y̧̲̯̥̙̱͚̬͠O͏̢̟͖͚͈͇̥͉͝Ừ̠̺̺̦̮̩͈ ̶̟͎̞͇̹̲̬͢͞Y̛͏̞̝̬̗͍̺O̠̪̖̱U͕̖̳̩͝ ͓̺̲̦͉̠̪Y͎̤͎̱̜̥̣̖͡͠O̧̦̘̭̞̖̝͉̘͟U̫͉͇̝̳̥͓͜ ̷͚̳̮̥̪Y̵̧͇̜̥̤̩̙̬̙̤O͏͉̗͈̖̦Ų̢̰̙̪ ̢̬̜͚͔Ỵ̡͇͚̞̪̞̯ͅO̶̝̻̭̺̫͟U̕ͅ ̣͈͟Y̜͈͖̖͉̺O̢͞ͅͅƯ҉̠̖̀ ̻̲̦͎̜̹̭Y̡̯̼̝̪ͅO̬̼̭͎̟̙Ứ̤̱̞̜̳͖̮͎ ̶̗͢Y̢͖̤̖͔O̜͎̳͕͎̝͎͙Ụ͔̺̳͎̺͈̺́͟ ̧̨̗̜͚̦̰̝̝́Ỵ̹̭̯̭̩͖̻́ͅO̱̣̹̞͈̱̩͖U̵̖͈̼̬͘ ̡̨̱̪̗͔͉̭̱Y̷̢̤̝O̶͓̻U̜͡ ̶̬̞̫͓͕̮͝ͅY̢̞̱̞͝ͅO̥̺̗͎̝U̶͚̭͇͖̲̞ ͇̣̤̺̺͖͜Y̵̞͇͓O͖̞̮̗͎U̲̫͇̮ ̛̺͎̗̮͢Y̕͏̢̪̼̬͈͓O̗̟̙̣̲̳U̸̱͇͙̬̺͓̺͡ ̸͏̛̦͇͙͔͙Y̦̘̼̺̥͍̹͎O̷̺̣̲̝̰̞̕U̴̘̞̫̗̣͖̣͚ ̵̘̦̘͖̖Y̛̞̯͖͍͜O̦͍̬̫̠U͉̟ ͙̗̝̬ͅͅY͓͉̠̺̖Ò̞̝͍̩̥̻͉̫̰͟͝U̪̖̠̻̻̠̕ ̗͙̻̣̞̫͎Ỳ̫̤͇̦̫̯̲O̻̼̻U̧̯͘͞ ͇̻̜̪̬Y̤̕͘͞O̷̸̲̠U̩͎ ̳̪̲͉̖͇͚͘͟Y̼̣̼͜O̯̤̝̩̹͖͞U̡̞͕̖͉͖͇͘ ҉̜̙͙̳̪͍Y̵̺̥̭Ǫ̡̟̘͓̝̯Ṳ͇̀ ͓͈͚̤͎͘͡Y̡̞͚͉O̻͇͘U̯̭͘ ̤͇͍̰̥̖́͟͝Y̪͕͘O̞̞̲͉ͅU͈̥̞͉ ̸̦͙̞̗̬͔̲͙̮Y̸̖̘O̕҉̺̳̬͙̳̪Ų̳̰̦͇͚̕ ̷̲̦̪͚̣̞͘Y̩̦͈͇̲̕͜ͅO̝͎̰̖Ú͖ ̘̣Y̷̲͜O̧̝̦̪͔̥̕͞ͅÙ̵͖̫̬̫̬̭ ̵̯̻͞Y̤͕͉̣͖͉̥̹O҉̘̼̩͕͎̖̮̭Ú̧̝̙͇͕͔̣͙̻ ̸̨̞̻̩̬Y̧̹̻̼̪͡Ǫ͖̬̣̳͚͍̘̠̹̕U̮̥̹̭̠͟͞ ̨̝̯̩̱̘̟̩̣͠Ý̷̢̥̬̹͎O͓͚͖̳̰͚͟͝͞Ų̙̩̫̰̹̻̹̪͢͠ ͇̞͈̰̥̦̻̻Y̜͚̖̗͘O̸͖̩͔͇̬͚͚U͚̩̙̮̘͟ ̻̘̗͍̬̝̮Y̸̩͍̳͔͓̜ͅO̤̝̖͔̱͖̹͠Ų̷̟̻̠ ͏̥̝͕Y̴̩͉͍͕̟̟ͅO̡̱̖̦̤͚ͅU̲̤̹͝ ̤̣͇̯̤̳̹̘̀̀͘Ỵ͎̩̠̩͟͟O̞̰̘̮̲̯̻̣̝U͉̘̟̼͙ ͏͉̖͓̭Y̟̼͉̬̥̫͢O̸͎͔͜U̩̟͈̘̳̼̳ ̵̳̜͈̀̕Y̸҉̞͇̱̹O̸͔̣̩̦̩̩̺͝U̷̻̤̪̱̜̥͍̰͚͡ ̡̼̯̺͉̳Y͉̠̣͔̻O̧̧̬͍͎͜U̷̫͙̲̗̩̥͔ ͏̖̫̱͈͇̩̣̕͡Y̷̛͉͢Ơ̙̼͚̝U͏̟̳̮̘̭̤̀ ̥̠͇̯̩̫Y̨̱͚͍͚̱̼O̵͈̩̹̪͡U̕͏̘̰̞̟̰̘͔ ̡̛̰͈̗̟Y̛̦̬͘͘Ó̵͚̼̝̩̞̩̦̱̻U̧̙̞ ͜҉̥͍̻̬͕̯͚̼ͅÝ̷̳͔̹̠͘Ó͈̫̰͎U҉̶̠͔̞̳͎͍̯͙ ͏̝̻͕͇̝͉Y͕̗̮͇̬͖̤͘Ò̶̩͔̰͉͘Ư̼̺̪̼͉͘ ̨̬̺Y̶̖̥O̻͍͎̹̻͍̻͝ͅU͕̦͓̼͟ ̱̫͟Y̶̹̮̕Ó̰̞̦̣̦̬̀͝U̵͍̟̺̭̜̞̥ ̢̼̜Y͕̖̱Ó͇̩͞U̸͚͖͈̞̲͙̞͜ ̗̦͕̼͢͟Y͙͓͎͝O̵͔͇̰͈̩U̸̶͕̞̙͔̟̩ ҉͏҉̹͓̼͉Y̛͕̮̬̖̙O̢̨̞̰̱͍U̸̸͍͔̻͓͎̹̪̦͘ ̷̰Ỵ̡̼̘̹͚͉Ò̥̩͓͉̞̬̞͖̳̕Ù̙͙͇̰̭͇͢ͅͅ ͕Y̙̜̣̪͚̕O͉̤͖̥̲̠͎̙U̸̜̘͇̥͓̹̳̝ ͈̯͎͖̠̩͍͠͠Y̗̠̣̪̣Ó̻͇̫̫̰̳͍͓͢U̠͟͡ ̨̻̝̻͞Y҉̮̬̣͜ͅO͇͚̜͈͙̝̗U̴͙̤̹̝ ͈̟̫̭͓̮͞Ỳ̡̧̹̱̠̮̺͔̬͚̣Ò̡͚̣̫̳U͎͘͢ ͢͏̞͈̥͍͙Y͚͙͖͔̬̣͕̗͢͞ͅÓ̻̙͈̭̹̦͍͇̥͟Ų̷̨̯̠̣͖͔͈̼ ͕̲͚͜ͅY͍̮̩͖̳̟͡O̶̶͙̤̦͝U̴̳͙ ̸̧̢̠͚̫̥̤̳̲Y̪̥̣͚O̢̧͍͖̭̲͈U͏̻͚̮̞̘̠̟ ͓̰̲̣͙͚̮̮͠Y̧͝҉̘͚̲͍̣̻O̧͘͏̯̥ͅͅU͏̟͕̜͚̳̻ ͍͓̯̱̮̳͓̩̀Y̹̫̲͖̟̭͢Ó̴̹͚͚̜͖Ù͏͎͎̭̲̺̲̻͈ ̮̤̘̝͘͠Y̢̙̝̤͎̟Ó̵̦̝U̧͓̣͎ͅ ͏͘҉̹̞͈̙̠̯͍̬Y̵̴̞̮̻Ơ̖̕Ư̧҉͕̯̳̙̪̝̞͎ ̨̯̙̗̳͙̭̘̺̼Y̶̝̫͓͎Ơ̶̬̝U̡̬̩͇̲̹ ̧̼̳̖Y̡̩̮̱̲̝͘O̶̖̼̯̱̗̪U̷̡̝ ̱̹͎Y̺̯̟̫O͙̯̳̙͡Ú̧͉̬͈͈̜̫ ̩͖̦͎̬̜̮̠͠͝͡Y̙̹̞̙O̵̠̘̜̺̣͜͡Ú̡̖̭̰̬̬ ͉̘͖͘͠Y̯̣̲Ơ̵̡̼̰͈U̳͟͞ ҉̩̯͕͎̦̣͠Y̧̘͔͟O̡͇̟U̡͍̤̲ ̵̠͖̭̬̝̦̙͞Y̙̗͉̙̼̯O̯̯̯̖̙̗̲͘Ṳ͈̱̖̯ ̺̟Y͚̫̖̯̞O̷̫̯̗̝̕͟U̵̢̨̮ͅ ̝̤̟̩Y̸̴̘̱̤O̝̹Ư̛͎̩͔͡ ̪͍̭̮̗͕̹̬Y̗̘̤͙͚̯̹͘O̜̠̣̺̪̠͡U̬͚͔̭̱͚͢ ̴̲̥͟Y̥̻̪̦̱̼ͅO̷̹̮͞Ù̴̯̤̘̲͉͉̘ͅ
+
+
+ENDING= PARALLEL YOU-NIVERSE
+
+
+
+
+"
+Passage Achievements:
+Text:  "As a challenge, try to play through and unlock every ending!
+ENDING 1: "
+If:  var=$end1, value=true
+START BLOCK
+Text:  "BAD DREAM"
+END BLOCK
+Else
+START BLOCK
+Text:  "??????"
+END BLOCK
+Text:  "
+ENDING 2: "
+If:  var=$end2, value=true
+START BLOCK
+Text:  "FEVER DREAM"
+END BLOCK
+Else
+START BLOCK
+Text:  "??????"
+END BLOCK
+Text:  "
+ENDING 3: "
+If:  var=$end3, value=true
+START BLOCK
+Text:  "CORNY STORY"
+END BLOCK
+Else
+START BLOCK
+Text:  "??????"
+END BLOCK
+Text:  "
+ENDING 4: "
+If:  var=$end4, value=true
+START BLOCK
+Text:  "WOKE UP MAMA"
+END BLOCK
+Else
+START BLOCK
+Text:  "??????"
+END BLOCK
+Text:  "
+ENDING 5: "
+If:  var=$end5, value=true
+START BLOCK
+Text:  "PUTTIN' ON THE RITZ"
+END BLOCK
+Else
+START BLOCK
+Text:  "??????"
+END BLOCK
+Text:  "
+ENDING 6: "
+If:  var=$end6, value=true
+START BLOCK
+Text:  "VENT-I DEATHSPRESSO"
+END BLOCK
+Else
+START BLOCK
+Text:  "??????"
+END BLOCK
+Text:  "
+ENDING 7: "
+If:  var=$end7, value=true
+START BLOCK
+Text:  "DRY AGAIN NEXT TIME"
+END BLOCK
+Else
+START BLOCK
+Text:  "??????"
+END BLOCK
+Text:  "
+ENDING 8: "
+If:  var=$end8, value=true
+START BLOCK
+Text:  "MIRROR WORLD"
+END BLOCK
+Else
+START BLOCK
+Text:  "??????"
+END BLOCK
+Text:  "
+ENDING 9: "
+If:  var=$end9, value=true
+START BLOCK
+Text:  "PARALLEL YOU-NIVERSE"
+END BLOCK
+Else
+START BLOCK
+Text:  "??????"
+END BLOCK
+Text:  "
+ENDING 10:"
+If:  var=$end10, value=true
+START BLOCK
+Text:  "TRUE END"
+END BLOCK
+Else
+START BLOCK
+Text:  "??????"
+END BLOCK
+Text:  "
+
+"
+If:  var=$end10, value=false
+START BLOCK
+Goto:  target=EPILOGUE
+END BLOCK
+Text:  "
+"
+Passage nothing at all:
+Text:  "//Siiiiiiiiiigh//. 
+You roll over and burrow comfortably into the duvet, relishing the warm feeling of the saturday morning sunlight on your face. You could swear that today your bed felt even comfier than usual-then again, it always does when you get the chance to take a long lie in. Its the weekend, that means for two whole days, no more catty Katie and her gang, no more Mrs. Gordon, no more Getting Started with Algebra, just two whole days of sweet, sweet freedom. //Mmmmmmmmmm~// 
+
+'School days are the best days of your life!', Yeah right, you snort. Anything is better than being stuck in that hell-hole. Fighting to stay awake. Staring at the clock hanging on the wall and feeling your brain slowly melt into mush. //Tick. Tick. Tick. Tick. ZZzzzzzzzzzz// Ugh! You just couldn't //imagine// anything more //torturous//.
+'I should really be thinking about getting up soon', you say aloud, trying to will yourself out of the soft cocoon of Bed and out into the cruel spring air. After all, you thought, I have a busy day today- a busy day of saturday morning tv, video games, and chinese carry-out! Not forgetting packing your things for a sleepover with Beth tonight. If only you didnt have to look after your little sister and her snotty friends first. Ugh. Whatever, the usual babysitting strategy will suffice- load 'em up on caffeine and sugar and barricade yourself upstairs in your bedroom to rack up your phone bill.
+When you finally flutter your eyes open, you're met with the same sight as you are every morning: white ceiling stained with nicotine patches from the people who lived here before, lilac flowery curtains to match the duvet cover, a whole zoo of stuffed animals scattered around your soft bed. Even though you'd seen it a hundred times before, for some reason, today felt extra special...It felt as though you'd finally come home after being gone a long long time. 
+Must be 'cause its saturday, you reason. When you finally go to get out of bed, you notice that you seem to have gone to sleep fully dressed. Huh? Your parents //never// let you wear shoes in the house, let alone in //bed//. Damn it. The bottom of your bedsheets are all muddy from your tennis shoes. Your mum is gonna be soooooo mad.
+You decide that you'd better get changed before you go downstairs for breakfast, as you'd rather not have to explain why you're fully dressed on a saturday at 9am in the morning. You pull your jumper off and dump it in the airing closet, and then grab a pyjama top randomly from your drawer and button it up. You take off your oddly-muddy shoes and socks and hide them under a bag in the airing closet- you'd 'transport' them back to their rightful place in the vestibule when mum was at work to save yourself a lecture.
+When you pull off your jeans, you notice one of the pockets stuffed full of a bunch of scraps of paper. Huh. Must be rubbish, you decide, and scoop them out to toss them in the paper bin under your desk. 
+
+//&quot;200ml WATER
+1 JUMPER
+1 JEANS
+2 SHOES&quot;//
+
+Yup, definitely garbage. When you finally finish changing and head out your bedroom door, your little brother Robby accosts you on the landing and dumps a rubber snake down the back of your shirt.
+//'AIIIIIIIIYEEEEEEEEEEEEEE//!!!&quot;, you scream. //&quot;MAAAAA! ROBBY'S BEIN' BAD!!!&quot;//
+//&quot;What is it, honey?~&quot;//, comes a faint reply from the kitchen downstairs.
+Ugh, never mind. Whatever. You could already //smell// the delicious scent of a cooked breakfast wafting up the stairs, and it was hard to stay angry.
+You started to head down the stairs with a peaceful smile. You were just ravenous. It had been a long, long night, after all
+
+
+"
+Link:  display=Achievements, target=Achievements
+Text:  " 
+"
+Link:  display=New Game, target=New Game
