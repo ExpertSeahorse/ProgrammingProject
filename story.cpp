@@ -76,22 +76,151 @@ void Story::print(){
                 break;
             }
 
-            case SET:
-                cout << "  Set:  " << endl;
+            case SET:{
+                cout << "  Set: var=";
+                string text = stok.getText();
+                
+                string var = text.substr(text.find("$"));
+                bool val;    
+                
+                var = var.substr(var.find("$"), var.find(" "));
+                
+                size_t found = text.find("true");
+                    
+                cout << var << ", ";
+                    
+                if(found != string::npos) {
+                    val = true;
+                    cout << "value=[" << val << "]" << endl;
+                }
+                else {
+                    val = false;
+                    cout << "value=[" << val << "]" << endl;
+                }
                 break;
-            case IF:
-                cout << "  If:  "<<endl;
+            }
+            case IF: {
+                cout << "  If: var=";
+                string text = stok.getText();
+                
+                string var = text.substr(text.find("$"));
+                bool val;    
+                
+                var = var.substr(var.find("$"), var.find(" "));
+                
+                size_t found = text.find("true");
+                    
+                cout << var << ", ";
+                    
+                if(found != string::npos) {
+                    val = true;
+                    cout << "value=true" << endl;
+                }
+                else {
+                    val = false;
+                    cout << "value=false" << endl;
+                }
                 break;
-            case ELSEIF:
-                cout << "  Else-if:  " << endl;
-                break;
-            case ELSE:
-                cout << "  Else:  "<<endl;
-                break;
-            case BLOCK:
-                cout << "  Block:  " <<endl;
-                break;
+            }
+            case ELSEIF: {
+                cout << "  Else-if:  var=";
+                string text = stok.getText();
             
+                string var = text.substr(text.find("$"));
+                bool val;
+            
+                var = var.substr(var.find("$"), var.find(" "));
+                
+                size_t found = text.find("true");
+                    
+                cout << var << ", ";
+                    
+                if(found != string::npos) {
+                    val = true;
+                    cout << "value=true" << endl;
+                }
+                else {
+                    val = false;
+                    cout << "value=false" << endl;
+                }
+                break;
+            }
+
+            case ELSE: {
+                cout << "  Else  "<< endl;
+                break;
+            }
+            case BLOCK:{
+               
+                int i = 0;
+                int j = 0;
+                bool para = false;
+                bool words = false;
+
+                string text = stok.getText();
+
+                while(i < text.size()) {
+
+                for (; i < text.size(); i++) {
+                    if(text[i] == '['){
+                        cout << "START BLOCK" << endl;
+                    }
+                    if(text[i] == ']'){
+                        cout << "END BLOCK" << endl;
+                    }
+                    if(isalpha(text[i])) {
+                        words = true;
+                        break;
+                    }
+                    if(text[i] == '(') {
+                        para = true;
+                        break;
+                    }
+                }
+    
+                if(words == true) {
+                    for (j = i; j < text.size(); j++) {
+                        if(text[j] == '(' || text[j] == '[' || text[j] == ']') {
+                            break;
+                        }
+                    }
+                    string newtext = text.substr(i, j - i);
+                    cout << "Text: \"" << newtext << '\"' << endl;
+                    words = false;
+                    i = j;
+                }
+
+                if(para == true) {
+                    for (j = i; j < text.size(); j++) {
+                        if(text[j] == ')') {
+                        break;
+                        }
+                    }
+
+                    string newtext = text.substr(i, j - (i - 1));
+                    string var = newtext.substr(newtext.find("$"));
+                    bool val;    
+                
+                    var = var.substr(var.find("$"), var.find(" "));
+                
+                    size_t found = text.find("true");
+                    
+                    cout << "If: var=" << var << ", ";
+
+                    if(found != string::npos) {
+                        val = true;
+                        cout << "value=true" << endl;
+                    }
+                    else {
+                        val = false;
+                        cout << "value=false" << endl;
+                    }
+                    para = false;
+                    i = j;
+                }
+            break;
+            }
+
             default:
                 cout << "  Unknown token:  ";
             }
