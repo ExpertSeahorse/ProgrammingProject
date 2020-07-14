@@ -175,5 +175,4 @@ PartToken PassageTokenizer::nextPart(){
 
 PassageTokenizer::PassageTokenizer(string body="h"){
     this->body = body;
-    cout << "Passage" << endl;
 }
