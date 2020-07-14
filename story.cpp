@@ -80,13 +80,17 @@ void Story::print(){
                 cout << "  Set: var=";
                 string text = stok.getText();
                 
+                // Will cut out everything before '$'
                 string var = text.substr(text.find("$"));
                 bool val;    
-                
+                // Will assign chars from '$' until next whitespace to var
                 var = var.substr(var.find("$"), var.find(" "));
                 
+                // Test to see if true or false in text and assigns bool to val
+                // then prints out value
                 size_t found = text.find("true");
                     
+                // Will output variable and value and assign bool 
                 cout << var << ", ";
                     
                 if(found != string::npos) {
@@ -103,13 +107,18 @@ void Story::print(){
                 cout << "  If: var=";
                 string text = stok.getText();
                 
+                //Will cut out all characters before '$'
                 string var = text.substr(text.find("$"));
                 bool val;    
                 
+                // Will assign chars from '$' until next whitespace to var
                 var = var.substr(var.find("$"), var.find(" "));
                 
+                // Test to see if true or false in text and assigns bool to val
+                // then prints out value
                 size_t found = text.find("true");
                     
+                // Will output variable and value and assign bool 
                 cout << var << ", ";
                     
                 if(found != string::npos) {
@@ -126,13 +135,18 @@ void Story::print(){
                 cout << "  Else-if:  var=";
                 string text = stok.getText();
             
+                //Will cut out all characters before '$'
                 string var = text.substr(text.find("$"));
                 bool val;
-            
+                
+                // Will assign chars from '$' until next whitespace to var
                 var = var.substr(var.find("$"), var.find(" "));
                 
+                // Test to see if true or false in text and assigns bool to val
+                // then prints out value
                 size_t found = text.find("true");
                     
+                // Will output variable and value and assign bool
                 cout << var << ", ";
                     
                 if(found != string::npos) {
@@ -147,20 +161,33 @@ void Story::print(){
             }
 
             case ELSE: {
+                // Will output else
                 cout << "  Else  "<< endl;
                 break;
             }
             case BLOCK:{
-               
+                //int i to keep track of where in the string we are indexed
+                //int j is used for the next position of '(' '[' or ')'
+                //bools are used to continue making text and if outputs in case more than
+                //one but keeps them from repeating the output in the for loop
+                
                 int i = 0;
                 int j = 0;
                 bool para = false;
                 bool words = false;
 
                 string text = stok.getText();
-
+                
+                // i will continue to be incremented in the for loop in this while loop
+                // it will break out completely when program has iterated through entire text
+      
                 while(i < text.size()) {
-
+                // for loop is used to iterate through the text
+                // 4 if statements in the for loop will output the start of a block if
+                // '[' is found and will out put the end of the block if ']' is found
+                // loop will break if the next character is an alphabetical letter or
+                // a '(' and assign the bool for words indicating text or para for parantheses
+                    
                 for (; i < text.size(); i++) {
                     if(text[i] == '['){
                         cout << "START BLOCK" << endl;
@@ -177,8 +204,15 @@ void Story::print(){
                         break;
                     }
                 }
-    
+                        
+                // if statements are used with the bool values as only one bool value will be on at any
+                // given time.
+                    
                 if(words == true) {
+                    //j will be set equal to i as that is the beginning of the text in the previous for loop
+                    //this for loop will look for the end of text by finding the corresponding symbols for
+                    //brackets or parantheses and i and j will be used to cut the original text and output the text
+         
                     for (j = i; j < text.size(); j++) {
                         if(text[j] == '(' || text[j] == '[' || text[j] == ']') {
                             break;
@@ -186,25 +220,37 @@ void Story::print(){
                     }
                     string newtext = text.substr(i, j - i);
                     cout << "Text: \"" << newtext << '\"' << endl;
+                    
+                    // words is set to false so that the original for loop can activate it again if there are more than one
+                    // text passage
+                    // i is also set to j because that would be our new starting point in the original text due to the fact
+                    // that we output all the text until j
                     words = false;
                     i = j;
                 }
 
                 if(para == true) {
+                    // for loop will set j to i as that is the beginning of the parantheses text
+                    // the for loop will iterate until it finds a closing ')' and break
+                    // the original text will be cut using i and j as delimeters for newtext
                     for (j = i; j < text.size(); j++) {
                         if(text[j] == ')') {
                         break;
                         }
                     }
-
+                    
                     string newtext = text.substr(i, j - (i - 1));
                     string var = newtext.substr(newtext.find("$"));
                     bool val;    
-                
+                    
+                    //Will cut the newtext for var starting with '$" and ending with
+                    //the next whitespace character
                     var = var.substr(var.find("$"), var.find(" "));
                 
+                    //test to search is "true" is in the parantheses or not
                     size_t found = text.find("true");
                     
+                    // will output var value if true or false
                     cout << "If: var=" << var << ", ";
 
                     if(found != string::npos) {
@@ -215,6 +261,8 @@ void Story::print(){
                         val = false;
                         cout << "value=false" << endl;
                     }
+                    // sets para to false for the original for loop to be able to flip it to true if another '('
+                    // is found and i is updated with j because it will be our new starting position in the string
                     para = false;
                     i = j;
                 }
