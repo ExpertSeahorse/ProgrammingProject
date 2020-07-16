@@ -50,125 +50,31 @@ string Story::print(){
                 ooutstring << "Text:  \"" << stok.getText() << "\"" << endl;
                 break;
 
-            case LINK:{
-                ooutstring << "Link:  display=";
-                string text = stok.getText();
-
-                // Test if display != target
-                size_t found = text.find("-&gt;");
-                if (found != string::npos){
-
-                    // If test != target: 
-                    ooutstring << text.substr(2, found-2) << ", target=";
-                    ooutstring << text.substr(found+5, text.size()-(found+5+2)) << endl;
-                }
-                else{
-                    // If test == target:
-                    string s = text.substr(2, text.size()-4);
-                    ooutstring << s << ", target=" << s << endl;
-                }
+            case LINK:
+                ooutstring << printLink(stok);
                 break;
-            }
-
-            case GOTO:{
-                ooutstring << "Goto:  target=";
-                string text = stok.getText();
-                
-                // Print all chars after "(go-to: &quot;" until the next &
-                ooutstring << text.substr(14, text.find('&')) << endl;
-                break;
-            }
-
-            case SET:{
-                ooutstring << "Set:  var=";
-                string text = stok.getText();
-                
-                // Will cut out everything before '$'
-                string var = text.substr(text.find("$"));
-                bool val;    
-                // Will assign chars from '$' until next whitespace to var
-                var = var.substr(var.find("$"), var.find(" "));
-                
-                // Test to see if true or false in text and assigns bool to val
-                // then prints out value
-                size_t found = text.find("true");
-                    
-                // Will output variable and value and assign bool 
-                ooutstring << var << ", ";
-                    
-                if(found != string::npos) {
-                    val = true;
-                    ooutstring << "value=true" << endl;
-                    //ooutstring << "value=[" << val << "]" << endl;
-                }
-                else {
-                    val = false;
-                    ooutstring << "value=false" << endl;
-                }
-                break;
-            }
-            case IF: {
-                ooutstring << "If:  var=";
-                string text = stok.getText();
-                
-                //Will cut out all characters before '$'
-                string var = text.substr(text.find("$"));
-                bool val;    
-                
-                // Will assign chars from '$' until next whitespace to var
-                var = var.substr(var.find("$"), var.find(" "));
-                
-                // Test to see if true or false in text and assigns bool to val
-                // then prints out value
-                size_t found = text.find("true");
-                    
-                // Will output variable and value and assign bool 
-                ooutstring << var << ", ";
-                    
-                if(found != string::npos) {
-                    val = true;
-                    ooutstring << "value=true" << endl;
-                }
-                else {
-                    val = false;
-                    ooutstring << "value=false" << endl;
-                }
-                break;
-            }
-            case ELSEIF: {
-                ooutstring << "Else-if:  var=";
-                string text = stok.getText();
             
-                //Will cut out all characters before '$'
-                string var = text.substr(text.find("$"));
-                bool val;
-                
-                // Will assign chars from '$' until next whitespace to var
-                var = var.substr(var.find("$"), var.find(" "));
-                
-                // Test to see if true or false in text and assigns bool to val
-                // then prints out value
-                size_t found = text.find("true");
-                    
-                // Will output variable and value and assign bool
-                ooutstring << var << ", ";
-                    
-                if(found != string::npos) {
-                    val = true;
-                    ooutstring << "value=true" << endl;
-                }
-                else {
-                    val = false;
-                    ooutstring << "value=false" << endl;
-                }
+            case GOTO:
+                ooutstring << printGoTo(stok);
                 break;
-            }
 
-            case ELSE: {
+            case SET:
+                ooutstring << printSet(stok);
+                break;
+
+            case IF: 
+                ooutstring << printIf(stok);
+                break;
+
+            case ELSEIF: 
+                ooutstring << printElseIf(stok);
+                break;
+
+            case ELSE: 
                 // Will output else
                 ooutstring << "Else"<< endl;
                 break;
-            }
+
             case BLOCK:{
                 //int i to keep track of where in the string we are indexed
                 //int j is used for the next position of '(' '[' or ')'
@@ -244,7 +150,9 @@ string Story::print(){
                         }
                         
                         string newtext = text.substr(i, j - (i - 1));
-                        string var = newtext.substr(newtext.find("$"));
+                        size_t qaz = newtext.find("$");
+                        if (find != string::npos)
+                            string var = newtext.substr(qaz);
                         bool val;    
                         
                         //Will cut the newtext for var starting with '$" and ending with
@@ -285,4 +193,125 @@ string Story::print(){
 
 void Story::play(){
     // Wait for Part 5
+}
+
+string Story::printLink(PartToken stok){
+    ostringstream ooutstring;
+    ooutstring << "Link:  display=";
+    string text = stok.getText();
+
+    // Test if display != target
+    size_t found = text.find("-&gt;");
+    if (found != string::npos){
+
+        // If test != target: 
+        ooutstring << text.substr(2, found-2) << ", target=";
+        ooutstring << text.substr(found+5, text.size()-(found+5+2)) << endl;
+    }
+    else{
+        // If test == target:
+        string s = text.substr(2, text.size()-4);
+        ooutstring << s << ", target=" << s << endl;
+    }
+    return ooutstring.str();
+}
+
+string Story::printSet(PartToken stok){
+    ostringstream ooutstring;
+    ooutstring << "Set:  var=";
+    string text = stok.getText();
+    
+    // Will cut out everything before '$'
+    string var = text.substr(text.find("$"));
+    bool val;    
+    // Will assign chars from '$' until next whitespace to var
+    var = var.substr(var.find("$"), var.find(" "));
+    
+    // Test to see if true or false in text and assigns bool to val
+    // then prints out value
+    size_t found = text.find("true");
+        
+    // Will output variable and value and assign bool 
+    ooutstring << var << ", ";
+        
+    if(found != string::npos) {
+        val = true;
+        ooutstring << "value=true" << endl;
+        //ooutstring << "value=[" << val << "]" << endl;
+    }
+    else {
+        val = false;
+        ooutstring << "value=false" << endl;
+    }
+    return ooutstring.str();
+}
+
+string Story::printGoTo(PartToken stok){
+    ostringstream ooutstring;
+    ooutstring << "Goto:  target=";
+    string text = stok.getText();
+    
+    // Print all chars after "(go-to: &quot;" until the next &
+    ooutstring << text.substr(14, text.find('&')) << endl;
+    return ooutstring.str();
+}
+
+string Story::printIf(PartToken stok){
+    ostringstream ooutstring;
+    ooutstring << "If:  var=";
+    string text = stok.getText();
+    
+    //Will cut out all characters before '$'
+    string var = text.substr(text.find("$"));
+    bool val;    
+    
+    // Will assign chars from '$' until next whitespace to var
+    var = var.substr(var.find("$"), var.find(" "));
+    
+    // Test to see if true or false in text and assigns bool to val
+    // then prints out value
+    size_t found = text.find("true");
+        
+    // Will output variable and value and assign bool 
+    ooutstring << var << ", ";
+        
+    if(found != string::npos) {
+        val = true;
+        ooutstring << "value=true" << endl;
+    }
+    else {
+        val = false;
+        ooutstring << "value=false" << endl;
+    }
+    return ooutstring.str();
+}
+
+string Story::printElseIf(PartToken stok){
+    ostringstream ooutstring;
+    ooutstring << "Else-if:  var=";
+    string text = stok.getText();
+
+    //Will cut out all characters before '$'
+    string var = text.substr(text.find("$"));
+    bool val;
+    
+    // Will assign chars from '$' until next whitespace to var
+    var = var.substr(var.find("$"), var.find(" "));
+    
+    // Test to see if true or false in text and assigns bool to val
+    // then prints out value
+    size_t found = text.find("true");
+        
+    // Will output variable and value and assign bool
+    ooutstring << var << ", ";
+        
+    if(found != string::npos) {
+        val = true;
+        ooutstring << "value=true" << endl;
+    }
+    else {
+        val = false;
+        ooutstring << "value=false" << endl;
+    }
+    return ooutstring.str();
 }

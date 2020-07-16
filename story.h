@@ -21,8 +21,18 @@ private:
 public:
     Story();
     Story(string);
+
     string print();
     void play();
+
+    string printLink(PartToken);
+    string printSet(PartToken);
+    string printGoTo(PartToken);
+    string printIf(PartToken);
+    string printElseIf(PartToken);
+
+
+
 };
 
 #endif
