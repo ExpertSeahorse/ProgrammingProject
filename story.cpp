@@ -266,6 +266,7 @@ void Story::print(){
                     para = false;
                     i = j;
                 }
+               }
             break;
             }
 
