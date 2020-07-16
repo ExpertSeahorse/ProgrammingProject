@@ -150,9 +150,7 @@ string Story::print(){
                         }
                         
                         string newtext = text.substr(i, j - (i - 1));
-                        size_t qaz = newtext.find("$");
-                        if (find != string::npos)
-                            string var = newtext.substr(qaz);
+                        string var = newtext.substr(newtext.find("$"));
                         bool val;    
                         
                         //Will cut the newtext for var starting with '$" and ending with
