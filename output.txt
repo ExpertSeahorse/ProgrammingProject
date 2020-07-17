@@ -30,11 +30,13 @@ If:  var=$debug, value=true
 START BLOCK
 Text:  "When you get your grade back, you smile smugly--an A+!"
 END BLOCK
+  Unknown token:  6
 Else
 START BLOCK
 Text:  "You missed the due date and got an F.  Oh no!  "
-If:  var=$facebook, value=true
+If: var=$facebook, value=true
 START BLOCK
 Text:  "Your friends take you out to help cheer you up."
 END BLOCK
 END BLOCK
+  Unknown token:  6
