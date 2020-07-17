@@ -75,111 +75,9 @@ string Story::print(){
                 ooutstring << "Else"<< endl;
                 break;
 
-            case BLOCK:{
-                //int i to keep track of where in the string we are indexed
-                //int j is used for the next position of '(' '[' or ')'
-                //bools are used to continue making text and if outputs in case more than
-                //one but keeps them from repeating the output in the for loop
-                
-                int i = 0;
-                int j = 0;
-                bool para = false;
-                bool words = false;
-
-                string text = stok.getText();
-                
-                // i will continue to be incremented in the for loop in this while loop
-                // it will break out completely when program has iterated through entire text
-      
-                while(i < text.size()) {
-                    // for loop is used to iterate through the text
-                // 4 if statements in the for loop will output the start of a block if
-                // '[' is found and will out put the end of the block if ']' is found
-                // loop will break if the next character is an alphabetical letter or
-                // a '(' and assign the bool for words indicating text or para for parantheses
-                    
-                    for (; i < text.size(); i++) {
-                        if(text[i] == '['){
-                            ooutstring << "START BLOCK" << endl;
-                        }
-                        if(text[i] == ']'){
-                            ooutstring << "END BLOCK" << endl;
-                        }
-                        if(isalpha(text[i])) {
-                            words = true;
-                            break;
-                        }
-                        if(text[i] == '(') {
-                            para = true;
-                            break;
-                        }
-                    }
-                        
-                    // if statements are used with the bool values as only one bool value will be on at any
-                    // given time.
-                        
-                    if(words == true) {
-                        //j will be set equal to i as that is the beginning of the text in the previous for loop
-                        //this for loop will look for the end of text by finding the corresponding symbols for
-                        //brackets or parantheses and i and j will be used to cut the original text and output the text
+            case BLOCK:
+                 ooutstring << printBlock(stok);
             
-                        for (j = i; j < text.size(); j++) {
-                            if(text[j] == '(' || text[j] == '[' || text[j] == ']') {
-                                break;
-                            }
-                        }
-                        string newtext = text.substr(i, j - i);
-                        ooutstring << "Text:  \"" << newtext << '\"' << endl;
-                        
-                        // words is set to false so that the original for loop can activate it again if there are more than one
-                        // text passage
-                        // i is also set to j because that would be our new starting point in the original text due to the fact
-                        // that we output all the text until j
-                        words = false;
-                        i = j;
-                    }
-
-                    if(para == true) {
-                        // for loop will set j to i as that is the beginning of the parantheses text
-                        // the for loop will iterate until it finds a closing ')' and break
-                        // the original text will be cut using i and j as delimeters for newtext
-                        for (j = i; j < text.size(); j++) {
-                            if(text[j] == ')') {
-                            break;
-                            }
-                        }
-                        
-                        string newtext = text.substr(i, j - (i - 1));
-                        string var = newtext.substr(newtext.find("$"));
-                        bool val;    
-                        
-                        //Will cut the newtext for var starting with '$" and ending with
-                        //the next whitespace character
-                        var = var.substr(var.find("$"), var.find(" "));
-                    
-                        //test to search is "true" is in the parantheses or not
-                        size_t found = text.find("true");
-                        
-                        // will output var value if true or false
-                        ooutstring << "If:  var=" << var << ", ";
-
-                        if(found != string::npos) {
-                            val = true;
-                            ooutstring << "value=true" << endl;
-                        }
-                        else {
-                            val = false;
-                            ooutstring << "value=false" << endl;
-                        }
-                        // sets para to false for the original for loop to be able to flip it to true if another '('
-                        // is found and i is updated with j because it will be our new starting position in the string
-                        para = false;
-                        i = j;
-                    }
-                }
-                break;
-            }
-
             default:
                 ooutstring << "  Unknown token:  ";
             }
@@ -313,3 +211,169 @@ string Story::printElseIf(PartToken stok){
     }
     return ooutstring.str();
 }
+
+string Story::printBlock(PartToken stok){
+    ostringstream ooutstring;
+    string text = stok.getText();
+    
+    int i = 0;
+    int j = 0;
+    bool para = false;
+    bool words = false;
+    
+    //int i to keep track of where in the string we are indexed and will be used in while loop to end the function
+    //int j is used for the next position of '(' '[' or ')'
+    //bools are used to continue making outputs of links, sets, ifs etc in case more than
+    //one but keeps them from repeating the output in the for loop
+    
+    while(i < text.size()) {
+    // for loop is used to iterate through the text
+    // 4 if statements in the for loop will output the start of a block if
+    // '[' is found and will out put the end of the block if ']' is found
+    // loop will break if the next character is an alphabetical letter or
+    // a '(' and assign the bool for words indicating text or para for parantheses
+
+        for (; i < text.size(); i++) {
+            if(text[i] == '['){
+            ooutstring << "START BLOCK" << endl;
+            }
+            if(text[i] == ']'){
+            ooutstring << "END BLOCK" << endl;
+            }
+            if(isalpha(text[i])){
+            words = true;
+            break;
+            }
+            if(text[i] == '('){
+            para = true;
+            break;
+            }
+        }
+
+        // if statements are used with the bool values as only one bool value will be on at any
+        // given time.
+    
+        if(words == true) {
+
+            //j will be set equal to i as that is the beginning of the text in the previous for loop
+            //this for loop will look for the end of text by finding the corresponding symbols for
+            //brackets or parantheses and i and j will be used to cut the original text and output the text
+
+            for (j = i; j < text.size(); j++) {
+                if(text[j] == '(' || text[j] == '[' || text[j] == ']') {
+                    break;
+                }
+            }
+
+            // words is set to false so that the original for loop can activate it again if there are more than one
+            // text passage
+            // i is also set to j because that would be our new starting point in the original text due to the fact
+            // that we output all the text until j
+
+            string newtext = text.substr(i, j - i);
+            ooutstring << "Text: \"" << newtext << '\"' << endl;
+            words = false;
+            i = j;
+        }
+
+        if(para == true) {
+            
+            // for loop will set j to i as that is the beginning of the parantheses text
+            // the for loop will iterate until it finds a closing ')' and break
+            // the original text will be cut using i and j as delimeters for newtext
+
+            //size_t found is used to check the paratheses for if, else, if-else or goto
+            //When either of the 4 is found the if staments will appropritately extract the
+            //values as they are inteded to for their type
+
+            //found2 will be used in all but goto and else to find if the value is either true or false
+
+            for (j = i; j < text.size(); j++) {
+                if(text[j] == ')') {
+                    break;
+                }
+            }
+
+            string newtext = text.substr(i, j - (i - 1));
+            string var;
+            bool val;   
+                
+
+            //Will check for "if" in the parantheses
+            size_t found = newtext.find("if");
+                    
+            if(found != string::npos) {
+                var = newtext.substr(newtext.find("$"));
+                var = var.substr(var.find("$"), var.find(" "));
+                ooutstring << "If: var=" << var << ", value=";
+                size_t found2 = newtext.find("true");
+
+                if(found2 != string::npos){
+                    ooutstring << "true" << endl;
+                }
+                else {
+                    ooutstring << "false" << endl;
+                }
+
+            }
+
+            //Will check for "set" in parantheses
+            found = newtext.find("set");
+
+            if(found != string::npos) {
+                var = newtext.substr(newtext.find("$"));
+                var = var.substr(var.find("$"), var.find(" "));
+                ooutstring << "Set: var=" << var <<", value=";
+                size_t found2 = newtext.find("true");
+
+                if(found2 != string::npos){
+                    ooutstring << "true" << endl;
+                }
+                else {
+                    ooutstring << "false" << endl;
+                }
+
+            }
+
+            //Will check for "go-to" in parantheses
+            found = newtext.find("go-to");
+
+            if(found != string::npos) {
+                var = newtext.substr(14, newtext.find("&"));
+                ooutstring << "Goto: target=" << var << endl;
+            }
+
+            //Will check for "else-if" in parantheses
+            found = newtext.find("else-if");
+
+            if(found != string::npos) {
+                var = newtext.substr(newtext.find("$"));
+                var = var.substr(var.find("$"), var.find(" "));
+                ooutstring << "Else-if: var=" << var <<", value=";
+                size_t found2 = newtext.find("true");
+
+                if(found2 != string::npos){
+                    ooutstring << "true" << endl;
+                }
+                else {
+                    ooutstring << "false" << endl;
+                }
+            }
+
+            //Will check for "else:" in the parantheses
+            found = newtext.find("else:");
+
+            if(found != string::npos) {
+                ooutstring << "ELSE" << endl;
+            }
+
+            //Resets bool para to be used once more in the for loop if theres more paranthetical statements
+            para = false;
+            //Sets i to j as the new starting point for the for loop
+            i = j;
+        }
+
+    }
+    return ooutstring.str();   
+}
+    
