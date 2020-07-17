@@ -30,6 +30,7 @@ public:
     string printGoTo(PartToken);
     string printIf(PartToken);
     string printElseIf(PartToken);
+    string printBlock(PartToken);
 
 
 
