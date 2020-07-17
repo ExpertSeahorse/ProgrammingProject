@@ -81,6 +81,7 @@ string Story::print(){
             
             default:
                 ooutstring << "  Unknown token:  " << stok.getType() << endl;
+                break;
             }
         }
     }
