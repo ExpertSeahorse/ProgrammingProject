@@ -77,6 +77,7 @@ string Story::print(){
 
             case BLOCK:
                  ooutstring << printBlock(stok);
+                 break;
             
             default:
                 ooutstring << "  Unknown token:  " << stok.getType() << endl;
