@@ -310,9 +310,11 @@ string Story::printBlock(PartToken stok){
                 size_t found2 = newtext.find("true");
 
                 if(found2 != string::npos){
+                    val = true;
                     ooutstring << "true" << endl;
                 }
                 else {
+                    val = false;
                     ooutstring << "false" << endl;
                 }
 
@@ -329,9 +331,11 @@ string Story::printBlock(PartToken stok){
                 size_t found2 = newtext.find("true");
 
                 if(found2 != string::npos){
+                    val = true;
                     ooutstring << "true" << endl;
                 }
                 else {
+                    val = false;
                     ooutstring << "false" << endl;
                 }
 
@@ -357,9 +361,11 @@ string Story::printBlock(PartToken stok){
                 size_t found2 = newtext.find("true");
 
                 if(found2 != string::npos){
+                    val = true;
                     ooutstring << "true" << endl;
                 }
                 else {
+                    val = false;
                     ooutstring << "false" << endl;
                 }
             }
