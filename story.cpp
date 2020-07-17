@@ -300,6 +300,7 @@ string Story::printBlock(PartToken stok){
                 
 
             //Will check for "if" in the parantheses
+            //and output according to if function
             size_t found = newtext.find("if");
                     
             if(found != string::npos) {
@@ -318,6 +319,7 @@ string Story::printBlock(PartToken stok){
             }
 
             //Will check for "set" in parantheses
+            //and output as if set function
             found = newtext.find("set");
 
             if(found != string::npos) {
@@ -336,6 +338,7 @@ string Story::printBlock(PartToken stok){
             }
 
             //Will check for "go-to" in parantheses
+            //and will output like goto function
             found = newtext.find("go-to");
 
             if(found != string::npos) {
@@ -344,6 +347,7 @@ string Story::printBlock(PartToken stok){
             }
 
             //Will check for "else-if" in parantheses
+            //will output like else-if function
             found = newtext.find("else-if");
 
             if(found != string::npos) {
@@ -361,6 +365,7 @@ string Story::printBlock(PartToken stok){
             }
 
             //Will check for "else:" in the parantheses
+            //and output else 
             found = newtext.find("else:");
 
             if(found != string::npos) {
