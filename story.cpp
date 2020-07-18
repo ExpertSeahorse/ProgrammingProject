@@ -222,6 +222,7 @@ string Story::printBlock(PartToken stok){
     int j = 0;
     bool para = false;
     bool words = false;
+    bool link = false;
     
     //int i to keep track of where in the string we are indexed and will be used in while loop to end the function
     //int j is used for the next position of '(' '[' or ')'
@@ -236,28 +237,57 @@ string Story::printBlock(PartToken stok){
     // a '(' and assign the bool for words indicating text or para for parantheses
 
         for (; i < text.size(); i++) {
+            if(i > 0 && text[i] == '[' && text[i + 1] == '[') {
+                link = true;
+                break;
+            }
             if(text[i] == '['){
-                ooutstring << "START BLOCK" << endl;
+            ooutstring << "START BLOCK" << endl;
             }
-
             if(text[i] == ']'){
-                ooutstring << "END BLOCK" << endl;
+            ooutstring << "END BLOCK" << endl;
             }
-
-            if(isalpha(text[i])){
-                words = true;
-                break;
+            if(isalpha(text[i]) || isspace(text[i])){
+            words = true;
+            break;
             }
-
             if(text[i] == '('){
-                para = true;
-                break;
+            para = true;
+            break;
             }
         }
 
         // if statements are used with the bool values as only one bool value will be on at any
         // given time.
-    
+        
+        //Will check for both cases of links in the block passage
+        if(link == true) {
+            for(j = i; j < text.size(); j++) {
+                if(text[j] == ']' && text[j + 1] == ']'){
+                    j = j + 1;
+                    break;
+                }
+            }
+
+            string newtext = text.substr(i, (j - i) + 1);
+            size_t found = newtext.find("-&gt;");
+
+            if (found != string::npos){
+                ooutstring << "Link: display=";
+                ooutstring << newtext.substr(2, found-2) << ", target=";
+                ooutstring << newtext.substr(found+5, newtext.size()-(found+5+2)) << endl;
+            }
+            else{
+                ooutstring << "Link: display=";
+                string s = newtext.substr(2, newtext.size() - 4);
+                ooutstring << s << ", target=" << s << endl;
+            }
+            link = false;
+            //In this case i is set to j + 1 to not output an extra "END BLOCK" statement in the for loop
+            i = j + 1;
+        }
+
+
         if(words == true) {
 
             //j will be set equal to i as that is the beginning of the text in the previous for loop
@@ -276,7 +306,7 @@ string Story::printBlock(PartToken stok){
             // that we output all the text until j
 
             string newtext = text.substr(i, j - i);
-            ooutstring << "Text:  \"" << newtext << '\"' << endl;
+            ooutstring << "Text: \"" << newtext << '\"' << endl;
             words = false;
             i = j;
         }
@@ -311,7 +341,7 @@ string Story::printBlock(PartToken stok){
             if(found != string::npos) {
                 var = newtext.substr(newtext.find("$"));
                 var = var.substr(var.find("$"), var.find(" "));
-                ooutstring << "If:  var=" << var << ", value=";
+                ooutstring << "If: var=" << var << ", value=";
                 size_t found2 = newtext.find("true");
 
                 if(found2 != string::npos){
@@ -332,7 +362,7 @@ string Story::printBlock(PartToken stok){
             if(found != string::npos) {
                 var = newtext.substr(newtext.find("$"));
                 var = var.substr(var.find("$"), var.find(" "));
-                ooutstring << "Set:  var=" << var <<", value=";
+                ooutstring << "Set: var=" << var <<", value=";
                 size_t found2 = newtext.find("true");
 
                 if(found2 != string::npos){
@@ -352,7 +382,7 @@ string Story::printBlock(PartToken stok){
 
             if(found != string::npos) {
                 var = newtext.substr(14, newtext.find("&"));
-                ooutstring << "Goto:  target=" << var << endl;
+                ooutstring << "Goto: target=" << var << endl;
             }
 
             //Will check for "else-if" in parantheses
@@ -362,7 +392,7 @@ string Story::printBlock(PartToken stok){
             if(found != string::npos) {
                 var = newtext.substr(newtext.find("$"));
                 var = var.substr(var.find("$"), var.find(" "));
-                ooutstring << "Else-if:  var=" << var <<", value=";
+                ooutstring << "Else-if: var=" << var <<", value=";
                 size_t found2 = newtext.find("true");
 
                 if(found2 != string::npos){
