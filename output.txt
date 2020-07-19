@@ -1,42 +1,69 @@
 Passage start:
-Set:  var=$debug, value=false
-Set:  var=$facebook, value=false
-Text:  "Your big programming project is due tomorrow.  Do you "
-Link:  display=start debugging, target=start debugging
-Text:  ", "
-Link:  display=log onto Facebook, target=log onto Facebook
-Text:  ", or "
-Link:  display=watch Netflix, target=watch Netflix
-Text:  "?"
-Passage start debugging:
-Set:  var=$debug, value=true
-Text:  " You work late into the night, but you think you have the code working before the "
-Link:  display=deadline, target=deadline
+Text:  "Your friend Monique is throwing a tea party today.  You head over to see her, and the two of you spend hours catching up before you realize that neither of you has had any tea yet!  
+
+Monique offers you a seat at her "
+Link:  display=table, target=table
+Text:  ".  You see a delicate tea set and cookies arranged on the table. "
+Set:  var=$ateCookie, value=false
+Text:  " "
+Set:  var=$ateCake, value=false
+Text:  "
+"
+Passage tea:
+Text:  "You pour yourself a cup of tea and sip.  It is very refreshing.  When you are finished, you turn back to the "
+Link:  display=table, target=table
 Text:  "."
-Passage log onto Facebook:
-Set:  var=$facebook, value=true
-Text:  " Your friend posted yet another picture of food, and you got friend requests from two people you've never met.   You make a post about how stupid school projects are and start cyberstalking someone cute you saw the other day.  Before you know it, you've missed the "
-Link:  display=deadline, target=deadline
-Text:  " for submitting your project!"
-Passage watch Netflix:
-Text:  "There's an amazing new crime drama on.  In fact, it's so good that you find yourself watching an entire season, and the next thing you know, sunlight is streaming in through the window--it's already morning, way past the "
-Link:  display=deadline, target=deadline
-Text:  " for turning in your project!  "
-Goto:  target=deadline
-Text:  " Invisible text.  "
-Link:  display=The link not taken, target=start
-Passage deadline:
-If:  var=$debug, value=true
+Passage cookies:
+Text:  "As you start eating the cookies, you suddenly realize you're much hungrier than you thought you were.
+
+"Wow, look at you go," says Monique.  "You know, if you're that hungry, I have some leftover "
+Link:  display=cake, target=cake
+Text:  " from my office party last week."
+"
+Set:  var=$ateCookie, value=true
+Text:  "
+You briefly consider whether to "
+Link:  display=politely decline, target=table
+Text:  " her request."
+Passage cake:
+Text:  "Monique heads back to her kitchen and brings back an improbably huge slice of cake.  You know that you'll be sick if you eat it, but it would be /awfully/ rude to back down, and the cake does look delicious.  One bite surely wouldn't hurt."
+Set:  var=$ateCake, value=true
+Text:  "
+
+A few moments later, you polish off the last couple bites of the cake.  It was, in fact, delicious.  Afterwards, you turn your attention back to the "
+Link:  display=table, target=table
+Text:  "."
+Passage heading home:
+Text:  "After giving your goodbyes to your gracious hostess, you head home.  
+
+You're exhausted after spending the day with your friend and immediately head to bed.  "
+If:  var=$ateCookie, value=false
 START BLOCK
-Text:  "When you get your grade back, you smile smugly--an A+!"
+Text:  "You're still a bit hungry, but you manage to fall asleep all the same."
 END BLOCK
-  Unknown token:  6
+Else-if:  var=$ateCake, value=false
+START BLOCK
+Text:  "You sigh contentedly and drift off to blissful slumber."
+END BLOCK
 Else
 START BLOCK
-Text:  "You missed the due date and got an F.  Oh no!  "
-If: var=$facebook, value=true
+Text:  "You definitely should not have eaten so much at the party--you feel ill, and you can't get comfortable in the bed.  As you toss and turn, you vow to be more careful about overeating in the future."
+END BLOCK
+Passage table:
+Text:  "There is a large pot of still-steaming "
+Link:  display=tea, target=tea
+Text:  " and some "
+If:  var=$ateCookie, value=false
 START BLOCK
-Text:  "Your friends take you out to help cheer you up."
+Text:  "delicious looking "
+Link:  display=cookies, target=cookies
 END BLOCK
+Else
+START BLOCK
+Text:  "scattered cookie crumbs"
 END BLOCK
-  Unknown token:  6
+Text:  " lying on the table.  
+
+You're having a wonderful time, but you're a little tired and thinking about "
+Link:  display=heading home, target=heading home
+Text:  "."

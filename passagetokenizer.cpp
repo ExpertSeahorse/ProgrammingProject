@@ -157,12 +157,9 @@ PartToken PassageTokenizer::nextPart(){
             if (ch == "]"){
                 start = 0;
                 level -= 1;
-                //cout << "In Loop Text Len: " << text_len << endl;
-                //cout << "Level: " << level << ", start: " << start << endl;
             }
             i++;
         }
-        //cout << "Text Len: " << text_len << endl;
         text = body.substr(current_position, text_len);
         current_position += text_len;
         return PartToken(text, nextPartType);
