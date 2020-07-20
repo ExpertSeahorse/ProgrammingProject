@@ -1,9 +1,5 @@
 #include "story.h"
 
-<<<<<<< HEAD
-#include <sstream>
-=======
->>>>>>> David
 
 // if no input file chosen
 Story::Story(){
