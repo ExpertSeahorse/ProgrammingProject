@@ -11,7 +11,7 @@ const string FILENAME = "if.html";
 int main()
 {
   Story* story = new Story(FILENAME);
-  story->print();
+  story->play();
 
   delete story;
   return 0;
