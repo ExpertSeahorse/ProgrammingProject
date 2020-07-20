@@ -399,12 +399,14 @@ void Story::play(){
     string nextPassage = passages_vec.at(0).getName();  // Sets nextPassage to first passage
     PassageToken passage;
 
+    bool gotoFlag = false;
+
     // TODO: Input exit condition maybe
     while (true){
         passage = passages_map[nextPassage];
 
         PassageTokenizer pt(passage.getText());
-        while (pt.hasNextPart()){
+        while (pt.hasNextPart() || !gotoFlag){
             PartToken stok = pt.nextPart();
             
             switch (stok.getType()){
@@ -435,40 +437,36 @@ void Story::play(){
             }
             
             case GOTO:{
-                cout << "Goto:  target=";
                 string text = stok.getText();
-                
-                // Print all chars after "(go-to: &quot;" until the next &
-                cout << text.substr(14, text.find('&')) << endl;
+
+                // send all chars after "(go-to: &quot;" until the next & into nextPassage
+                nextPassage = text.substr(14, text.find('&'));
+                gotoFlag = true;
+
                 break;
             }
 
             case SET:{
-                cout << "Set:  var=";
                 string text = stok.getText();
-                
+                /*  Just in case my code doesn't work
+
                 // Will cut out everything before '$'
                 string var = text.substr(text.find("$"));
-                bool val;    
+                
                 // Will assign chars from '$' until next whitespace to var
                 var = var.substr(var.find("$"), var.find(" "));
+                */
+
+               string var = text.substr(text.find("$"), text.find(" "));
+
+                // Will get value and assign to vars map        
+                size_t found = text.find("true");             
+                if(found != string::npos) 
+                    vars.emplace(var, true);
                 
-                // Test to see if true or false in text and assigns bool to val
-                // then prints out value
-                size_t found = text.find("true");
-                    
-                // Will output variable and value and assign bool 
-                cout << var << ", ";
-                    
-                if(found != string::npos) {
-                    val = true;
-                    cout << "value=true" << endl;
-                    //cout << "value=[" << val << "]" << endl;
-                }
-                else {
-                    val = false;
-                    cout << "value=false" << endl;
-                }
+                else 
+                    vars.emplace(var, false);
+                
                 break;
             }
 
@@ -756,8 +754,15 @@ void Story::play(){
         }
 
         // End of the PartToken switch statement
-        cout << endl;
 
+        // If the Passage stopped because of Go-To: just continue,
+        // don't print out links or terminate
+        if (gotoFlag){
+            gotoFlag = false;
+            continue;
+        }
+
+        cout << endl;
         // If there are no links, terminate the session
         if (link_destinations.empty())
             break;
