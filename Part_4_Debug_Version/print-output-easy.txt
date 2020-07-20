@@ -1,0 +1,40 @@
+Passage start:
+Set:  var=$debug, value=false
+Set:  var=$facebook, value=false
+Text:  "Your big programming project is due tomorrow.  Do you "
+Link:  display=start debugging, target=start debugging
+Text:  ", "
+Link:  display=log onto Facebook, target=log onto Facebook
+Text:  ", or "
+Link:  display=watch Netflix, target=watch Netflix
+Text:  "?"
+Passage start debugging:
+Set:  var=$debug, value=true
+Text:  " You work late into the night, but you think you have the code working before the "
+Link:  display=deadline, target=deadline
+Text:  "."
+Passage log onto Facebook:
+Set:  var=$facebook, value=true
+Text:  " Your friend posted yet another picture of food, and you got friend requests from two people you've never met.   You make a post about how stupid school projects are and start cyberstalking someone cute you saw the other day.  Before you know it, you've missed the "
+Link:  display=deadline, target=deadline
+Text:  " for submitting your project!"
+Passage watch Netflix:
+Text:  "There's an amazing new crime drama on.  In fact, it's so good that you find yourself watching an entire season, and the next thing you know, sunlight is streaming in through the window--it's already morning, way past the "
+Link:  display=deadline, target=deadline
+Text:  " for turning in your project!  "
+Goto:  target=deadline
+Text:  " Invisible text.  "
+Link:  display=The link not taken, target=start
+Passage deadline:
+If:  var=$debug, value=true
+START BLOCK
+Text:  "When you get your grade back, you smile smugly--an A+!"
+END BLOCK
+Else
+START BLOCK
+Text:  "You missed the due date and got an F.  Oh no!  "
+If:  var=$facebook, value=true
+START BLOCK
+Text:  "Your friends take you out to help cheer you up."
+END BLOCK
+END BLOCK
