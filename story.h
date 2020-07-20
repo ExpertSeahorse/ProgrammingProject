@@ -21,6 +21,7 @@ private:
 public:
     Story();
     Story(string);
+
     void print();
     void play();
 };
