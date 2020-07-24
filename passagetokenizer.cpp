@@ -7,7 +7,7 @@ using namespace std;
 
 // Checks if there is another passage T/F
 bool PassageTokenizer::hasNextPart(){
-    if (current_position == (int) body.size())
+    if (current_position >= (int) body.size())
         return false;
 
     // reset distances array

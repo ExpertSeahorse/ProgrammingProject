@@ -24,7 +24,7 @@ public:
     void print();
     void play();
 
-    string tokenizePlay(string, vector< pair<string, string> >&, bool);
+    string tokenizePlay(string, vector< pair<string, string> >&, bool&);
 };
 
 #endif

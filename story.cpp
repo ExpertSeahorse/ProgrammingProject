@@ -395,13 +395,17 @@ void Story::print(){
 
 
 void Story::play(){
+
     vector< pair<string, string> > link_destinations;
     string nextPassage = passages_vec.at(0).getName();  // Sets nextPassage to first passage
     PassageToken passage;
 
     bool gotoFlag = false;
 
+
     while (true){
+            
+
         passage = passages_map[nextPassage];
 
         nextPassage = tokenizePlay(passage.getText(), link_destinations, gotoFlag);
@@ -565,6 +569,7 @@ void Story::play(){
         // don't print out links or terminate
         if (gotoFlag){
             gotoFlag = false;
+            link_destinations.clear();
             continue;
         }
 
@@ -572,6 +577,7 @@ void Story::play(){
         // If there are no links, terminate the session
         if (link_destinations.empty())
             break;
+
 
         // print out the links + 
         int choice;
@@ -586,14 +592,14 @@ void Story::play(){
 }
 
 
-string Story::tokenizePlay(string pass, vector< pair<string, string> >& link_destinations, bool gotoFlag){
+string Story::tokenizePlay(string pass, vector< pair<string, string> >& link_destinations, bool& gotoFlag){
     PassageTokenizer pt(pass);
-    while (pt.hasNextPart() || !gotoFlag){
+    bool remember = false;
+    bool nextBlock = false;
+
+    while (pt.hasNextPart() && !gotoFlag){
         PartToken stok = pt.nextPart();
-        
-        bool remember = false;
-        bool nextBlock = false;
-        
+
         switch (stok.getType()){
         case TEXT:
             cout << stok.getText();
@@ -628,13 +634,11 @@ string Story::tokenizePlay(string pass, vector< pair<string, string> >& link_des
 
             // send all chars after "(go-to: &quot;" until the next & into nextPassage
             return text.substr(14, text.find('&'));
-            
-
-            break;
         }
 
         case SET:{
             string text = stok.getText();
+            bool val = false;
             /*  Just in case my code doesn't work
 
             // Will cut out everything before '$'
@@ -644,15 +648,20 @@ string Story::tokenizePlay(string pass, vector< pair<string, string> >& link_des
             var = var.substr(var.find("$"), var.find(" "));
             */
 
-            string var = text.substr(text.find("$"), text.find(" "));
+            string var = text.substr(text.find("$"));
+            var = var.substr(0, var.find(" "));
 
-            // Will get value and assign to vars map        
+            // Will get value and assign to val        
             size_t found = text.find("true");             
             if(found != string::npos) 
-                vars.emplace(var, true);
-            
-            else 
-                vars.emplace(var, false);
+                val = true;
+
+            // Checks if var is already in map
+            // and switches value or adds it to the map
+            if (vars.count(var))
+                vars[var] = val;
+            else
+                vars.emplace(var, val);
             
             break;
         }
@@ -663,7 +672,7 @@ string Story::tokenizePlay(string pass, vector< pair<string, string> >& link_des
             
             //Will cut out all characters before '$'
             string var = text.substr(text.find("$"));
-            bool val;    
+            bool val = false;    
             
             // Will assign chars from '$' until next whitespace to var
             var = var.substr(var.find("$"), var.find(" "));
@@ -672,44 +681,34 @@ string Story::tokenizePlay(string pass, vector< pair<string, string> >& link_des
             // then prints out value
             size_t found = text.find("true");
                 
-            if(found != string::npos) {
+            if(found != string::npos) 
                 val = true;
-            }
-            else {
-                val = false;
-            }
 
             if(vars[var] == val){
                 remember = true;
                 nextBlock = true;
             }
-
             break;
         }
 
         case ELSEIF: {
-            if(remember == true) {
+            if(remember == true) 
                 break;
-            }
+
             string text = stok.getText();
 
             //Will cut out all characters before '$'
             string var = text.substr(text.find("$"));
-            bool val;
+            bool val = false;
             
             // Will assign chars from '$' until next whitespace to var
             var = var.substr(var.find("$"), var.find(" "));
             
             // Test to see if true or false in text and assigns bool to val
-            // then prints out value
+            // then gets ready to print next block
             size_t found = text.find("true");
-                
-            if(found != string::npos) {
+            if(found != string::npos) 
                 val = true;
-            }
-            else {
-                val = false;
-            }
 
             if(vars[var] == val){
                 remember = true;
@@ -718,24 +717,23 @@ string Story::tokenizePlay(string pass, vector< pair<string, string> >& link_des
             break;
         }
 
-        case ELSE: 
+        case ELSE:{ 
             if(remember == false){
-                remember == true;
-                nextBlock == true;
+                remember = true;
+                nextBlock = true;
             }
             break;
+        }
 
         case BLOCK:{
-            string text = stok.getText();
-            if(nextBlock == false) {
+            if(nextBlock == false) 
                 break;
-            }
 
-            if (remember == true && nextBlock == true) {
-                string newstring;
-                newstring = tokenizePlay(text, link_destinations, gotoFlag);
-            
-            }
+            string text = stok.getText();
+            text = text.substr(1, text.size()-2);
+            string newstring = tokenizePlay(text, link_destinations, gotoFlag); 
+
+            nextBlock = false;           
             break;
         }
         
@@ -744,8 +742,7 @@ string Story::tokenizePlay(string pass, vector< pair<string, string> >& link_des
             break;
         }
     
-    }
-    }
-    string ret = " ";
-    return ret;
-}
+        }// end switch
+    }// end while
+    return " ";
+}//end tokenizePlay()
