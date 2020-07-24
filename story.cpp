@@ -609,18 +609,21 @@ string Story::tokenizePlay(string pass, vector< pair<string, string> >& link_des
             string text = stok.getText();
             string target;
 
-            target = text.substr(2, text.size()-4);
-            cout << target;
+            
 
             // Test if link display != target
             size_t found = text.find("-&gt;");
             if (found != string::npos){
+                target = text.substr(2, found-2);
+                cout << target;
                 // appends the target of the link to the vector if target != display
                 string destination = text.substr(found+5, text.size()-(found+5+2));
                 link_destinations.push_back(make_pair(target, destination));
             }
 
             else{
+                target = text.substr(2, text.size()-4);
+                cout << target;
                 // If link display == target:
                 link_destinations.push_back(make_pair(target, target));
             }
